@@ -1,0 +1,4861 @@
+{
+ "as_of": "2026-10-01",
+ "mouzas": [
+  {
+   "id": "M901",
+   "name_en": "Shapla Char (DEMO)",
+   "name_bn": "শাপলা চর (ডেমো)",
+   "jl_no": "901",
+   "upazila": "Demo Upazila",
+   "district": "Demo District"
+  },
+  {
+   "id": "M902",
+   "name_en": "Kashful Para (DEMO)",
+   "name_bn": "কাশফুল পাড়া (ডেমো)",
+   "jl_no": "902",
+   "upazila": "Demo Upazila",
+   "district": "Demo District"
+  },
+  {
+   "id": "M903",
+   "name_en": "Hijol Tola (DEMO)",
+   "name_bn": "হিজল তলা (ডেমো)",
+   "jl_no": "903",
+   "upazila": "Demo Upazila",
+   "district": "Demo District"
+  }
+ ],
+ "local_units": [
+  {
+   "mouza_id": "M902",
+   "unit": "katha",
+   "decimals": "7200/4356",
+   "note": "Demo assumption: 1 katha = 720 sq ft (local definitions vary)"
+  }
+ ],
+ "coverage": [
+  {
+   "id": "C901",
+   "mouza_id": "M901",
+   "source": "registry_index",
+   "start_date": "2000-01-01",
+   "end_date": null,
+   "note": "Simulated digital index of registered deeds (L.T. notices) for JL 901"
+  },
+  {
+   "id": "C902",
+   "mouza_id": "M902",
+   "source": "registry_index",
+   "start_date": "2000-01-01",
+   "end_date": null,
+   "note": "Simulated digital index of registered deeds (L.T. notices) for JL 902"
+  },
+  {
+   "id": "C903",
+   "mouza_id": "M903",
+   "source": "registry_index",
+   "start_date": "2016-01-01",
+   "end_date": null,
+   "note": "Simulated index for JL 903 starts in 2016; older deeds are on paper only"
+  }
+ ],
+ "persons": [
+  {
+   "id": "P-0001",
+   "name_en": "Rahela Namuna",
+   "name_bn": "রাহেলা নমুনা"
+  },
+  {
+   "id": "P-0002",
+   "name_en": "Kamrul Namuna",
+   "name_bn": "কামরুল নমুনা"
+  },
+  {
+   "id": "P-0003",
+   "name_en": "Nasima Namuna",
+   "name_bn": "নাসিমা নমুনা"
+  },
+  {
+   "id": "P-0004",
+   "name_en": "Joynal Namuna",
+   "name_bn": "জয়নাল নমুনা"
+  },
+  {
+   "id": "P-0005",
+   "name_en": "Shirin Namuna",
+   "name_bn": "শিরিন নমুনা"
+  },
+  {
+   "id": "P-0006",
+   "name_en": "Mizan Namuna",
+   "name_bn": "মিজান নমুনা"
+  },
+  {
+   "id": "P-0007",
+   "name_en": "Shapla Namuna",
+   "name_bn": "শাপলা নমুনা"
+  },
+  {
+   "id": "P-0008",
+   "name_en": "Habib Namuna",
+   "name_bn": "হাবিব নমুনা"
+  },
+  {
+   "id": "P-0009",
+   "name_en": "Rokeya Namuna",
+   "name_bn": "রোকেয়া নমুনা"
+  },
+  {
+   "id": "P-0010",
+   "name_en": "Tofazzal Namuna",
+   "name_bn": "তোফাজ্জল নমুনা"
+  },
+  {
+   "id": "P-0011",
+   "name_en": "Jahanara Namuna",
+   "name_bn": "জাহানারা নমুনা"
+  },
+  {
+   "id": "P-0012",
+   "name_en": "Sabbir Namuna",
+   "name_bn": "সাব্বির নমুনা"
+  },
+  {
+   "id": "P-0013",
+   "name_en": "Moushumi Namuna",
+   "name_bn": "মৌসুমী নমুনা"
+  },
+  {
+   "id": "P-0014",
+   "name_en": "Anwar Namuna",
+   "name_bn": "আনোয়ার নমুনা"
+  },
+  {
+   "id": "P-0015",
+   "name_en": "Lipi Namuna",
+   "name_bn": "লিপি নমুনা"
+  },
+  {
+   "id": "P-0016",
+   "name_en": "Faruk Namuna",
+   "name_bn": "ফারুক নমুনা"
+  },
+  {
+   "id": "P-0017",
+   "name_en": "Ruma Namuna",
+   "name_bn": "রুমা নমুনা"
+  },
+  {
+   "id": "P-0018",
+   "name_en": "Delwar Namuna",
+   "name_bn": "দেলোয়ার নমুনা"
+  },
+  {
+   "id": "P-0019",
+   "name_en": "Monir Namuna",
+   "name_bn": "মনির নমুনা"
+  },
+  {
+   "id": "P-0020",
+   "name_en": "Taslima Namuna",
+   "name_bn": "তাসলিমা নমুনা"
+  },
+  {
+   "id": "P-0021",
+   "name_en": "Belal Namuna",
+   "name_bn": "বেলাল নমুনা"
+  },
+  {
+   "id": "P-0022",
+   "name_en": "Kohinur Namuna",
+   "name_bn": "কোহিনূর নমুনা"
+  },
+  {
+   "id": "P-0023",
+   "name_en": "Selim Namuna",
+   "name_bn": "সেলিম নমুনা"
+  },
+  {
+   "id": "P-0024",
+   "name_en": "Parul Namuna",
+   "name_bn": "পারুল নমুনা"
+  },
+  {
+   "id": "P-0025",
+   "name_en": "Alamgir Namuna",
+   "name_bn": "আলমগীর নমুনা"
+  },
+  {
+   "id": "P-0026",
+   "name_en": "Bokul Namuna",
+   "name_bn": "বকুল নমুনা"
+  },
+  {
+   "id": "P-0027",
+   "name_en": "Rafiq Namuna",
+   "name_bn": "রফিক নমুনা"
+  },
+  {
+   "id": "P-0028",
+   "name_en": "Morjina Namuna",
+   "name_bn": "মর্জিনা নমুনা"
+  },
+  {
+   "id": "P-0029",
+   "name_en": "Shahid Namuna",
+   "name_bn": "শহিদ নমুনা"
+  },
+  {
+   "id": "P-0030",
+   "name_en": "Ayesha Namuna",
+   "name_bn": "আয়েশা নমুনা"
+  },
+  {
+   "id": "P-0031",
+   "name_en": "Nurul Namuna",
+   "name_bn": "নুরুল নমুনা"
+  },
+  {
+   "id": "P-0032",
+   "name_en": "Sufia Namuna",
+   "name_bn": "সুফিয়া নমুনা"
+  },
+  {
+   "id": "P-0033",
+   "name_en": "Kader Namuna",
+   "name_bn": "কাদের নমুনা"
+  },
+  {
+   "id": "P-0034",
+   "name_en": "Champa Namuna",
+   "name_bn": "চম্পা নমুনা"
+  },
+  {
+   "id": "P-0035",
+   "name_en": "Jamal Namuna",
+   "name_bn": "জামাল নমুনা"
+  },
+  {
+   "id": "P-0036",
+   "name_en": "Rina Namuna",
+   "name_bn": "রিনা নমুনা"
+  },
+  {
+   "id": "P-0037",
+   "name_en": "Babul Namuna",
+   "name_bn": "বাবুল নমুনা"
+  },
+  {
+   "id": "P-0038",
+   "name_en": "Hosne Ara Namuna",
+   "name_bn": "হোসনে আরা নমুনা"
+  },
+  {
+   "id": "P-0039",
+   "name_en": "Motaleb Namuna",
+   "name_bn": "মোতালেব নমুনা"
+  },
+  {
+   "id": "P-0040",
+   "name_en": "Dilruba Namuna",
+   "name_bn": "দিলরুবা নমুনা"
+  },
+  {
+   "id": "P-0041",
+   "name_en": "Joynal Kalponik",
+   "name_bn": "জয়নাল কাল্পনিক"
+  },
+  {
+   "id": "P-0042",
+   "name_en": "Rahela Kalponik",
+   "name_bn": "রাহেলা কাল্পনিক"
+  },
+  {
+   "id": "P-0043",
+   "name_en": "Mizan Kalponik",
+   "name_bn": "মিজান কাল্পনিক"
+  },
+  {
+   "id": "P-0044",
+   "name_en": "Shapla Kalponik",
+   "name_bn": "শাপলা কাল্পনিক"
+  },
+  {
+   "id": "P-0045",
+   "name_en": "Kamrul Kalponik",
+   "name_bn": "কামরুল কাল্পনিক"
+  },
+  {
+   "id": "P-0046",
+   "name_en": "Nasima Kalponik",
+   "name_bn": "নাসিমা কাল্পনিক"
+  },
+  {
+   "id": "P-0047",
+   "name_en": "Habib Kalponik",
+   "name_bn": "হাবিব কাল্পনিক"
+  },
+  {
+   "id": "P-0048",
+   "name_en": "Rokeya Kalponik",
+   "name_bn": "রোকেয়া কাল্পনিক"
+  },
+  {
+   "id": "P-0049",
+   "name_en": "Tofazzal Kalponik",
+   "name_bn": "তোফাজ্জল কাল্পনিক"
+  },
+  {
+   "id": "P-0050",
+   "name_en": "Jahanara Kalponik",
+   "name_bn": "জাহানারা কাল্পনিক"
+  },
+  {
+   "id": "P-0051",
+   "name_en": "Sabbir Kalponik",
+   "name_bn": "সাব্বির কাল্পনিক"
+  },
+  {
+   "id": "P-0052",
+   "name_en": "Moushumi Kalponik",
+   "name_bn": "মৌসুমী কাল্পনিক"
+  },
+  {
+   "id": "P-0053",
+   "name_en": "Anwar Kalponik",
+   "name_bn": "আনোয়ার কাল্পনিক"
+  },
+  {
+   "id": "P-0054",
+   "name_en": "Lipi Kalponik",
+   "name_bn": "লিপি কাল্পনিক"
+  },
+  {
+   "id": "P-0055",
+   "name_en": "Faruk Kalponik",
+   "name_bn": "ফারুক কাল্পনিক"
+  },
+  {
+   "id": "P-0056",
+   "name_en": "Ruma Kalponik",
+   "name_bn": "রুমা কাল্পনিক"
+  },
+  {
+   "id": "P-0057",
+   "name_en": "Delwar Kalponik",
+   "name_bn": "দেলোয়ার কাল্পনিক"
+  },
+  {
+   "id": "P-0058",
+   "name_en": "Shirin Kalponik",
+   "name_bn": "শিরিন কাল্পনিক"
+  },
+  {
+   "id": "P-0059",
+   "name_en": "Monir Kalponik",
+   "name_bn": "মনির কাল্পনিক"
+  },
+  {
+   "id": "P-0060",
+   "name_en": "Taslima Kalponik",
+   "name_bn": "তাসলিমা কাল্পনিক"
+  },
+  {
+   "id": "P-0061",
+   "name_en": "Belal Kalponik",
+   "name_bn": "বেলাল কাল্পনিক"
+  },
+  {
+   "id": "P-0062",
+   "name_en": "Kohinur Kalponik",
+   "name_bn": "কোহিনূর কাল্পনিক"
+  },
+  {
+   "id": "P-0063",
+   "name_en": "Selim Kalponik",
+   "name_bn": "সেলিম কাল্পনিক"
+  },
+  {
+   "id": "P-0064",
+   "name_en": "Parul Kalponik",
+   "name_bn": "পারুল কাল্পনিক"
+  },
+  {
+   "id": "P-0065",
+   "name_en": "Alamgir Kalponik",
+   "name_bn": "আলমগীর কাল্পনিক"
+  },
+  {
+   "id": "P-0066",
+   "name_en": "Bokul Kalponik",
+   "name_bn": "বকুল কাল্পনিক"
+  },
+  {
+   "id": "P-0067",
+   "name_en": "Rafiq Kalponik",
+   "name_bn": "রফিক কাল্পনিক"
+  },
+  {
+   "id": "P-0068",
+   "name_en": "Morjina Kalponik",
+   "name_bn": "মর্জিনা কাল্পনিক"
+  },
+  {
+   "id": "P-0069",
+   "name_en": "Shahid Kalponik",
+   "name_bn": "শহিদ কাল্পনিক"
+  },
+  {
+   "id": "P-0070",
+   "name_en": "Ayesha Kalponik",
+   "name_bn": "আয়েশা কাল্পনিক"
+  },
+  {
+   "id": "P-0071",
+   "name_en": "Nurul Kalponik",
+   "name_bn": "নুরুল কাল্পনিক"
+  },
+  {
+   "id": "P-0072",
+   "name_en": "Sufia Kalponik",
+   "name_bn": "সুফিয়া কাল্পনিক"
+  },
+  {
+   "id": "P-0073",
+   "name_en": "Kader Kalponik",
+   "name_bn": "কাদের কাল্পনিক"
+  },
+  {
+   "id": "P-0074",
+   "name_en": "Champa Kalponik",
+   "name_bn": "চম্পা কাল্পনিক"
+  },
+  {
+   "id": "P-0075",
+   "name_en": "Jamal Kalponik",
+   "name_bn": "জামাল কাল্পনিক"
+  },
+  {
+   "id": "P-0076",
+   "name_en": "Rina Kalponik",
+   "name_bn": "রিনা কাল্পনিক"
+  },
+  {
+   "id": "P-0077",
+   "name_en": "Babul Kalponik",
+   "name_bn": "বাবুল কাল্পনিক"
+  },
+  {
+   "id": "P-0078",
+   "name_en": "Hosne Ara Kalponik",
+   "name_bn": "হোসনে আরা কাল্পনিক"
+  },
+  {
+   "id": "P-0079",
+   "name_en": "Motaleb Kalponik",
+   "name_bn": "মোতালেব কাল্পনিক"
+  },
+  {
+   "id": "P-0080",
+   "name_en": "Dilruba Kalponik",
+   "name_bn": "দিলরুবা কাল্পনিক"
+  },
+  {
+   "id": "P-0081",
+   "name_en": "Joynal Udahoron",
+   "name_bn": "জয়নাল উদাহরণ"
+  },
+  {
+   "id": "P-0082",
+   "name_en": "Rahela Udahoron",
+   "name_bn": "রাহেলা উদাহরণ"
+  },
+  {
+   "id": "P-0083",
+   "name_en": "Mizan Udahoron",
+   "name_bn": "মিজান উদাহরণ"
+  },
+  {
+   "id": "P-0084",
+   "name_en": "Shapla Udahoron",
+   "name_bn": "শাপলা উদাহরণ"
+  },
+  {
+   "id": "P-0085",
+   "name_en": "Kamrul Udahoron",
+   "name_bn": "কামরুল উদাহরণ"
+  },
+  {
+   "id": "P-0086",
+   "name_en": "Nasima Udahoron",
+   "name_bn": "নাসিমা উদাহরণ"
+  },
+  {
+   "id": "P-0087",
+   "name_en": "Habib Udahoron",
+   "name_bn": "হাবিব উদাহরণ"
+  },
+  {
+   "id": "P-0088",
+   "name_en": "Rokeya Udahoron",
+   "name_bn": "রোকেয়া উদাহরণ"
+  },
+  {
+   "id": "P-0089",
+   "name_en": "Tofazzal Udahoron",
+   "name_bn": "তোফাজ্জল উদাহরণ"
+  },
+  {
+   "id": "P-0090",
+   "name_en": "Jahanara Udahoron",
+   "name_bn": "জাহানারা উদাহরণ"
+  },
+  {
+   "id": "P-0091",
+   "name_en": "Sabbir Udahoron",
+   "name_bn": "সাব্বির উদাহরণ"
+  },
+  {
+   "id": "P-0092",
+   "name_en": "Moushumi Udahoron",
+   "name_bn": "মৌসুমী উদাহরণ"
+  },
+  {
+   "id": "P-0093",
+   "name_en": "Anwar Udahoron",
+   "name_bn": "আনোয়ার উদাহরণ"
+  },
+  {
+   "id": "P-0094",
+   "name_en": "Lipi Udahoron",
+   "name_bn": "লিপি উদাহরণ"
+  },
+  {
+   "id": "P-0095",
+   "name_en": "Faruk Udahoron",
+   "name_bn": "ফারুক উদাহরণ"
+  },
+  {
+   "id": "P-0096",
+   "name_en": "Ruma Udahoron",
+   "name_bn": "রুমা উদাহরণ"
+  },
+  {
+   "id": "P-0097",
+   "name_en": "Delwar Udahoron",
+   "name_bn": "দেলোয়ার উদাহরণ"
+  },
+  {
+   "id": "P-0098",
+   "name_en": "Shirin Udahoron",
+   "name_bn": "শিরিন উদাহরণ"
+  },
+  {
+   "id": "P-0099",
+   "name_en": "Monir Udahoron",
+   "name_bn": "মনির উদাহরণ"
+  },
+  {
+   "id": "P-0100",
+   "name_en": "Taslima Udahoron",
+   "name_bn": "তাসলিমা উদাহরণ"
+  },
+  {
+   "id": "P-0101",
+   "name_en": "Belal Udahoron",
+   "name_bn": "বেলাল উদাহরণ"
+  },
+  {
+   "id": "P-0102",
+   "name_en": "Kohinur Udahoron",
+   "name_bn": "কোহিনূর উদাহরণ"
+  },
+  {
+   "id": "P-0103",
+   "name_en": "Selim Udahoron",
+   "name_bn": "সেলিম উদাহরণ"
+  },
+  {
+   "id": "P-0104",
+   "name_en": "Parul Udahoron",
+   "name_bn": "পারুল উদাহরণ"
+  },
+  {
+   "id": "P-0105",
+   "name_en": "Alamgir Udahoron",
+   "name_bn": "আলমগীর উদাহরণ"
+  },
+  {
+   "id": "P-0106",
+   "name_en": "Bokul Udahoron",
+   "name_bn": "বকুল উদাহরণ"
+  },
+  {
+   "id": "P-0107",
+   "name_en": "Rafiq Udahoron",
+   "name_bn": "রফিক উদাহরণ"
+  },
+  {
+   "id": "P-0108",
+   "name_en": "Morjina Udahoron",
+   "name_bn": "মর্জিনা উদাহরণ"
+  },
+  {
+   "id": "P-0109",
+   "name_en": "Shahid Udahoron",
+   "name_bn": "শহিদ উদাহরণ"
+  },
+  {
+   "id": "P-0110",
+   "name_en": "Ayesha Udahoron",
+   "name_bn": "আয়েশা উদাহরণ"
+  },
+  {
+   "id": "P-0111",
+   "name_en": "Nurul Udahoron",
+   "name_bn": "নুরুল উদাহরণ"
+  },
+  {
+   "id": "P-0112",
+   "name_en": "Sufia Udahoron",
+   "name_bn": "সুফিয়া উদাহরণ"
+  },
+  {
+   "id": "P-0113",
+   "name_en": "Kader Udahoron",
+   "name_bn": "কাদের উদাহরণ"
+  },
+  {
+   "id": "P-0114",
+   "name_en": "Champa Udahoron",
+   "name_bn": "চম্পা উদাহরণ"
+  },
+  {
+   "id": "P-0115",
+   "name_en": "Jamal Udahoron",
+   "name_bn": "জামাল উদাহরণ"
+  },
+  {
+   "id": "P-0116",
+   "name_en": "Rina Udahoron",
+   "name_bn": "রিনা উদাহরণ"
+  },
+  {
+   "id": "P-0117",
+   "name_en": "Babul Udahoron",
+   "name_bn": "বাবুল উদাহরণ"
+  },
+  {
+   "id": "P-0118",
+   "name_en": "Hosne Ara Udahoron",
+   "name_bn": "হোসনে আরা উদাহরণ"
+  },
+  {
+   "id": "P-0119",
+   "name_en": "Motaleb Udahoron",
+   "name_bn": "মোতালেব উদাহরণ"
+  },
+  {
+   "id": "P-0120",
+   "name_en": "Dilruba Udahoron",
+   "name_bn": "দিলরুবা উদাহরণ"
+  },
+  {
+   "id": "P-0121",
+   "name_en": "Joynal Porikkha",
+   "name_bn": "জয়নাল পরীক্ষা"
+  },
+  {
+   "id": "P-0122",
+   "name_en": "Rahela Porikkha",
+   "name_bn": "রাহেলা পরীক্ষা"
+  },
+  {
+   "id": "P-0123",
+   "name_en": "Mizan Porikkha",
+   "name_bn": "মিজান পরীক্ষা"
+  },
+  {
+   "id": "P-0124",
+   "name_en": "Shapla Porikkha",
+   "name_bn": "শাপলা পরীক্ষা"
+  },
+  {
+   "id": "P-0125",
+   "name_en": "Kamrul Porikkha",
+   "name_bn": "কামরুল পরীক্ষা"
+  },
+  {
+   "id": "P-0126",
+   "name_en": "Nasima Porikkha",
+   "name_bn": "নাসিমা পরীক্ষা"
+  },
+  {
+   "id": "P-0127",
+   "name_en": "Habib Porikkha",
+   "name_bn": "হাবিব পরীক্ষা"
+  },
+  {
+   "id": "P-0128",
+   "name_en": "Rokeya Porikkha",
+   "name_bn": "রোকেয়া পরীক্ষা"
+  },
+  {
+   "id": "P-0129",
+   "name_en": "Tofazzal Porikkha",
+   "name_bn": "তোফাজ্জল পরীক্ষা"
+  },
+  {
+   "id": "P-0130",
+   "name_en": "Jahanara Porikkha",
+   "name_bn": "জাহানারা পরীক্ষা"
+  },
+  {
+   "id": "P-0131",
+   "name_en": "Sabbir Porikkha",
+   "name_bn": "সাব্বির পরীক্ষা"
+  },
+  {
+   "id": "P-0132",
+   "name_en": "Moushumi Porikkha",
+   "name_bn": "মৌসুমী পরীক্ষা"
+  },
+  {
+   "id": "P-0133",
+   "name_en": "Anwar Porikkha",
+   "name_bn": "আনোয়ার পরীক্ষা"
+  },
+  {
+   "id": "P-0134",
+   "name_en": "Lipi Porikkha",
+   "name_bn": "লিপি পরীক্ষা"
+  },
+  {
+   "id": "P-0135",
+   "name_en": "Faruk Porikkha",
+   "name_bn": "ফারুক পরীক্ষা"
+  },
+  {
+   "id": "P-0136",
+   "name_en": "Ruma Porikkha",
+   "name_bn": "রুমা পরীক্ষা"
+  },
+  {
+   "id": "P-0137",
+   "name_en": "Delwar Porikkha",
+   "name_bn": "দেলোয়ার পরীক্ষা"
+  },
+  {
+   "id": "P-0138",
+   "name_en": "Shirin Porikkha",
+   "name_bn": "শিরিন পরীক্ষা"
+  },
+  {
+   "id": "P-0139",
+   "name_en": "Monir Porikkha",
+   "name_bn": "মনির পরীক্ষা"
+  },
+  {
+   "id": "P-0140",
+   "name_en": "Taslima Porikkha",
+   "name_bn": "তাসলিমা পরীক্ষা"
+  },
+  {
+   "id": "P-0141",
+   "name_en": "Belal Porikkha",
+   "name_bn": "বেলাল পরীক্ষা"
+  },
+  {
+   "id": "P-0142",
+   "name_en": "Kohinur Porikkha",
+   "name_bn": "কোহিনূর পরীক্ষা"
+  },
+  {
+   "id": "P-0143",
+   "name_en": "Selim Porikkha",
+   "name_bn": "সেলিম পরীক্ষা"
+  },
+  {
+   "id": "P-0144",
+   "name_en": "Parul Porikkha",
+   "name_bn": "পারুল পরীক্ষা"
+  },
+  {
+   "id": "P-0145",
+   "name_en": "Alamgir Porikkha",
+   "name_bn": "আলমগীর পরীক্ষা"
+  },
+  {
+   "id": "P-0146",
+   "name_en": "Bokul Porikkha",
+   "name_bn": "বকুল পরীক্ষা"
+  },
+  {
+   "id": "P-0147",
+   "name_en": "Rafiq Porikkha",
+   "name_bn": "রফিক পরীক্ষা"
+  },
+  {
+   "id": "P-0148",
+   "name_en": "Morjina Porikkha",
+   "name_bn": "মর্জিনা পরীক্ষা"
+  },
+  {
+   "id": "P-0149",
+   "name_en": "Shahid Porikkha",
+   "name_bn": "শহিদ পরীক্ষা"
+  },
+  {
+   "id": "P-0150",
+   "name_en": "Ayesha Porikkha",
+   "name_bn": "আয়েশা পরীক্ষা"
+  },
+  {
+   "id": "P-0151",
+   "name_en": "Nurul Porikkha",
+   "name_bn": "নুরুল পরীক্ষা"
+  },
+  {
+   "id": "P-0152",
+   "name_en": "Sufia Porikkha",
+   "name_bn": "সুফিয়া পরীক্ষা"
+  },
+  {
+   "id": "P-0153",
+   "name_en": "Kader Porikkha",
+   "name_bn": "কাদের পরীক্ষা"
+  },
+  {
+   "id": "P-0154",
+   "name_en": "Champa Porikkha",
+   "name_bn": "চম্পা পরীক্ষা"
+  },
+  {
+   "id": "P-0155",
+   "name_en": "Jamal Porikkha",
+   "name_bn": "জামাল পরীক্ষা"
+  },
+  {
+   "id": "P-0156",
+   "name_en": "Rina Porikkha",
+   "name_bn": "রিনা পরীক্ষা"
+  },
+  {
+   "id": "P-0157",
+   "name_en": "Babul Porikkha",
+   "name_bn": "বাবুল পরীক্ষা"
+  },
+  {
+   "id": "P-0158",
+   "name_en": "Hosne Ara Porikkha",
+   "name_bn": "হোসনে আরা পরীক্ষা"
+  },
+  {
+   "id": "P-0159",
+   "name_en": "Motaleb Porikkha",
+   "name_bn": "মোতালেব পরীক্ষা"
+  },
+  {
+   "id": "P-0160",
+   "name_en": "Dilruba Porikkha",
+   "name_bn": "দিলরুবা পরীক্ষা"
+  },
+  {
+   "id": "P-0161",
+   "name_en": "Joynal Kritrim",
+   "name_bn": "জয়নাল কৃত্রিম"
+  },
+  {
+   "id": "P-0162",
+   "name_en": "Rahela Kritrim",
+   "name_bn": "রাহেলা কৃত্রিম"
+  },
+  {
+   "id": "P-0163",
+   "name_en": "Mizan Kritrim",
+   "name_bn": "মিজান কৃত্রিম"
+  }
+ ],
+ "plots": [
+  {
+   "id": "M901-BS-1101",
+   "mouza_id": "M901",
+   "survey": "BS",
+   "dag_no": "1101",
+   "area_raw": "50 decimal",
+   "record_date": "2018-06-30",
+   "record_ref": "BS Khatian 210",
+   "scenario": "S01",
+   "title": "Ordinary sale, mutation done"
+  },
+  {
+   "id": "M901-BS-1201",
+   "mouza_id": "M901",
+   "survey": "BS",
+   "dag_no": "1201",
+   "area_raw": "60 decimal",
+   "record_date": "2019-06-30",
+   "record_ref": "BS Khatian 340",
+   "scenario": "S02",
+   "title": "Second sale while first is unmutated"
+  },
+  {
+   "id": "M901-BS-1205",
+   "mouza_id": "M901",
+   "survey": "BS",
+   "dag_no": "1205",
+   "area_raw": "45 decimal",
+   "record_date": "2016-06-30",
+   "record_ref": "BS Khatian 412",
+   "scenario": "S03",
+   "title": "Co-heir sells beyond share"
+  },
+  {
+   "id": "M901-BS-1210",
+   "mouza_id": "M901",
+   "survey": "BS",
+   "dag_no": "1210",
+   "area_raw": "40 decimal",
+   "record_date": "2017-06-30",
+   "record_ref": "BS Khatian 455",
+   "scenario": "S04",
+   "title": "Mutation cites unknown deed"
+  },
+  {
+   "id": "M903-BS-2101",
+   "mouza_id": "M903",
+   "survey": "BS",
+   "dag_no": "2101",
+   "area_raw": "30 decimal",
+   "record_date": "2005-06-30",
+   "record_ref": "BS Khatian 88",
+   "scenario": "S05",
+   "title": "Cited deed older than digital index"
+  },
+  {
+   "id": "M902-BS-3101",
+   "mouza_id": "M902",
+   "survey": "BS",
+   "dag_no": "3101",
+   "area_raw": "66 decimal",
+   "record_date": "2018-06-30",
+   "record_ref": "BS Khatian 120",
+   "scenario": "S06",
+   "title": "Mutation quantity differs from deed"
+  },
+  {
+   "id": "M902-BS-3105",
+   "mouza_id": "M902",
+   "survey": "BS",
+   "dag_no": "3105",
+   "area_raw": "33 decimal",
+   "record_date": "2018-06-30",
+   "record_ref": "BS Khatian 131",
+   "scenario": "S07",
+   "title": "Rapid resale chain"
+  },
+  {
+   "id": "M901-BS-1215",
+   "mouza_id": "M901",
+   "survey": "BS",
+   "dag_no": "1215",
+   "area_raw": "52 decimal",
+   "record_date": "2019-06-30",
+   "record_ref": "BS Khatian 470",
+   "scenario": "S08",
+   "title": "Seller has no recorded source"
+  },
+  {
+   "id": "M903-BS-2105",
+   "mouza_id": "M903",
+   "survey": "BS",
+   "dag_no": "2105",
+   "area_raw": "40 decimal",
+   "record_date": "2010-06-30",
+   "record_ref": "BS Khatian 95",
+   "scenario": "S09",
+   "title": "Registry coverage gap"
+  },
+  {
+   "id": "M901-BS-1301",
+   "mouza_id": "M901",
+   "survey": "BS",
+   "dag_no": "1301",
+   "area_raw": "35 decimal",
+   "record_date": "2015-06-30",
+   "record_ref": "BS Khatian 501",
+   "scenario": "S10",
+   "title": "Old-survey dag maps to two plots"
+  },
+  {
+   "id": "M901-BS-1302",
+   "mouza_id": "M901",
+   "survey": "BS",
+   "dag_no": "1302",
+   "area_raw": "25 decimal",
+   "record_date": "2015-06-30",
+   "record_ref": "BS Khatian 501",
+   "scenario": "S10",
+   "title": "Old-survey dag maps to two plots"
+  },
+  {
+   "id": "M901-BS-1220",
+   "mouza_id": "M901",
+   "survey": "BS",
+   "dag_no": "1220",
+   "area_raw": "66 decimal",
+   "record_date": "2016-06-30",
+   "record_ref": "BS Khatian 480",
+   "scenario": "S11",
+   "title": "Unit without local definition"
+  },
+  {
+   "id": "M902-BS-3110",
+   "mouza_id": "M902",
+   "survey": "BS",
+   "dag_no": "3110",
+   "area_raw": "48 decimal",
+   "record_date": "2014-06-30",
+   "record_ref": "BS Khatian 140",
+   "scenario": "S12",
+   "title": "Inheritance then sale within share"
+  },
+  {
+   "id": "M902-BS-3115",
+   "mouza_id": "M902",
+   "survey": "BS",
+   "dag_no": "3115",
+   "area_raw": "30 decimal",
+   "record_date": "2014-06-30",
+   "record_ref": "BS Khatian 145",
+   "scenario": "S13",
+   "title": "Heir shares do not add up"
+  },
+  {
+   "id": "M901-BS-1225",
+   "mouza_id": "M901",
+   "survey": "BS",
+   "dag_no": "1225",
+   "area_raw": "40 decimal",
+   "record_date": "2017-06-30",
+   "record_ref": "BS Khatian 490",
+   "scenario": "S14",
+   "title": "Khatian shares exceed whole"
+  },
+  {
+   "id": "M902-BS-3120",
+   "mouza_id": "M902",
+   "survey": "BS",
+   "dag_no": "3120",
+   "area_raw": "80 decimal",
+   "record_date": "2016-06-30",
+   "record_ref": "BS Khatian 150",
+   "scenario": "S15",
+   "title": "Mixed notation, consistent"
+  },
+  {
+   "id": "M901-BS-1230",
+   "mouza_id": "M901",
+   "survey": "BS",
+   "dag_no": "1230",
+   "area_raw": "50 decimal",
+   "record_date": "2018-06-30",
+   "record_ref": "BS Khatian 495",
+   "scenario": "S16",
+   "title": "Rounded one-third share"
+  },
+  {
+   "id": "M901-BS-1235",
+   "mouza_id": "M901",
+   "survey": "BS",
+   "dag_no": "1235",
+   "area_raw": "30 decimal",
+   "record_date": "2016-06-30",
+   "record_ref": "BS Khatian 498",
+   "scenario": "S17",
+   "title": "Sale after selling everything"
+  },
+  {
+   "id": "M902-BS-3125",
+   "mouza_id": "M902",
+   "survey": "BS",
+   "dag_no": "3125",
+   "area_raw": "40 decimal",
+   "record_date": "2017-06-30",
+   "record_ref": "BS Khatian 160",
+   "scenario": "S18",
+   "title": "Registered but never mutated"
+  },
+  {
+   "id": "M901-BS-1400",
+   "mouza_id": "M901",
+   "survey": "BS",
+   "dag_no": "1400",
+   "area_raw": "35 decimal",
+   "record_date": "2017-06-30",
+   "record_ref": "BS Khatian 600",
+   "scenario": "BG",
+   "title": "Background (clean)"
+  },
+  {
+   "id": "M902-BS-3201",
+   "mouza_id": "M902",
+   "survey": "BS",
+   "dag_no": "3201",
+   "area_raw": "30 decimal",
+   "record_date": "2015-06-30",
+   "record_ref": "BS Khatian 601",
+   "scenario": "BG",
+   "title": "Background (clean)"
+  },
+  {
+   "id": "M901-BS-1402",
+   "mouza_id": "M901",
+   "survey": "BS",
+   "dag_no": "1402",
+   "area_raw": "63 decimal",
+   "record_date": "2015-06-30",
+   "record_ref": "BS Khatian 602",
+   "scenario": "BG",
+   "title": "Background (clean)"
+  },
+  {
+   "id": "M902-BS-3203",
+   "mouza_id": "M902",
+   "survey": "BS",
+   "dag_no": "3203",
+   "area_raw": "74 decimal",
+   "record_date": "2019-06-30",
+   "record_ref": "BS Khatian 603",
+   "scenario": "BG",
+   "title": "Background (clean)"
+  },
+  {
+   "id": "M901-BS-1404",
+   "mouza_id": "M901",
+   "survey": "BS",
+   "dag_no": "1404",
+   "area_raw": "36 decimal",
+   "record_date": "2015-06-30",
+   "record_ref": "BS Khatian 604",
+   "scenario": "BG",
+   "title": "Background (clean)"
+  },
+  {
+   "id": "M902-BS-3205",
+   "mouza_id": "M902",
+   "survey": "BS",
+   "dag_no": "3205",
+   "area_raw": "35 decimal",
+   "record_date": "2018-06-30",
+   "record_ref": "BS Khatian 605",
+   "scenario": "BG",
+   "title": "Background (clean)"
+  },
+  {
+   "id": "M901-BS-1406",
+   "mouza_id": "M901",
+   "survey": "BS",
+   "dag_no": "1406",
+   "area_raw": "54 decimal",
+   "record_date": "2015-06-30",
+   "record_ref": "BS Khatian 606",
+   "scenario": "BG",
+   "title": "Background (clean)"
+  },
+  {
+   "id": "M902-BS-3207",
+   "mouza_id": "M902",
+   "survey": "BS",
+   "dag_no": "3207",
+   "area_raw": "96 decimal",
+   "record_date": "2018-06-30",
+   "record_ref": "BS Khatian 607",
+   "scenario": "BG",
+   "title": "Background (clean)"
+  },
+  {
+   "id": "M901-BS-1408",
+   "mouza_id": "M901",
+   "survey": "BS",
+   "dag_no": "1408",
+   "area_raw": "78 decimal",
+   "record_date": "2015-06-30",
+   "record_ref": "BS Khatian 608",
+   "scenario": "BG",
+   "title": "Background (clean)"
+  },
+  {
+   "id": "M902-BS-3209",
+   "mouza_id": "M902",
+   "survey": "BS",
+   "dag_no": "3209",
+   "area_raw": "44 decimal",
+   "record_date": "2018-06-30",
+   "record_ref": "BS Khatian 609",
+   "scenario": "BG",
+   "title": "Background (clean)"
+  },
+  {
+   "id": "M901-BS-1410",
+   "mouza_id": "M901",
+   "survey": "BS",
+   "dag_no": "1410",
+   "area_raw": "20 decimal",
+   "record_date": "2018-06-30",
+   "record_ref": "BS Khatian 610",
+   "scenario": "BG",
+   "title": "Background (clean)"
+  },
+  {
+   "id": "M902-BS-3211",
+   "mouza_id": "M902",
+   "survey": "BS",
+   "dag_no": "3211",
+   "area_raw": "94 decimal",
+   "record_date": "2019-06-30",
+   "record_ref": "BS Khatian 611",
+   "scenario": "BG",
+   "title": "Background (clean)"
+  },
+  {
+   "id": "M901-BS-1412",
+   "mouza_id": "M901",
+   "survey": "BS",
+   "dag_no": "1412",
+   "area_raw": "37 decimal",
+   "record_date": "2019-06-30",
+   "record_ref": "BS Khatian 612",
+   "scenario": "BG",
+   "title": "Background (clean)"
+  },
+  {
+   "id": "M902-BS-3213",
+   "mouza_id": "M902",
+   "survey": "BS",
+   "dag_no": "3213",
+   "area_raw": "29 decimal",
+   "record_date": "2015-06-30",
+   "record_ref": "BS Khatian 613",
+   "scenario": "BG",
+   "title": "Background (clean)"
+  },
+  {
+   "id": "M901-BS-1414",
+   "mouza_id": "M901",
+   "survey": "BS",
+   "dag_no": "1414",
+   "area_raw": "78 decimal",
+   "record_date": "2019-06-30",
+   "record_ref": "BS Khatian 614",
+   "scenario": "BG",
+   "title": "Background (clean)"
+  },
+  {
+   "id": "M902-BS-3215",
+   "mouza_id": "M902",
+   "survey": "BS",
+   "dag_no": "3215",
+   "area_raw": "89 decimal",
+   "record_date": "2015-06-30",
+   "record_ref": "BS Khatian 615",
+   "scenario": "BG",
+   "title": "Background (clean)"
+  },
+  {
+   "id": "M901-BS-1416",
+   "mouza_id": "M901",
+   "survey": "BS",
+   "dag_no": "1416",
+   "area_raw": "54 decimal",
+   "record_date": "2018-06-30",
+   "record_ref": "BS Khatian 616",
+   "scenario": "BG",
+   "title": "Background (clean)"
+  },
+  {
+   "id": "M902-BS-3217",
+   "mouza_id": "M902",
+   "survey": "BS",
+   "dag_no": "3217",
+   "area_raw": "59 decimal",
+   "record_date": "2016-06-30",
+   "record_ref": "BS Khatian 617",
+   "scenario": "BG",
+   "title": "Background (clean)"
+  },
+  {
+   "id": "M901-BS-1418",
+   "mouza_id": "M901",
+   "survey": "BS",
+   "dag_no": "1418",
+   "area_raw": "32 decimal",
+   "record_date": "2016-06-30",
+   "record_ref": "BS Khatian 618",
+   "scenario": "BG",
+   "title": "Background (clean)"
+  },
+  {
+   "id": "M902-BS-3219",
+   "mouza_id": "M902",
+   "survey": "BS",
+   "dag_no": "3219",
+   "area_raw": "78 decimal",
+   "record_date": "2017-06-30",
+   "record_ref": "BS Khatian 619",
+   "scenario": "BG",
+   "title": "Background (clean)"
+  },
+  {
+   "id": "M901-BS-1420",
+   "mouza_id": "M901",
+   "survey": "BS",
+   "dag_no": "1420",
+   "area_raw": "116 decimal",
+   "record_date": "2019-06-30",
+   "record_ref": "BS Khatian 620",
+   "scenario": "BG",
+   "title": "Background (clean)"
+  },
+  {
+   "id": "M902-BS-3221",
+   "mouza_id": "M902",
+   "survey": "BS",
+   "dag_no": "3221",
+   "area_raw": "54 decimal",
+   "record_date": "2019-06-30",
+   "record_ref": "BS Khatian 621",
+   "scenario": "BG",
+   "title": "Background (clean)"
+  },
+  {
+   "id": "M901-BS-1422",
+   "mouza_id": "M901",
+   "survey": "BS",
+   "dag_no": "1422",
+   "area_raw": "75 decimal",
+   "record_date": "2016-06-30",
+   "record_ref": "BS Khatian 622",
+   "scenario": "BG",
+   "title": "Background (clean)"
+  },
+  {
+   "id": "M902-BS-3223",
+   "mouza_id": "M902",
+   "survey": "BS",
+   "dag_no": "3223",
+   "area_raw": "95 decimal",
+   "record_date": "2015-06-30",
+   "record_ref": "BS Khatian 623",
+   "scenario": "BG",
+   "title": "Background (clean)"
+  },
+  {
+   "id": "M901-BS-1424",
+   "mouza_id": "M901",
+   "survey": "BS",
+   "dag_no": "1424",
+   "area_raw": "59 decimal",
+   "record_date": "2015-06-30",
+   "record_ref": "BS Khatian 624",
+   "scenario": "BG",
+   "title": "Background (clean)"
+  },
+  {
+   "id": "M902-BS-3225",
+   "mouza_id": "M902",
+   "survey": "BS",
+   "dag_no": "3225",
+   "area_raw": "100 decimal",
+   "record_date": "2019-06-30",
+   "record_ref": "BS Khatian 625",
+   "scenario": "BG",
+   "title": "Background (clean)"
+  },
+  {
+   "id": "M901-BS-1426",
+   "mouza_id": "M901",
+   "survey": "BS",
+   "dag_no": "1426",
+   "area_raw": "67 decimal",
+   "record_date": "2019-06-30",
+   "record_ref": "BS Khatian 626",
+   "scenario": "BG",
+   "title": "Background (clean)"
+  },
+  {
+   "id": "M902-BS-3227",
+   "mouza_id": "M902",
+   "survey": "BS",
+   "dag_no": "3227",
+   "area_raw": "108 decimal",
+   "record_date": "2017-06-30",
+   "record_ref": "BS Khatian 627",
+   "scenario": "BG",
+   "title": "Background (clean)"
+  },
+  {
+   "id": "M901-BS-1428",
+   "mouza_id": "M901",
+   "survey": "BS",
+   "dag_no": "1428",
+   "area_raw": "36 decimal",
+   "record_date": "2019-06-30",
+   "record_ref": "BS Khatian 628",
+   "scenario": "BG",
+   "title": "Background (clean)"
+  },
+  {
+   "id": "M902-BS-3229",
+   "mouza_id": "M902",
+   "survey": "BS",
+   "dag_no": "3229",
+   "area_raw": "50 decimal",
+   "record_date": "2018-06-30",
+   "record_ref": "BS Khatian 629",
+   "scenario": "BG",
+   "title": "Background (clean)"
+  }
+ ],
+ "holdings": [
+  {
+   "id": "H-0001",
+   "plot_id": "M901-BS-1101",
+   "person_id": "P-0001",
+   "khatian_no": "210",
+   "share_raw": "1/2 share"
+  },
+  {
+   "id": "H-0002",
+   "plot_id": "M901-BS-1101",
+   "person_id": "P-0002",
+   "khatian_no": "210",
+   "share_raw": "1/2 share"
+  },
+  {
+   "id": "H-0003",
+   "plot_id": "M901-BS-1201",
+   "person_id": "P-0004",
+   "khatian_no": "340",
+   "share_raw": "৮ আনা"
+  },
+  {
+   "id": "H-0004",
+   "plot_id": "M901-BS-1201",
+   "person_id": "P-0005",
+   "khatian_no": "340",
+   "share_raw": "৮ আনা"
+  },
+  {
+   "id": "H-0005",
+   "plot_id": "M901-BS-1205",
+   "person_id": "P-0008",
+   "khatian_no": "412",
+   "share_raw": "1/3 share"
+  },
+  {
+   "id": "H-0006",
+   "plot_id": "M901-BS-1205",
+   "person_id": "P-0009",
+   "khatian_no": "412",
+   "share_raw": "1/3 share"
+  },
+  {
+   "id": "H-0007",
+   "plot_id": "M901-BS-1205",
+   "person_id": "P-0010",
+   "khatian_no": "412",
+   "share_raw": "1/3 share"
+  },
+  {
+   "id": "H-0008",
+   "plot_id": "M901-BS-1210",
+   "person_id": "P-0012",
+   "khatian_no": "455",
+   "share_raw": "1 share"
+  },
+  {
+   "id": "H-0009",
+   "plot_id": "M903-BS-2101",
+   "person_id": "P-0014",
+   "khatian_no": "88",
+   "share_raw": "1 share"
+  },
+  {
+   "id": "H-0010",
+   "plot_id": "M902-BS-3101",
+   "person_id": "P-0016",
+   "khatian_no": "120",
+   "share_raw": "1/2 share"
+  },
+  {
+   "id": "H-0011",
+   "plot_id": "M902-BS-3101",
+   "person_id": "P-0017",
+   "khatian_no": "120",
+   "share_raw": "1/2 share"
+  },
+  {
+   "id": "H-0012",
+   "plot_id": "M902-BS-3105",
+   "person_id": "P-0019",
+   "khatian_no": "131",
+   "share_raw": "1 share"
+  },
+  {
+   "id": "H-0013",
+   "plot_id": "M901-BS-1215",
+   "person_id": "P-0023",
+   "khatian_no": "470",
+   "share_raw": "1/2 share"
+  },
+  {
+   "id": "H-0014",
+   "plot_id": "M901-BS-1215",
+   "person_id": "P-0024",
+   "khatian_no": "470",
+   "share_raw": "1/2 share"
+  },
+  {
+   "id": "H-0015",
+   "plot_id": "M903-BS-2105",
+   "person_id": "P-0027",
+   "khatian_no": "95",
+   "share_raw": "1/2 share"
+  },
+  {
+   "id": "H-0016",
+   "plot_id": "M903-BS-2105",
+   "person_id": "P-0028",
+   "khatian_no": "95",
+   "share_raw": "1/2 share"
+  },
+  {
+   "id": "H-0017",
+   "plot_id": "M901-BS-1301",
+   "person_id": "P-0031",
+   "khatian_no": "501",
+   "share_raw": "1 share"
+  },
+  {
+   "id": "H-0018",
+   "plot_id": "M901-BS-1302",
+   "person_id": "P-0031",
+   "khatian_no": "501",
+   "share_raw": "1 share"
+  },
+  {
+   "id": "H-0019",
+   "plot_id": "M901-BS-1220",
+   "person_id": "P-0033",
+   "khatian_no": "480",
+   "share_raw": "1 share"
+  },
+  {
+   "id": "H-0020",
+   "plot_id": "M902-BS-3110",
+   "person_id": "P-0035",
+   "khatian_no": "140",
+   "share_raw": "1 share"
+  },
+  {
+   "id": "H-0021",
+   "plot_id": "M902-BS-3115",
+   "person_id": "P-0040",
+   "khatian_no": "145",
+   "share_raw": "1 share"
+  },
+  {
+   "id": "H-0022",
+   "plot_id": "M901-BS-1225",
+   "person_id": "P-0044",
+   "khatian_no": "490",
+   "share_raw": "3/4 share"
+  },
+  {
+   "id": "H-0023",
+   "plot_id": "M901-BS-1225",
+   "person_id": "P-0045",
+   "khatian_no": "490",
+   "share_raw": "1/2 share"
+  },
+  {
+   "id": "H-0024",
+   "plot_id": "M902-BS-3120",
+   "person_id": "P-0047",
+   "khatian_no": "150",
+   "share_raw": "৫ আনা ১০ গণ্ডা"
+  },
+  {
+   "id": "H-0025",
+   "plot_id": "M902-BS-3120",
+   "person_id": "P-0048",
+   "khatian_no": "150",
+   "share_raw": "১০ আনা ১০ গণ্ডা"
+  },
+  {
+   "id": "H-0026",
+   "plot_id": "M901-BS-1230",
+   "person_id": "P-0051",
+   "khatian_no": "495",
+   "share_raw": "1/3 share"
+  },
+  {
+   "id": "H-0027",
+   "plot_id": "M901-BS-1230",
+   "person_id": "P-0052",
+   "khatian_no": "495",
+   "share_raw": "1/3 share"
+  },
+  {
+   "id": "H-0028",
+   "plot_id": "M901-BS-1230",
+   "person_id": "P-0053",
+   "khatian_no": "495",
+   "share_raw": "1/3 share"
+  },
+  {
+   "id": "H-0029",
+   "plot_id": "M901-BS-1235",
+   "person_id": "P-0055",
+   "khatian_no": "498",
+   "share_raw": "1 share"
+  },
+  {
+   "id": "H-0030",
+   "plot_id": "M902-BS-3125",
+   "person_id": "P-0058",
+   "khatian_no": "160",
+   "share_raw": "1/2 share"
+  },
+  {
+   "id": "H-0031",
+   "plot_id": "M902-BS-3125",
+   "person_id": "P-0059",
+   "khatian_no": "160",
+   "share_raw": "1/2 share"
+  },
+  {
+   "id": "H-0032",
+   "plot_id": "M901-BS-1400",
+   "person_id": "P-0061",
+   "khatian_no": "600",
+   "share_raw": "৮ আনা"
+  },
+  {
+   "id": "H-0033",
+   "plot_id": "M901-BS-1400",
+   "person_id": "P-0062",
+   "khatian_no": "600",
+   "share_raw": "৮ আনা"
+  },
+  {
+   "id": "H-0034",
+   "plot_id": "M902-BS-3201",
+   "person_id": "P-0065",
+   "khatian_no": "601",
+   "share_raw": "1/3 share"
+  },
+  {
+   "id": "H-0035",
+   "plot_id": "M902-BS-3201",
+   "person_id": "P-0066",
+   "khatian_no": "601",
+   "share_raw": "1/3 share"
+  },
+  {
+   "id": "H-0036",
+   "plot_id": "M902-BS-3201",
+   "person_id": "P-0067",
+   "khatian_no": "601",
+   "share_raw": "1/3 share"
+  },
+  {
+   "id": "H-0037",
+   "plot_id": "M901-BS-1402",
+   "person_id": "P-0070",
+   "khatian_no": "602",
+   "share_raw": "৮ আনা"
+  },
+  {
+   "id": "H-0038",
+   "plot_id": "M901-BS-1402",
+   "person_id": "P-0071",
+   "khatian_no": "602",
+   "share_raw": "৮ আনা"
+  },
+  {
+   "id": "H-0039",
+   "plot_id": "M902-BS-3203",
+   "person_id": "P-0074",
+   "khatian_no": "603",
+   "share_raw": "৮ আনা"
+  },
+  {
+   "id": "H-0040",
+   "plot_id": "M902-BS-3203",
+   "person_id": "P-0075",
+   "khatian_no": "603",
+   "share_raw": "৮ আনা"
+  },
+  {
+   "id": "H-0041",
+   "plot_id": "M901-BS-1404",
+   "person_id": "P-0078",
+   "khatian_no": "604",
+   "share_raw": "0.60 share"
+  },
+  {
+   "id": "H-0042",
+   "plot_id": "M901-BS-1404",
+   "person_id": "P-0079",
+   "khatian_no": "604",
+   "share_raw": "0.40 share"
+  },
+  {
+   "id": "H-0043",
+   "plot_id": "M902-BS-3205",
+   "person_id": "P-0081",
+   "khatian_no": "605",
+   "share_raw": "0.60 share"
+  },
+  {
+   "id": "H-0044",
+   "plot_id": "M902-BS-3205",
+   "person_id": "P-0082",
+   "khatian_no": "605",
+   "share_raw": "0.40 share"
+  },
+  {
+   "id": "H-0045",
+   "plot_id": "M901-BS-1406",
+   "person_id": "P-0085",
+   "khatian_no": "606",
+   "share_raw": "1 share"
+  },
+  {
+   "id": "H-0046",
+   "plot_id": "M902-BS-3207",
+   "person_id": "P-0086",
+   "khatian_no": "607",
+   "share_raw": "৮ আনা"
+  },
+  {
+   "id": "H-0047",
+   "plot_id": "M902-BS-3207",
+   "person_id": "P-0087",
+   "khatian_no": "607",
+   "share_raw": "৮ আনা"
+  },
+  {
+   "id": "H-0048",
+   "plot_id": "M901-BS-1408",
+   "person_id": "P-0090",
+   "khatian_no": "608",
+   "share_raw": "1/4 share"
+  },
+  {
+   "id": "H-0049",
+   "plot_id": "M901-BS-1408",
+   "person_id": "P-0091",
+   "khatian_no": "608",
+   "share_raw": "3/4 share"
+  },
+  {
+   "id": "H-0050",
+   "plot_id": "M902-BS-3209",
+   "person_id": "P-0094",
+   "khatian_no": "609",
+   "share_raw": "1/2 share"
+  },
+  {
+   "id": "H-0051",
+   "plot_id": "M902-BS-3209",
+   "person_id": "P-0095",
+   "khatian_no": "609",
+   "share_raw": "1/2 share"
+  },
+  {
+   "id": "H-0052",
+   "plot_id": "M901-BS-1410",
+   "person_id": "P-0096",
+   "khatian_no": "610",
+   "share_raw": "৮ আনা"
+  },
+  {
+   "id": "H-0053",
+   "plot_id": "M901-BS-1410",
+   "person_id": "P-0097",
+   "khatian_no": "610",
+   "share_raw": "৮ আনা"
+  },
+  {
+   "id": "H-0054",
+   "plot_id": "M902-BS-3211",
+   "person_id": "P-0100",
+   "khatian_no": "611",
+   "share_raw": "1/4 share"
+  },
+  {
+   "id": "H-0055",
+   "plot_id": "M902-BS-3211",
+   "person_id": "P-0101",
+   "khatian_no": "611",
+   "share_raw": "3/4 share"
+  },
+  {
+   "id": "H-0056",
+   "plot_id": "M901-BS-1412",
+   "person_id": "P-0104",
+   "khatian_no": "612",
+   "share_raw": "1/3 share"
+  },
+  {
+   "id": "H-0057",
+   "plot_id": "M901-BS-1412",
+   "person_id": "P-0105",
+   "khatian_no": "612",
+   "share_raw": "1/3 share"
+  },
+  {
+   "id": "H-0058",
+   "plot_id": "M901-BS-1412",
+   "person_id": "P-0106",
+   "khatian_no": "612",
+   "share_raw": "1/3 share"
+  },
+  {
+   "id": "H-0059",
+   "plot_id": "M902-BS-3213",
+   "person_id": "P-0108",
+   "khatian_no": "613",
+   "share_raw": "1/3 share"
+  },
+  {
+   "id": "H-0060",
+   "plot_id": "M902-BS-3213",
+   "person_id": "P-0109",
+   "khatian_no": "613",
+   "share_raw": "1/3 share"
+  },
+  {
+   "id": "H-0061",
+   "plot_id": "M902-BS-3213",
+   "person_id": "P-0110",
+   "khatian_no": "613",
+   "share_raw": "1/3 share"
+  },
+  {
+   "id": "H-0062",
+   "plot_id": "M901-BS-1414",
+   "person_id": "P-0114",
+   "khatian_no": "614",
+   "share_raw": "1/2 share"
+  },
+  {
+   "id": "H-0063",
+   "plot_id": "M901-BS-1414",
+   "person_id": "P-0115",
+   "khatian_no": "614",
+   "share_raw": "1/2 share"
+  },
+  {
+   "id": "H-0064",
+   "plot_id": "M902-BS-3215",
+   "person_id": "P-0117",
+   "khatian_no": "615",
+   "share_raw": "1/4 share"
+  },
+  {
+   "id": "H-0065",
+   "plot_id": "M902-BS-3215",
+   "person_id": "P-0118",
+   "khatian_no": "615",
+   "share_raw": "3/4 share"
+  },
+  {
+   "id": "H-0066",
+   "plot_id": "M901-BS-1416",
+   "person_id": "P-0121",
+   "khatian_no": "616",
+   "share_raw": "৮ আনা"
+  },
+  {
+   "id": "H-0067",
+   "plot_id": "M901-BS-1416",
+   "person_id": "P-0122",
+   "khatian_no": "616",
+   "share_raw": "৮ আনা"
+  },
+  {
+   "id": "H-0068",
+   "plot_id": "M902-BS-3217",
+   "person_id": "P-0123",
+   "khatian_no": "617",
+   "share_raw": "1/3 share"
+  },
+  {
+   "id": "H-0069",
+   "plot_id": "M902-BS-3217",
+   "person_id": "P-0124",
+   "khatian_no": "617",
+   "share_raw": "1/3 share"
+  },
+  {
+   "id": "H-0070",
+   "plot_id": "M902-BS-3217",
+   "person_id": "P-0125",
+   "khatian_no": "617",
+   "share_raw": "1/3 share"
+  },
+  {
+   "id": "H-0071",
+   "plot_id": "M901-BS-1418",
+   "person_id": "P-0128",
+   "khatian_no": "618",
+   "share_raw": "1/2 share"
+  },
+  {
+   "id": "H-0072",
+   "plot_id": "M901-BS-1418",
+   "person_id": "P-0129",
+   "khatian_no": "618",
+   "share_raw": "1/2 share"
+  },
+  {
+   "id": "H-0073",
+   "plot_id": "M902-BS-3219",
+   "person_id": "P-0130",
+   "khatian_no": "619",
+   "share_raw": "1/4 share"
+  },
+  {
+   "id": "H-0074",
+   "plot_id": "M902-BS-3219",
+   "person_id": "P-0131",
+   "khatian_no": "619",
+   "share_raw": "3/4 share"
+  },
+  {
+   "id": "H-0075",
+   "plot_id": "M901-BS-1420",
+   "person_id": "P-0134",
+   "khatian_no": "620",
+   "share_raw": "0.60 share"
+  },
+  {
+   "id": "H-0076",
+   "plot_id": "M901-BS-1420",
+   "person_id": "P-0135",
+   "khatian_no": "620",
+   "share_raw": "0.40 share"
+  },
+  {
+   "id": "H-0077",
+   "plot_id": "M902-BS-3221",
+   "person_id": "P-0136",
+   "khatian_no": "621",
+   "share_raw": "1/2 share"
+  },
+  {
+   "id": "H-0078",
+   "plot_id": "M902-BS-3221",
+   "person_id": "P-0137",
+   "khatian_no": "621",
+   "share_raw": "1/2 share"
+  },
+  {
+   "id": "H-0079",
+   "plot_id": "M901-BS-1422",
+   "person_id": "P-0138",
+   "khatian_no": "622",
+   "share_raw": "1 share"
+  },
+  {
+   "id": "H-0080",
+   "plot_id": "M902-BS-3223",
+   "person_id": "P-0140",
+   "khatian_no": "623",
+   "share_raw": "1/3 share"
+  },
+  {
+   "id": "H-0081",
+   "plot_id": "M902-BS-3223",
+   "person_id": "P-0141",
+   "khatian_no": "623",
+   "share_raw": "1/3 share"
+  },
+  {
+   "id": "H-0082",
+   "plot_id": "M902-BS-3223",
+   "person_id": "P-0142",
+   "khatian_no": "623",
+   "share_raw": "1/3 share"
+  },
+  {
+   "id": "H-0083",
+   "plot_id": "M901-BS-1424",
+   "person_id": "P-0145",
+   "khatian_no": "624",
+   "share_raw": "1 share"
+  },
+  {
+   "id": "H-0084",
+   "plot_id": "M902-BS-3225",
+   "person_id": "P-0147",
+   "khatian_no": "625",
+   "share_raw": "1 share"
+  },
+  {
+   "id": "H-0085",
+   "plot_id": "M901-BS-1426",
+   "person_id": "P-0149",
+   "khatian_no": "626",
+   "share_raw": "0.60 share"
+  },
+  {
+   "id": "H-0086",
+   "plot_id": "M901-BS-1426",
+   "person_id": "P-0150",
+   "khatian_no": "626",
+   "share_raw": "0.40 share"
+  },
+  {
+   "id": "H-0087",
+   "plot_id": "M902-BS-3227",
+   "person_id": "P-0152",
+   "khatian_no": "627",
+   "share_raw": "1/3 share"
+  },
+  {
+   "id": "H-0088",
+   "plot_id": "M902-BS-3227",
+   "person_id": "P-0153",
+   "khatian_no": "627",
+   "share_raw": "1/3 share"
+  },
+  {
+   "id": "H-0089",
+   "plot_id": "M902-BS-3227",
+   "person_id": "P-0154",
+   "khatian_no": "627",
+   "share_raw": "1/3 share"
+  },
+  {
+   "id": "H-0090",
+   "plot_id": "M901-BS-1428",
+   "person_id": "P-0158",
+   "khatian_no": "628",
+   "share_raw": "1/3 share"
+  },
+  {
+   "id": "H-0091",
+   "plot_id": "M901-BS-1428",
+   "person_id": "P-0159",
+   "khatian_no": "628",
+   "share_raw": "1/3 share"
+  },
+  {
+   "id": "H-0092",
+   "plot_id": "M901-BS-1428",
+   "person_id": "P-0160",
+   "khatian_no": "628",
+   "share_raw": "1/3 share"
+  },
+  {
+   "id": "H-0093",
+   "plot_id": "M902-BS-3229",
+   "person_id": "P-0162",
+   "khatian_no": "629",
+   "share_raw": "0.60 share"
+  },
+  {
+   "id": "H-0094",
+   "plot_id": "M902-BS-3229",
+   "person_id": "P-0163",
+   "khatian_no": "629",
+   "share_raw": "0.40 share"
+  }
+ ],
+ "deeds": [
+  {
+   "id": "D-2024-0110",
+   "office": "DEMO-SRO",
+   "deed_no": "2024/0110",
+   "deed_type": "sale",
+   "execution_date": "2024-03-10",
+   "registration_date": "2024-03-10",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2023-0457",
+   "office": "DEMO-SRO",
+   "deed_no": "2023/0457",
+   "deed_type": "sale",
+   "execution_date": "2023-02-10",
+   "registration_date": "2023-02-10",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2026-0688",
+   "office": "DEMO-SRO",
+   "deed_no": "2026/0688",
+   "deed_type": "sale",
+   "execution_date": "2026-08-21",
+   "registration_date": "2026-08-21",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2026-0733",
+   "office": "DEMO-SRO",
+   "deed_no": "2026/0733",
+   "deed_type": "sale",
+   "execution_date": "2026-07-12",
+   "registration_date": "2026-07-12",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2026-0612",
+   "office": "DEMO-SRO",
+   "deed_no": "2026/0612",
+   "deed_type": "sale",
+   "execution_date": "2026-08-01",
+   "registration_date": "2026-08-01",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2026-0301",
+   "office": "DEMO-SRO",
+   "deed_no": "2026/0301",
+   "deed_type": "sale",
+   "execution_date": "2026-03-05",
+   "registration_date": "2026-03-05",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2026-0388",
+   "office": "DEMO-SRO",
+   "deed_no": "2026/0388",
+   "deed_type": "sale",
+   "execution_date": "2026-04-10",
+   "registration_date": "2026-04-10",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2026-0455",
+   "office": "DEMO-SRO",
+   "deed_no": "2026/0455",
+   "deed_type": "sale",
+   "execution_date": "2026-05-20",
+   "registration_date": "2026-05-20",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2026-0702",
+   "office": "DEMO-SRO",
+   "deed_no": "2026/0702",
+   "deed_type": "sale",
+   "execution_date": "2026-07-15",
+   "registration_date": "2026-07-15",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2024-0222",
+   "office": "DEMO-SRO",
+   "deed_no": "2024/0222",
+   "deed_type": "sale",
+   "execution_date": "2024-05-05",
+   "registration_date": "2024-05-05",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2026-0801",
+   "office": "DEMO-SRO",
+   "deed_no": "2026/0801",
+   "deed_type": "sale",
+   "execution_date": "2026-08-10",
+   "registration_date": "2026-08-10",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2026-0640",
+   "office": "DEMO-SRO",
+   "deed_no": "2026/0640",
+   "deed_type": "sale",
+   "execution_date": "2026-07-20",
+   "registration_date": "2026-07-20",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2026-0655",
+   "office": "DEMO-SRO",
+   "deed_no": "2026/0655",
+   "deed_type": "sale",
+   "execution_date": "2026-07-25",
+   "registration_date": "2026-07-25",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2026-0590",
+   "office": "DEMO-SRO",
+   "deed_no": "2026/0590",
+   "deed_type": "sale",
+   "execution_date": "2026-08-05",
+   "registration_date": "2026-08-05",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2026-0700",
+   "office": "DEMO-SRO",
+   "deed_no": "2026/0700",
+   "deed_type": "sale",
+   "execution_date": "2026-08-15",
+   "registration_date": "2026-08-15",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2026-0710",
+   "office": "DEMO-SRO",
+   "deed_no": "2026/0710",
+   "deed_type": "sale",
+   "execution_date": "2026-08-02",
+   "registration_date": "2026-08-02",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2026-0720",
+   "office": "DEMO-SRO",
+   "deed_no": "2026/0720",
+   "deed_type": "sale",
+   "execution_date": "2026-08-08",
+   "registration_date": "2026-08-08",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2026-0726",
+   "office": "DEMO-SRO",
+   "deed_no": "2026/0726",
+   "deed_type": "sale",
+   "execution_date": "2026-08-12",
+   "registration_date": "2026-08-12",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2026-0730",
+   "office": "DEMO-SRO",
+   "deed_no": "2026/0730",
+   "deed_type": "sale",
+   "execution_date": "2026-08-09",
+   "registration_date": "2026-08-09",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2025-0505",
+   "office": "DEMO-SRO",
+   "deed_no": "2025/0505",
+   "deed_type": "sale",
+   "execution_date": "2025-03-03",
+   "registration_date": "2025-03-03",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2026-0745",
+   "office": "DEMO-SRO",
+   "deed_no": "2026/0745",
+   "deed_type": "sale",
+   "execution_date": "2026-08-18",
+   "registration_date": "2026-08-18",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2025-0901",
+   "office": "DEMO-SRO",
+   "deed_no": "2025/0901",
+   "deed_type": "sale",
+   "execution_date": "2025-11-05",
+   "registration_date": "2025-11-05",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2019-4658",
+   "office": "DEMO-SRO",
+   "deed_no": "2019/4658",
+   "deed_type": "sale",
+   "execution_date": "2019-03-12",
+   "registration_date": "2019-03-12",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2023-8226",
+   "office": "DEMO-SRO",
+   "deed_no": "2023/8226",
+   "deed_type": "sale",
+   "execution_date": "2023-07-19",
+   "registration_date": "2023-07-19",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2021-6148",
+   "office": "DEMO-SRO",
+   "deed_no": "2021/6148",
+   "deed_type": "sale",
+   "execution_date": "2021-07-16",
+   "registration_date": "2021-07-16",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2020-9414",
+   "office": "DEMO-SRO",
+   "deed_no": "2020/9414",
+   "deed_type": "sale",
+   "execution_date": "2020-04-05",
+   "registration_date": "2020-04-05",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2017-6062",
+   "office": "DEMO-SRO",
+   "deed_no": "2017/6062",
+   "deed_type": "sale",
+   "execution_date": "2017-08-15",
+   "registration_date": "2017-08-15",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2026-9166",
+   "office": "DEMO-SRO",
+   "deed_no": "2026/9166",
+   "deed_type": "sale",
+   "execution_date": "2026-08-15",
+   "registration_date": "2026-08-15",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2025-5237",
+   "office": "DEMO-SRO",
+   "deed_no": "2025/5237",
+   "deed_type": "sale",
+   "execution_date": "2025-12-03",
+   "registration_date": "2025-12-03",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2025-1415",
+   "office": "DEMO-SRO",
+   "deed_no": "2025/1415",
+   "deed_type": "sale",
+   "execution_date": "2025-11-06",
+   "registration_date": "2025-11-06",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2020-8701",
+   "office": "DEMO-SRO",
+   "deed_no": "2020/8701",
+   "deed_type": "sale",
+   "execution_date": "2020-11-08",
+   "registration_date": "2020-11-08",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2021-7587",
+   "office": "DEMO-SRO",
+   "deed_no": "2021/7587",
+   "deed_type": "sale",
+   "execution_date": "2021-11-09",
+   "registration_date": "2021-11-09",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2024-7585",
+   "office": "DEMO-SRO",
+   "deed_no": "2024/7585",
+   "deed_type": "sale",
+   "execution_date": "2024-05-30",
+   "registration_date": "2024-05-30",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2021-5261",
+   "office": "DEMO-SRO",
+   "deed_no": "2021/5261",
+   "deed_type": "sale",
+   "execution_date": "2021-04-13",
+   "registration_date": "2021-04-13",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2023-1550",
+   "office": "DEMO-SRO",
+   "deed_no": "2023/1550",
+   "deed_type": "sale",
+   "execution_date": "2023-11-29",
+   "registration_date": "2023-11-29",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2021-5240",
+   "office": "DEMO-SRO",
+   "deed_no": "2021/5240",
+   "deed_type": "sale",
+   "execution_date": "2021-10-26",
+   "registration_date": "2021-10-26",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2016-5365",
+   "office": "DEMO-SRO",
+   "deed_no": "2016/5365",
+   "deed_type": "sale",
+   "execution_date": "2016-10-05",
+   "registration_date": "2016-10-05",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2021-5060",
+   "office": "DEMO-SRO",
+   "deed_no": "2021/5060",
+   "deed_type": "sale",
+   "execution_date": "2021-04-09",
+   "registration_date": "2021-04-09",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2023-3535",
+   "office": "DEMO-SRO",
+   "deed_no": "2023/3535",
+   "deed_type": "sale",
+   "execution_date": "2023-01-18",
+   "registration_date": "2023-01-18",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2022-8749",
+   "office": "DEMO-SRO",
+   "deed_no": "2022/8749",
+   "deed_type": "sale",
+   "execution_date": "2022-07-17",
+   "registration_date": "2022-07-17",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2020-7844",
+   "office": "DEMO-SRO",
+   "deed_no": "2020/7844",
+   "deed_type": "sale",
+   "execution_date": "2020-12-26",
+   "registration_date": "2020-12-26",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2021-9520",
+   "office": "DEMO-SRO",
+   "deed_no": "2021/9520",
+   "deed_type": "sale",
+   "execution_date": "2021-09-15",
+   "registration_date": "2021-09-15",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2016-1419",
+   "office": "DEMO-SRO",
+   "deed_no": "2016/1419",
+   "deed_type": "sale",
+   "execution_date": "2016-04-30",
+   "registration_date": "2016-04-30",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2017-9152",
+   "office": "DEMO-SRO",
+   "deed_no": "2017/9152",
+   "deed_type": "sale",
+   "execution_date": "2017-05-27",
+   "registration_date": "2017-05-27",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2026-4391",
+   "office": "DEMO-SRO",
+   "deed_no": "2026/4391",
+   "deed_type": "sale",
+   "execution_date": "2026-08-19",
+   "registration_date": "2026-08-19",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2026-1559",
+   "office": "DEMO-SRO",
+   "deed_no": "2026/1559",
+   "deed_type": "sale",
+   "execution_date": "2026-08-27",
+   "registration_date": "2026-08-27",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2021-1335",
+   "office": "DEMO-SRO",
+   "deed_no": "2021/1335",
+   "deed_type": "sale",
+   "execution_date": "2021-06-19",
+   "registration_date": "2021-06-19",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2017-3627",
+   "office": "DEMO-SRO",
+   "deed_no": "2017/3627",
+   "deed_type": "sale",
+   "execution_date": "2017-08-02",
+   "registration_date": "2017-08-02",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2021-5713",
+   "office": "DEMO-SRO",
+   "deed_no": "2021/5713",
+   "deed_type": "sale",
+   "execution_date": "2021-09-14",
+   "registration_date": "2021-09-14",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2022-9596",
+   "office": "DEMO-SRO",
+   "deed_no": "2022/9596",
+   "deed_type": "sale",
+   "execution_date": "2022-12-15",
+   "registration_date": "2022-12-15",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2020-1445",
+   "office": "DEMO-SRO",
+   "deed_no": "2020/1445",
+   "deed_type": "sale",
+   "execution_date": "2020-02-02",
+   "registration_date": "2020-02-02",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2020-2797",
+   "office": "DEMO-SRO",
+   "deed_no": "2020/2797",
+   "deed_type": "sale",
+   "execution_date": "2020-06-20",
+   "registration_date": "2020-06-20",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2019-2741",
+   "office": "DEMO-SRO",
+   "deed_no": "2019/2741",
+   "deed_type": "sale",
+   "execution_date": "2019-02-14",
+   "registration_date": "2019-02-14",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2026-2030",
+   "office": "DEMO-SRO",
+   "deed_no": "2026/2030",
+   "deed_type": "sale",
+   "execution_date": "2026-09-05",
+   "registration_date": "2026-09-05",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2018-7791",
+   "office": "DEMO-SRO",
+   "deed_no": "2018/7791",
+   "deed_type": "sale",
+   "execution_date": "2018-12-03",
+   "registration_date": "2018-12-03",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2019-6160",
+   "office": "DEMO-SRO",
+   "deed_no": "2019/6160",
+   "deed_type": "sale",
+   "execution_date": "2019-12-20",
+   "registration_date": "2019-12-20",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2022-8580",
+   "office": "DEMO-SRO",
+   "deed_no": "2022/8580",
+   "deed_type": "sale",
+   "execution_date": "2022-06-17",
+   "registration_date": "2022-06-17",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2023-6837",
+   "office": "DEMO-SRO",
+   "deed_no": "2023/6837",
+   "deed_type": "sale",
+   "execution_date": "2023-04-25",
+   "registration_date": "2023-04-25",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2019-5865",
+   "office": "DEMO-SRO",
+   "deed_no": "2019/5865",
+   "deed_type": "sale",
+   "execution_date": "2019-06-01",
+   "registration_date": "2019-06-01",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2026-4234",
+   "office": "DEMO-SRO",
+   "deed_no": "2026/4234",
+   "deed_type": "sale",
+   "execution_date": "2026-08-31",
+   "registration_date": "2026-08-31",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2026-3010",
+   "office": "DEMO-SRO",
+   "deed_no": "2026/3010",
+   "deed_type": "sale",
+   "execution_date": "2026-08-13",
+   "registration_date": "2026-08-13",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  },
+  {
+   "id": "D-2023-1471",
+   "office": "DEMO-SRO",
+   "deed_no": "2023/1471",
+   "deed_type": "sale",
+   "execution_date": "2023-06-06",
+   "registration_date": "2023-06-06",
+   "received_via": "registry_index",
+   "created_by": "seed"
+  }
+ ],
+ "deed_items": [
+  {
+   "id": "DI-0001",
+   "deed_id": "D-2024-0110",
+   "mouza_id": "M901",
+   "plot_ref": "",
+   "plot_id": "M901-BS-1101",
+   "seller_id": "P-0001",
+   "buyer_id": "P-0003",
+   "quantity_raw": "10 decimal"
+  },
+  {
+   "id": "DI-0002",
+   "deed_id": "D-2023-0457",
+   "mouza_id": "M901",
+   "plot_ref": "",
+   "plot_id": "M901-BS-1201",
+   "seller_id": "P-0004",
+   "buyer_id": "P-0006",
+   "quantity_raw": "20 decimal"
+  },
+  {
+   "id": "DI-0003",
+   "deed_id": "D-2026-0688",
+   "mouza_id": "M901",
+   "plot_ref": "",
+   "plot_id": "M901-BS-1201",
+   "seller_id": "P-0004",
+   "buyer_id": "P-0007",
+   "quantity_raw": "20 decimal"
+  },
+  {
+   "id": "DI-0004",
+   "deed_id": "D-2026-0733",
+   "mouza_id": "M901",
+   "plot_ref": "",
+   "plot_id": "M901-BS-1205",
+   "seller_id": "P-0008",
+   "buyer_id": "P-0011",
+   "quantity_raw": "20 decimal"
+  },
+  {
+   "id": "DI-0005",
+   "deed_id": "D-2026-0612",
+   "mouza_id": "M902",
+   "plot_ref": "",
+   "plot_id": "M902-BS-3101",
+   "seller_id": "P-0017",
+   "buyer_id": "P-0018",
+   "quantity_raw": "10 decimal"
+  },
+  {
+   "id": "DI-0006",
+   "deed_id": "D-2026-0301",
+   "mouza_id": "M902",
+   "plot_ref": "",
+   "plot_id": "M902-BS-3105",
+   "seller_id": "P-0019",
+   "buyer_id": "P-0020",
+   "quantity_raw": "10 decimal"
+  },
+  {
+   "id": "DI-0007",
+   "deed_id": "D-2026-0388",
+   "mouza_id": "M902",
+   "plot_ref": "",
+   "plot_id": "M902-BS-3105",
+   "seller_id": "P-0020",
+   "buyer_id": "P-0021",
+   "quantity_raw": "10 decimal"
+  },
+  {
+   "id": "DI-0008",
+   "deed_id": "D-2026-0455",
+   "mouza_id": "M902",
+   "plot_ref": "",
+   "plot_id": "M902-BS-3105",
+   "seller_id": "P-0021",
+   "buyer_id": "P-0022",
+   "quantity_raw": "10 decimal"
+  },
+  {
+   "id": "DI-0009",
+   "deed_id": "D-2026-0702",
+   "mouza_id": "M901",
+   "plot_ref": "",
+   "plot_id": "M901-BS-1215",
+   "seller_id": "P-0025",
+   "buyer_id": "P-0026",
+   "quantity_raw": "10 decimal"
+  },
+  {
+   "id": "DI-0010",
+   "deed_id": "D-2024-0222",
+   "mouza_id": "M903",
+   "plot_ref": "",
+   "plot_id": "M903-BS-2105",
+   "seller_id": "P-0027",
+   "buyer_id": "P-0029",
+   "quantity_raw": "5 decimal"
+  },
+  {
+   "id": "DI-0011",
+   "deed_id": "D-2026-0801",
+   "mouza_id": "M903",
+   "plot_ref": "",
+   "plot_id": "M903-BS-2105",
+   "seller_id": "P-0028",
+   "buyer_id": "P-0030",
+   "quantity_raw": "8 decimal"
+  },
+  {
+   "id": "DI-0012",
+   "deed_id": "D-2026-0640",
+   "mouza_id": "M901",
+   "plot_ref": "RS 245",
+   "plot_id": null,
+   "seller_id": "P-0031",
+   "buyer_id": "P-0032",
+   "quantity_raw": "12 decimal"
+  },
+  {
+   "id": "DI-0013",
+   "deed_id": "D-2026-0655",
+   "mouza_id": "M901",
+   "plot_ref": "",
+   "plot_id": "M901-BS-1220",
+   "seller_id": "P-0033",
+   "buyer_id": "P-0034",
+   "quantity_raw": "1 bigha"
+  },
+  {
+   "id": "DI-0014",
+   "deed_id": "D-2026-0590",
+   "mouza_id": "M902",
+   "plot_ref": "",
+   "plot_id": "M902-BS-3110",
+   "seller_id": "P-0037",
+   "buyer_id": "P-0039",
+   "quantity_raw": "12 decimal"
+  },
+  {
+   "id": "DI-0015",
+   "deed_id": "D-2026-0700",
+   "mouza_id": "M902",
+   "plot_ref": "",
+   "plot_id": "M902-BS-3115",
+   "seller_id": "P-0041",
+   "buyer_id": "P-0043",
+   "quantity_raw": "10 decimal"
+  },
+  {
+   "id": "DI-0016",
+   "deed_id": "D-2026-0710",
+   "mouza_id": "M901",
+   "plot_ref": "",
+   "plot_id": "M901-BS-1225",
+   "seller_id": "P-0045",
+   "buyer_id": "P-0046",
+   "quantity_raw": "5 decimal"
+  },
+  {
+   "id": "DI-0017",
+   "deed_id": "D-2026-0720",
+   "mouza_id": "M902",
+   "plot_ref": "",
+   "plot_id": "M902-BS-3120",
+   "seller_id": "P-0047",
+   "buyer_id": "P-0049",
+   "quantity_raw": "0.25 acre"
+  },
+  {
+   "id": "DI-0018",
+   "deed_id": "D-2026-0726",
+   "mouza_id": "M902",
+   "plot_ref": "",
+   "plot_id": "M902-BS-3120",
+   "seller_id": "P-0048",
+   "buyer_id": "P-0050",
+   "quantity_raw": "5 katha"
+  },
+  {
+   "id": "DI-0019",
+   "deed_id": "D-2026-0730",
+   "mouza_id": "M901",
+   "plot_ref": "",
+   "plot_id": "M901-BS-1230",
+   "seller_id": "P-0051",
+   "buyer_id": "P-0054",
+   "quantity_raw": "16.67 decimal"
+  },
+  {
+   "id": "DI-0020",
+   "deed_id": "D-2025-0505",
+   "mouza_id": "M901",
+   "plot_ref": "",
+   "plot_id": "M901-BS-1235",
+   "seller_id": "P-0055",
+   "buyer_id": "P-0056",
+   "quantity_raw": "30 decimal"
+  },
+  {
+   "id": "DI-0021",
+   "deed_id": "D-2026-0745",
+   "mouza_id": "M901",
+   "plot_ref": "",
+   "plot_id": "M901-BS-1235",
+   "seller_id": "P-0055",
+   "buyer_id": "P-0057",
+   "quantity_raw": "10 decimal"
+  },
+  {
+   "id": "DI-0022",
+   "deed_id": "D-2025-0901",
+   "mouza_id": "M902",
+   "plot_ref": "",
+   "plot_id": "M902-BS-3125",
+   "seller_id": "P-0058",
+   "buyer_id": "P-0060",
+   "quantity_raw": "10 decimal"
+  },
+  {
+   "id": "DI-0023",
+   "deed_id": "D-2019-4658",
+   "mouza_id": "M901",
+   "plot_ref": "",
+   "plot_id": "M901-BS-1400",
+   "seller_id": "P-0061",
+   "buyer_id": "P-0063",
+   "quantity_raw": "8.5 decimal"
+  },
+  {
+   "id": "DI-0024",
+   "deed_id": "D-2023-8226",
+   "mouza_id": "M901",
+   "plot_ref": "",
+   "plot_id": "M901-BS-1400",
+   "seller_id": "P-0062",
+   "buyer_id": "P-0064",
+   "quantity_raw": "8.5 decimal"
+  },
+  {
+   "id": "DI-0025",
+   "deed_id": "D-2021-6148",
+   "mouza_id": "M902",
+   "plot_ref": "",
+   "plot_id": "M902-BS-3201",
+   "seller_id": "P-0065",
+   "buyer_id": "P-0068",
+   "quantity_raw": "5.0 decimal"
+  },
+  {
+   "id": "DI-0026",
+   "deed_id": "D-2020-9414",
+   "mouza_id": "M902",
+   "plot_ref": "",
+   "plot_id": "M902-BS-3201",
+   "seller_id": "P-0067",
+   "buyer_id": "P-0069",
+   "quantity_raw": "5.0 decimal"
+  },
+  {
+   "id": "DI-0027",
+   "deed_id": "D-2017-6062",
+   "mouza_id": "M901",
+   "plot_ref": "",
+   "plot_id": "M901-BS-1402",
+   "seller_id": "P-0070",
+   "buyer_id": "P-0072",
+   "quantity_raw": "15.5 decimal"
+  },
+  {
+   "id": "DI-0028",
+   "deed_id": "D-2026-9166",
+   "mouza_id": "M901",
+   "plot_ref": "",
+   "plot_id": "M901-BS-1402",
+   "seller_id": "P-0071",
+   "buyer_id": "P-0073",
+   "quantity_raw": "15.5 decimal"
+  },
+  {
+   "id": "DI-0029",
+   "deed_id": "D-2025-5237",
+   "mouza_id": "M902",
+   "plot_ref": "",
+   "plot_id": "M902-BS-3203",
+   "seller_id": "P-0074",
+   "buyer_id": "P-0076",
+   "quantity_raw": "18.5 decimal"
+  },
+  {
+   "id": "DI-0030",
+   "deed_id": "D-2025-1415",
+   "mouza_id": "M902",
+   "plot_ref": "",
+   "plot_id": "M902-BS-3203",
+   "seller_id": "P-0075",
+   "buyer_id": "P-0077",
+   "quantity_raw": "18.5 decimal"
+  },
+  {
+   "id": "DI-0031",
+   "deed_id": "D-2020-8701",
+   "mouza_id": "M901",
+   "plot_ref": "",
+   "plot_id": "M901-BS-1404",
+   "seller_id": "P-0078",
+   "buyer_id": "P-0080",
+   "quantity_raw": "10.5 decimal"
+  },
+  {
+   "id": "DI-0032",
+   "deed_id": "D-2021-7587",
+   "mouza_id": "M902",
+   "plot_ref": "",
+   "plot_id": "M902-BS-3205",
+   "seller_id": "P-0081",
+   "buyer_id": "P-0083",
+   "quantity_raw": "10.5 decimal"
+  },
+  {
+   "id": "DI-0033",
+   "deed_id": "D-2024-7585",
+   "mouza_id": "M902",
+   "plot_ref": "",
+   "plot_id": "M902-BS-3205",
+   "seller_id": "P-0082",
+   "buyer_id": "P-0084",
+   "quantity_raw": "7.0 decimal"
+  },
+  {
+   "id": "DI-0034",
+   "deed_id": "D-2021-5261",
+   "mouza_id": "M902",
+   "plot_ref": "",
+   "plot_id": "M902-BS-3207",
+   "seller_id": "P-0086",
+   "buyer_id": "P-0088",
+   "quantity_raw": "24.0 decimal"
+  },
+  {
+   "id": "DI-0035",
+   "deed_id": "D-2023-1550",
+   "mouza_id": "M902",
+   "plot_ref": "",
+   "plot_id": "M902-BS-3207",
+   "seller_id": "P-0087",
+   "buyer_id": "P-0089",
+   "quantity_raw": "24.0 decimal"
+  },
+  {
+   "id": "DI-0036",
+   "deed_id": "D-2021-5240",
+   "mouza_id": "M901",
+   "plot_ref": "",
+   "plot_id": "M901-BS-1408",
+   "seller_id": "P-0090",
+   "buyer_id": "P-0092",
+   "quantity_raw": "9.5 decimal"
+  },
+  {
+   "id": "DI-0037",
+   "deed_id": "D-2016-5365",
+   "mouza_id": "M901",
+   "plot_ref": "",
+   "plot_id": "M901-BS-1408",
+   "seller_id": "P-0091",
+   "buyer_id": "P-0093",
+   "quantity_raw": "29.0 decimal"
+  },
+  {
+   "id": "DI-0038",
+   "deed_id": "D-2021-5060",
+   "mouza_id": "M901",
+   "plot_ref": "",
+   "plot_id": "M901-BS-1410",
+   "seller_id": "P-0096",
+   "buyer_id": "P-0098",
+   "quantity_raw": "5.0 decimal"
+  },
+  {
+   "id": "DI-0039",
+   "deed_id": "D-2023-3535",
+   "mouza_id": "M901",
+   "plot_ref": "",
+   "plot_id": "M901-BS-1410",
+   "seller_id": "P-0097",
+   "buyer_id": "P-0099",
+   "quantity_raw": "5.0 decimal"
+  },
+  {
+   "id": "DI-0040",
+   "deed_id": "D-2022-8749",
+   "mouza_id": "M902",
+   "plot_ref": "",
+   "plot_id": "M902-BS-3211",
+   "seller_id": "P-0100",
+   "buyer_id": "P-0102",
+   "quantity_raw": "11.5 decimal"
+  },
+  {
+   "id": "DI-0041",
+   "deed_id": "D-2020-7844",
+   "mouza_id": "M902",
+   "plot_ref": "",
+   "plot_id": "M902-BS-3211",
+   "seller_id": "P-0101",
+   "buyer_id": "P-0103",
+   "quantity_raw": "35.0 decimal"
+  },
+  {
+   "id": "DI-0042",
+   "deed_id": "D-2021-9520",
+   "mouza_id": "M901",
+   "plot_ref": "",
+   "plot_id": "M901-BS-1412",
+   "seller_id": "P-0104",
+   "buyer_id": "P-0107",
+   "quantity_raw": "6.0 decimal"
+  },
+  {
+   "id": "DI-0043",
+   "deed_id": "D-2016-1419",
+   "mouza_id": "M902",
+   "plot_ref": "",
+   "plot_id": "M902-BS-3213",
+   "seller_id": "P-0108",
+   "buyer_id": "P-0111",
+   "quantity_raw": "4.5 decimal"
+  },
+  {
+   "id": "DI-0044",
+   "deed_id": "D-2017-9152",
+   "mouza_id": "M902",
+   "plot_ref": "",
+   "plot_id": "M902-BS-3213",
+   "seller_id": "P-0109",
+   "buyer_id": "P-0112",
+   "quantity_raw": "4.5 decimal"
+  },
+  {
+   "id": "DI-0045",
+   "deed_id": "D-2026-4391",
+   "mouza_id": "M902",
+   "plot_ref": "",
+   "plot_id": "M902-BS-3213",
+   "seller_id": "P-0110",
+   "buyer_id": "P-0113",
+   "quantity_raw": "4.5 decimal"
+  },
+  {
+   "id": "DI-0046",
+   "deed_id": "D-2026-1559",
+   "mouza_id": "M901",
+   "plot_ref": "",
+   "plot_id": "M901-BS-1414",
+   "seller_id": "P-0114",
+   "buyer_id": "P-0116",
+   "quantity_raw": "19.5 decimal"
+  },
+  {
+   "id": "DI-0047",
+   "deed_id": "D-2021-1335",
+   "mouza_id": "M902",
+   "plot_ref": "",
+   "plot_id": "M902-BS-3215",
+   "seller_id": "P-0117",
+   "buyer_id": "P-0119",
+   "quantity_raw": "11.0 decimal"
+  },
+  {
+   "id": "DI-0048",
+   "deed_id": "D-2017-3627",
+   "mouza_id": "M902",
+   "plot_ref": "",
+   "plot_id": "M902-BS-3215",
+   "seller_id": "P-0118",
+   "buyer_id": "P-0120",
+   "quantity_raw": "33.0 decimal"
+  },
+  {
+   "id": "DI-0049",
+   "deed_id": "D-2021-5713",
+   "mouza_id": "M902",
+   "plot_ref": "",
+   "plot_id": "M902-BS-3217",
+   "seller_id": "P-0124",
+   "buyer_id": "P-0126",
+   "quantity_raw": "9.5 decimal"
+  },
+  {
+   "id": "DI-0050",
+   "deed_id": "D-2022-9596",
+   "mouza_id": "M902",
+   "plot_ref": "",
+   "plot_id": "M902-BS-3217",
+   "seller_id": "P-0125",
+   "buyer_id": "P-0127",
+   "quantity_raw": "9.5 decimal"
+  },
+  {
+   "id": "DI-0051",
+   "deed_id": "D-2020-1445",
+   "mouza_id": "M902",
+   "plot_ref": "",
+   "plot_id": "M902-BS-3219",
+   "seller_id": "P-0130",
+   "buyer_id": "P-0132",
+   "quantity_raw": "9.5 decimal"
+  },
+  {
+   "id": "DI-0052",
+   "deed_id": "D-2020-2797",
+   "mouza_id": "M902",
+   "plot_ref": "",
+   "plot_id": "M902-BS-3219",
+   "seller_id": "P-0131",
+   "buyer_id": "P-0133",
+   "quantity_raw": "29.0 decimal"
+  },
+  {
+   "id": "DI-0053",
+   "deed_id": "D-2019-2741",
+   "mouza_id": "M901",
+   "plot_ref": "",
+   "plot_id": "M901-BS-1422",
+   "seller_id": "P-0138",
+   "buyer_id": "P-0139",
+   "quantity_raw": "37.5 decimal"
+  },
+  {
+   "id": "DI-0054",
+   "deed_id": "D-2026-2030",
+   "mouza_id": "M902",
+   "plot_ref": "",
+   "plot_id": "M902-BS-3223",
+   "seller_id": "P-0140",
+   "buyer_id": "P-0143",
+   "quantity_raw": "15.5 decimal"
+  },
+  {
+   "id": "DI-0055",
+   "deed_id": "D-2018-7791",
+   "mouza_id": "M902",
+   "plot_ref": "",
+   "plot_id": "M902-BS-3223",
+   "seller_id": "P-0141",
+   "buyer_id": "P-0144",
+   "quantity_raw": "15.5 decimal"
+  },
+  {
+   "id": "DI-0056",
+   "deed_id": "D-2019-6160",
+   "mouza_id": "M901",
+   "plot_ref": "",
+   "plot_id": "M901-BS-1424",
+   "seller_id": "P-0145",
+   "buyer_id": "P-0146",
+   "quantity_raw": "29.5 decimal"
+  },
+  {
+   "id": "DI-0057",
+   "deed_id": "D-2022-8580",
+   "mouza_id": "M902",
+   "plot_ref": "",
+   "plot_id": "M902-BS-3225",
+   "seller_id": "P-0147",
+   "buyer_id": "P-0148",
+   "quantity_raw": "50.0 decimal"
+  },
+  {
+   "id": "DI-0058",
+   "deed_id": "D-2023-6837",
+   "mouza_id": "M901",
+   "plot_ref": "",
+   "plot_id": "M901-BS-1426",
+   "seller_id": "P-0149",
+   "buyer_id": "P-0151",
+   "quantity_raw": "20.0 decimal"
+  },
+  {
+   "id": "DI-0059",
+   "deed_id": "D-2019-5865",
+   "mouza_id": "M902",
+   "plot_ref": "",
+   "plot_id": "M902-BS-3227",
+   "seller_id": "P-0152",
+   "buyer_id": "P-0155",
+   "quantity_raw": "18.0 decimal"
+  },
+  {
+   "id": "DI-0060",
+   "deed_id": "D-2026-4234",
+   "mouza_id": "M902",
+   "plot_ref": "",
+   "plot_id": "M902-BS-3227",
+   "seller_id": "P-0153",
+   "buyer_id": "P-0156",
+   "quantity_raw": "18.0 decimal"
+  },
+  {
+   "id": "DI-0061",
+   "deed_id": "D-2026-3010",
+   "mouza_id": "M902",
+   "plot_ref": "",
+   "plot_id": "M902-BS-3227",
+   "seller_id": "P-0154",
+   "buyer_id": "P-0157",
+   "quantity_raw": "18.0 decimal"
+  },
+  {
+   "id": "DI-0062",
+   "deed_id": "D-2023-1471",
+   "mouza_id": "M901",
+   "plot_ref": "",
+   "plot_id": "M901-BS-1428",
+   "seller_id": "P-0158",
+   "buyer_id": "P-0161",
+   "quantity_raw": "6.0 decimal"
+  }
+ ],
+ "crosswalk": [
+  {
+   "mouza_id": "M901",
+   "old_survey": "RS",
+   "old_dag": "245",
+   "plot_id": "M901-BS-1301",
+   "note": "Synthetic crosswalk: RS 245 split into BS 1301 and BS 1302"
+  },
+  {
+   "mouza_id": "M901",
+   "old_survey": "RS",
+   "old_dag": "245",
+   "plot_id": "M901-BS-1302",
+   "note": "Synthetic crosswalk: RS 245 split into BS 1301 and BS 1302"
+  }
+ ],
+ "inheritances": [
+  {
+   "id": "INH-001",
+   "plot_id": "M902-BS-3110",
+   "deceased_id": "P-0035",
+   "event_date": "2020-03-01",
+   "certificate_ref": "DEMO-UP/SC/2020/017"
+  },
+  {
+   "id": "INH-002",
+   "plot_id": "M902-BS-3115",
+   "deceased_id": "P-0040",
+   "event_date": "2021-09-09",
+   "certificate_ref": "DEMO-UP/SC/2021/044"
+  }
+ ],
+ "heirs": [
+  {
+   "inheritance_id": "INH-001",
+   "person_id": "P-0036",
+   "fraction_raw": "1/2 share"
+  },
+  {
+   "inheritance_id": "INH-001",
+   "person_id": "P-0037",
+   "fraction_raw": "1/4 share"
+  },
+  {
+   "inheritance_id": "INH-001",
+   "person_id": "P-0038",
+   "fraction_raw": "1/4 share"
+  },
+  {
+   "inheritance_id": "INH-002",
+   "person_id": "P-0041",
+   "fraction_raw": "1/2 share"
+  },
+  {
+   "inheritance_id": "INH-002",
+   "person_id": "P-0042",
+   "fraction_raw": "1/3 share"
+  }
+ ],
+ "mutation_cases": [
+  {
+   "id": "MC-0001",
+   "case_no": "DEMO-MC/2024/0201",
+   "plot_id": "M901-BS-1101",
+   "filed_date": "2024-03-25",
+   "status": "approved",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2024/0110",
+   "basis_deed_date": "2024-03-10",
+   "from_id": "P-0001",
+   "to_id": "P-0003",
+   "quantity_raw": "10 decimal",
+   "decided_date": "2024-04-20"
+  },
+  {
+   "id": "MC-0002",
+   "case_no": "DEMO-MC/2026/0312",
+   "plot_id": "M901-BS-1201",
+   "filed_date": "2026-09-15",
+   "status": "pending",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2026/0688",
+   "basis_deed_date": "2026-08-21",
+   "from_id": "P-0004",
+   "to_id": "P-0007",
+   "quantity_raw": "20 decimal",
+   "decided_date": null
+  },
+  {
+   "id": "MC-0003",
+   "case_no": "DEMO-MC/2026/0390",
+   "plot_id": "M901-BS-1205",
+   "filed_date": "2026-07-20",
+   "status": "pending",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2026/0733",
+   "basis_deed_date": "2026-07-12",
+   "from_id": "P-0008",
+   "to_id": "P-0011",
+   "quantity_raw": "20 decimal",
+   "decided_date": null
+  },
+  {
+   "id": "MC-0004",
+   "case_no": "DEMO-MC/2026/0405",
+   "plot_id": "M901-BS-1210",
+   "filed_date": "2026-08-05",
+   "status": "pending",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2026/0999",
+   "basis_deed_date": "2026-06-18",
+   "from_id": "P-0012",
+   "to_id": "P-0013",
+   "quantity_raw": "15 decimal",
+   "decided_date": null
+  },
+  {
+   "id": "MC-0005",
+   "case_no": "DEMO-MC/2026/0418",
+   "plot_id": "M903-BS-2101",
+   "filed_date": "2026-08-20",
+   "status": "pending",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2008/0141",
+   "basis_deed_date": "2008-04-02",
+   "from_id": "P-0014",
+   "to_id": "P-0015",
+   "quantity_raw": "30 decimal",
+   "decided_date": null
+  },
+  {
+   "id": "MC-0006",
+   "case_no": "DEMO-MC/2026/0377",
+   "plot_id": "M902-BS-3101",
+   "filed_date": "2026-08-20",
+   "status": "pending",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2026/0612",
+   "basis_deed_date": "2026-08-01",
+   "from_id": "P-0017",
+   "to_id": "P-0018",
+   "quantity_raw": "15 decimal",
+   "decided_date": null
+  },
+  {
+   "id": "MC-0007",
+   "case_no": "DEMO-MC/2026/0150",
+   "plot_id": "M902-BS-3105",
+   "filed_date": "2026-03-12",
+   "status": "approved",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2026/0301",
+   "basis_deed_date": "2026-03-05",
+   "from_id": "P-0019",
+   "to_id": "P-0020",
+   "quantity_raw": "10 decimal",
+   "decided_date": "2026-04-02"
+  },
+  {
+   "id": "MC-0008",
+   "case_no": "DEMO-MC/2026/0190",
+   "plot_id": "M902-BS-3105",
+   "filed_date": "2026-04-15",
+   "status": "approved",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2026/0388",
+   "basis_deed_date": "2026-04-10",
+   "from_id": "P-0020",
+   "to_id": "P-0021",
+   "quantity_raw": "10 decimal",
+   "decided_date": "2026-05-06"
+  },
+  {
+   "id": "MC-0009",
+   "case_no": "DEMO-MC/2026/0230",
+   "plot_id": "M902-BS-3105",
+   "filed_date": "2026-05-25",
+   "status": "approved",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2026/0455",
+   "basis_deed_date": "2026-05-20",
+   "from_id": "P-0021",
+   "to_id": "P-0022",
+   "quantity_raw": "10 decimal",
+   "decided_date": "2026-06-15"
+  },
+  {
+   "id": "MC-0010",
+   "case_no": "DEMO-MC/2026/0399",
+   "plot_id": "M901-BS-1215",
+   "filed_date": "2026-08-01",
+   "status": "pending",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2026/0702",
+   "basis_deed_date": "2026-07-15",
+   "from_id": "P-0025",
+   "to_id": "P-0026",
+   "quantity_raw": "10 decimal",
+   "decided_date": null
+  },
+  {
+   "id": "MC-0011",
+   "case_no": "DEMO-MC/2024/0301",
+   "plot_id": "M903-BS-2105",
+   "filed_date": "2024-05-20",
+   "status": "approved",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2024/0222",
+   "basis_deed_date": "2024-05-05",
+   "from_id": "P-0027",
+   "to_id": "P-0029",
+   "quantity_raw": "5 decimal",
+   "decided_date": "2024-06-10"
+  },
+  {
+   "id": "MC-0012",
+   "case_no": "DEMO-MC/2026/0425",
+   "plot_id": "M903-BS-2105",
+   "filed_date": "2026-08-25",
+   "status": "pending",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2026/0801",
+   "basis_deed_date": "2026-08-10",
+   "from_id": "P-0028",
+   "to_id": "P-0030",
+   "quantity_raw": "8 decimal",
+   "decided_date": null
+  },
+  {
+   "id": "MC-0013",
+   "case_no": "DEMO-MC/2026/0410",
+   "plot_id": "M901-BS-1301",
+   "filed_date": "2026-08-10",
+   "status": "pending",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2026/0640",
+   "basis_deed_date": "2026-07-20",
+   "from_id": "P-0031",
+   "to_id": "P-0032",
+   "quantity_raw": "12 decimal",
+   "decided_date": null
+  },
+  {
+   "id": "MC-0014",
+   "case_no": "DEMO-MC/2026/0412",
+   "plot_id": "M901-BS-1220",
+   "filed_date": "2026-08-12",
+   "status": "pending",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2026/0655",
+   "basis_deed_date": "2026-07-25",
+   "from_id": "P-0033",
+   "to_id": "P-0034",
+   "quantity_raw": "1 bigha",
+   "decided_date": null
+  },
+  {
+   "id": "MC-0015",
+   "case_no": "DEMO-MC/2026/0415",
+   "plot_id": "M902-BS-3110",
+   "filed_date": "2026-08-20",
+   "status": "pending",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2026/0590",
+   "basis_deed_date": "2026-08-05",
+   "from_id": "P-0037",
+   "to_id": "P-0039",
+   "quantity_raw": "12 decimal",
+   "decided_date": null
+  },
+  {
+   "id": "MC-0016",
+   "case_no": "DEMO-MC/2026/0420",
+   "plot_id": "M902-BS-3115",
+   "filed_date": "2026-08-30",
+   "status": "pending",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2026/0700",
+   "basis_deed_date": "2026-08-15",
+   "from_id": "P-0041",
+   "to_id": "P-0043",
+   "quantity_raw": "10 decimal",
+   "decided_date": null
+  },
+  {
+   "id": "MC-0017",
+   "case_no": "DEMO-MC/2026/0402",
+   "plot_id": "M901-BS-1225",
+   "filed_date": "2026-08-16",
+   "status": "pending",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2026/0710",
+   "basis_deed_date": "2026-08-02",
+   "from_id": "P-0045",
+   "to_id": "P-0046",
+   "quantity_raw": "5 decimal",
+   "decided_date": null
+  },
+  {
+   "id": "MC-0018",
+   "case_no": "DEMO-MC/2026/0421",
+   "plot_id": "M902-BS-3120",
+   "filed_date": "2026-08-22",
+   "status": "pending",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2026/0720",
+   "basis_deed_date": "2026-08-08",
+   "from_id": "P-0047",
+   "to_id": "P-0049",
+   "quantity_raw": "২৫ শতাংশ",
+   "decided_date": null
+  },
+  {
+   "id": "MC-0019",
+   "case_no": "DEMO-MC/2026/0422",
+   "plot_id": "M901-BS-1230",
+   "filed_date": "2026-08-24",
+   "status": "pending",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2026/0730",
+   "basis_deed_date": "2026-08-09",
+   "from_id": "P-0051",
+   "to_id": "P-0054",
+   "quantity_raw": "16.67 decimal",
+   "decided_date": null
+  },
+  {
+   "id": "MC-0020",
+   "case_no": "DEMO-MC/2025/0210",
+   "plot_id": "M901-BS-1235",
+   "filed_date": "2025-03-15",
+   "status": "approved",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2025/0505",
+   "basis_deed_date": "2025-03-03",
+   "from_id": "P-0055",
+   "to_id": "P-0056",
+   "quantity_raw": "30 decimal",
+   "decided_date": "2025-04-10"
+  },
+  {
+   "id": "MC-0021",
+   "case_no": "DEMO-MC/2026/0428",
+   "plot_id": "M901-BS-1235",
+   "filed_date": "2026-09-01",
+   "status": "pending",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2026/0745",
+   "basis_deed_date": "2026-08-18",
+   "from_id": "P-0055",
+   "to_id": "P-0057",
+   "quantity_raw": "10 decimal",
+   "decided_date": null
+  },
+  {
+   "id": "MC-0022",
+   "case_no": "DEMO-MC/2019/9559",
+   "plot_id": "M901-BS-1400",
+   "filed_date": "2019-03-19",
+   "status": "approved",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2019/4658",
+   "basis_deed_date": "2019-03-12",
+   "from_id": "P-0061",
+   "to_id": "P-0063",
+   "quantity_raw": "8.5 decimal",
+   "decided_date": "2019-04-21"
+  },
+  {
+   "id": "MC-0023",
+   "case_no": "DEMO-MC/2023/5020",
+   "plot_id": "M901-BS-1400",
+   "filed_date": "2023-07-23",
+   "status": "approved",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2023/8226",
+   "basis_deed_date": "2023-07-19",
+   "from_id": "P-0062",
+   "to_id": "P-0064",
+   "quantity_raw": "8.5 decimal",
+   "decided_date": "2023-08-31"
+  },
+  {
+   "id": "MC-0024",
+   "case_no": "DEMO-MC/2021/8254",
+   "plot_id": "M902-BS-3201",
+   "filed_date": "2021-07-20",
+   "status": "approved",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2021/6148",
+   "basis_deed_date": "2021-07-16",
+   "from_id": "P-0065",
+   "to_id": "P-0068",
+   "quantity_raw": "5.0 decimal",
+   "decided_date": "2021-08-17"
+  },
+  {
+   "id": "MC-0025",
+   "case_no": "DEMO-MC/2020/5625",
+   "plot_id": "M902-BS-3201",
+   "filed_date": "2020-04-13",
+   "status": "approved",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2020/9414",
+   "basis_deed_date": "2020-04-05",
+   "from_id": "P-0067",
+   "to_id": "P-0069",
+   "quantity_raw": "5.0 decimal",
+   "decided_date": "2020-05-26"
+  },
+  {
+   "id": "MC-0026",
+   "case_no": "DEMO-MC/2017/8021",
+   "plot_id": "M901-BS-1402",
+   "filed_date": "2017-08-18",
+   "status": "approved",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2017/6062",
+   "basis_deed_date": "2017-08-15",
+   "from_id": "P-0070",
+   "to_id": "P-0072",
+   "quantity_raw": "15.5 decimal",
+   "decided_date": "2017-09-18"
+  },
+  {
+   "id": "MC-0027",
+   "case_no": "DEMO-MC/2026/5953",
+   "plot_id": "M901-BS-1402",
+   "filed_date": "2026-08-24",
+   "status": "pending",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2026/9166",
+   "basis_deed_date": "2026-08-15",
+   "from_id": "P-0071",
+   "to_id": "P-0073",
+   "quantity_raw": "15.5 decimal",
+   "decided_date": null
+  },
+  {
+   "id": "MC-0028",
+   "case_no": "DEMO-MC/2025/8440",
+   "plot_id": "M902-BS-3203",
+   "filed_date": "2025-12-12",
+   "status": "approved",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2025/5237",
+   "basis_deed_date": "2025-12-03",
+   "from_id": "P-0074",
+   "to_id": "P-0076",
+   "quantity_raw": "18.5 decimal",
+   "decided_date": "2026-01-19"
+  },
+  {
+   "id": "MC-0029",
+   "case_no": "DEMO-MC/2025/6839",
+   "plot_id": "M902-BS-3203",
+   "filed_date": "2025-11-13",
+   "status": "approved",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2025/1415",
+   "basis_deed_date": "2025-11-06",
+   "from_id": "P-0075",
+   "to_id": "P-0077",
+   "quantity_raw": "18.5 decimal",
+   "decided_date": "2025-12-27"
+  },
+  {
+   "id": "MC-0030",
+   "case_no": "DEMO-MC/2020/8949",
+   "plot_id": "M901-BS-1404",
+   "filed_date": "2020-11-12",
+   "status": "approved",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2020/8701",
+   "basis_deed_date": "2020-11-08",
+   "from_id": "P-0078",
+   "to_id": "P-0080",
+   "quantity_raw": "10.5 decimal",
+   "decided_date": "2020-12-30"
+  },
+  {
+   "id": "MC-0031",
+   "case_no": "DEMO-MC/2021/7520",
+   "plot_id": "M902-BS-3205",
+   "filed_date": "2021-11-17",
+   "status": "approved",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2021/7587",
+   "basis_deed_date": "2021-11-09",
+   "from_id": "P-0081",
+   "to_id": "P-0083",
+   "quantity_raw": "10.5 decimal",
+   "decided_date": "2021-12-24"
+  },
+  {
+   "id": "MC-0032",
+   "case_no": "DEMO-MC/2024/6659",
+   "plot_id": "M902-BS-3205",
+   "filed_date": "2024-06-05",
+   "status": "approved",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2024/7585",
+   "basis_deed_date": "2024-05-30",
+   "from_id": "P-0082",
+   "to_id": "P-0084",
+   "quantity_raw": "7.0 decimal",
+   "decided_date": "2024-07-04"
+  },
+  {
+   "id": "MC-0033",
+   "case_no": "DEMO-MC/2021/8977",
+   "plot_id": "M902-BS-3207",
+   "filed_date": "2021-04-21",
+   "status": "approved",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2021/5261",
+   "basis_deed_date": "2021-04-13",
+   "from_id": "P-0086",
+   "to_id": "P-0088",
+   "quantity_raw": "24.0 decimal",
+   "decided_date": "2021-05-25"
+  },
+  {
+   "id": "MC-0034",
+   "case_no": "DEMO-MC/2023/7376",
+   "plot_id": "M902-BS-3207",
+   "filed_date": "2023-12-08",
+   "status": "approved",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2023/1550",
+   "basis_deed_date": "2023-11-29",
+   "from_id": "P-0087",
+   "to_id": "P-0089",
+   "quantity_raw": "24.0 decimal",
+   "decided_date": "2024-01-07"
+  },
+  {
+   "id": "MC-0035",
+   "case_no": "DEMO-MC/2021/6499",
+   "plot_id": "M901-BS-1408",
+   "filed_date": "2021-11-01",
+   "status": "approved",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2021/5240",
+   "basis_deed_date": "2021-10-26",
+   "from_id": "P-0090",
+   "to_id": "P-0092",
+   "quantity_raw": "9.5 decimal",
+   "decided_date": "2021-12-04"
+  },
+  {
+   "id": "MC-0036",
+   "case_no": "DEMO-MC/2016/8032",
+   "plot_id": "M901-BS-1408",
+   "filed_date": "2016-10-11",
+   "status": "approved",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2016/5365",
+   "basis_deed_date": "2016-10-05",
+   "from_id": "P-0091",
+   "to_id": "P-0093",
+   "quantity_raw": "29.0 decimal",
+   "decided_date": "2016-11-03"
+  },
+  {
+   "id": "MC-0037",
+   "case_no": "DEMO-MC/2021/5365",
+   "plot_id": "M901-BS-1410",
+   "filed_date": "2021-04-12",
+   "status": "approved",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2021/5060",
+   "basis_deed_date": "2021-04-09",
+   "from_id": "P-0096",
+   "to_id": "P-0098",
+   "quantity_raw": "5.0 decimal",
+   "decided_date": "2021-05-26"
+  },
+  {
+   "id": "MC-0038",
+   "case_no": "DEMO-MC/2023/7567",
+   "plot_id": "M901-BS-1410",
+   "filed_date": "2023-01-21",
+   "status": "approved",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2023/3535",
+   "basis_deed_date": "2023-01-18",
+   "from_id": "P-0097",
+   "to_id": "P-0099",
+   "quantity_raw": "5.0 decimal",
+   "decided_date": "2023-03-03"
+  },
+  {
+   "id": "MC-0039",
+   "case_no": "DEMO-MC/2022/6074",
+   "plot_id": "M902-BS-3211",
+   "filed_date": "2022-07-24",
+   "status": "approved",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2022/8749",
+   "basis_deed_date": "2022-07-17",
+   "from_id": "P-0100",
+   "to_id": "P-0102",
+   "quantity_raw": "11.5 decimal",
+   "decided_date": "2022-09-01"
+  },
+  {
+   "id": "MC-0040",
+   "case_no": "DEMO-MC/2021/6311",
+   "plot_id": "M902-BS-3211",
+   "filed_date": "2021-01-03",
+   "status": "approved",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2020/7844",
+   "basis_deed_date": "2020-12-26",
+   "from_id": "P-0101",
+   "to_id": "P-0103",
+   "quantity_raw": "35.0 decimal",
+   "decided_date": "2021-02-21"
+  },
+  {
+   "id": "MC-0041",
+   "case_no": "DEMO-MC/2021/6611",
+   "plot_id": "M901-BS-1412",
+   "filed_date": "2021-09-24",
+   "status": "approved",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2021/9520",
+   "basis_deed_date": "2021-09-15",
+   "from_id": "P-0104",
+   "to_id": "P-0107",
+   "quantity_raw": "6.0 decimal",
+   "decided_date": "2021-10-26"
+  },
+  {
+   "id": "MC-0042",
+   "case_no": "DEMO-MC/2016/8899",
+   "plot_id": "M902-BS-3213",
+   "filed_date": "2016-05-07",
+   "status": "approved",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2016/1419",
+   "basis_deed_date": "2016-04-30",
+   "from_id": "P-0108",
+   "to_id": "P-0111",
+   "quantity_raw": "4.5 decimal",
+   "decided_date": "2016-06-06"
+  },
+  {
+   "id": "MC-0043",
+   "case_no": "DEMO-MC/2017/9682",
+   "plot_id": "M902-BS-3213",
+   "filed_date": "2017-06-02",
+   "status": "approved",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2017/9152",
+   "basis_deed_date": "2017-05-27",
+   "from_id": "P-0109",
+   "to_id": "P-0112",
+   "quantity_raw": "4.5 decimal",
+   "decided_date": "2017-07-11"
+  },
+  {
+   "id": "MC-0044",
+   "case_no": "DEMO-MC/2026/7755",
+   "plot_id": "M902-BS-3213",
+   "filed_date": "2026-08-25",
+   "status": "pending",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2026/4391",
+   "basis_deed_date": "2026-08-19",
+   "from_id": "P-0110",
+   "to_id": "P-0113",
+   "quantity_raw": "4.5 decimal",
+   "decided_date": null
+  },
+  {
+   "id": "MC-0045",
+   "case_no": "DEMO-MC/2026/6420",
+   "plot_id": "M901-BS-1414",
+   "filed_date": "2026-08-31",
+   "status": "pending",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2026/1559",
+   "basis_deed_date": "2026-08-27",
+   "from_id": "P-0114",
+   "to_id": "P-0116",
+   "quantity_raw": "19.5 decimal",
+   "decided_date": null
+  },
+  {
+   "id": "MC-0046",
+   "case_no": "DEMO-MC/2021/9341",
+   "plot_id": "M902-BS-3215",
+   "filed_date": "2021-06-23",
+   "status": "approved",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2021/1335",
+   "basis_deed_date": "2021-06-19",
+   "from_id": "P-0117",
+   "to_id": "P-0119",
+   "quantity_raw": "11.0 decimal",
+   "decided_date": "2021-07-19"
+  },
+  {
+   "id": "MC-0047",
+   "case_no": "DEMO-MC/2017/6523",
+   "plot_id": "M902-BS-3215",
+   "filed_date": "2017-08-10",
+   "status": "approved",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2017/3627",
+   "basis_deed_date": "2017-08-02",
+   "from_id": "P-0118",
+   "to_id": "P-0120",
+   "quantity_raw": "33.0 decimal",
+   "decided_date": "2017-09-11"
+  },
+  {
+   "id": "MC-0048",
+   "case_no": "DEMO-MC/2021/6449",
+   "plot_id": "M902-BS-3217",
+   "filed_date": "2021-09-20",
+   "status": "approved",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2021/5713",
+   "basis_deed_date": "2021-09-14",
+   "from_id": "P-0124",
+   "to_id": "P-0126",
+   "quantity_raw": "9.5 decimal",
+   "decided_date": "2021-10-20"
+  },
+  {
+   "id": "MC-0049",
+   "case_no": "DEMO-MC/2022/7243",
+   "plot_id": "M902-BS-3217",
+   "filed_date": "2022-12-24",
+   "status": "approved",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2022/9596",
+   "basis_deed_date": "2022-12-15",
+   "from_id": "P-0125",
+   "to_id": "P-0127",
+   "quantity_raw": "9.5 decimal",
+   "decided_date": "2023-02-08"
+  },
+  {
+   "id": "MC-0050",
+   "case_no": "DEMO-MC/2020/6284",
+   "plot_id": "M902-BS-3219",
+   "filed_date": "2020-02-07",
+   "status": "approved",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2020/1445",
+   "basis_deed_date": "2020-02-02",
+   "from_id": "P-0130",
+   "to_id": "P-0132",
+   "quantity_raw": "9.5 decimal",
+   "decided_date": "2020-03-09"
+  },
+  {
+   "id": "MC-0051",
+   "case_no": "DEMO-MC/2020/7297",
+   "plot_id": "M902-BS-3219",
+   "filed_date": "2020-06-27",
+   "status": "approved",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2020/2797",
+   "basis_deed_date": "2020-06-20",
+   "from_id": "P-0131",
+   "to_id": "P-0133",
+   "quantity_raw": "29.0 decimal",
+   "decided_date": "2020-08-03"
+  },
+  {
+   "id": "MC-0052",
+   "case_no": "DEMO-MC/2019/7568",
+   "plot_id": "M901-BS-1422",
+   "filed_date": "2019-02-21",
+   "status": "approved",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2019/2741",
+   "basis_deed_date": "2019-02-14",
+   "from_id": "P-0138",
+   "to_id": "P-0139",
+   "quantity_raw": "37.5 decimal",
+   "decided_date": "2019-03-21"
+  },
+  {
+   "id": "MC-0053",
+   "case_no": "DEMO-MC/2026/8372",
+   "plot_id": "M902-BS-3223",
+   "filed_date": "2026-09-08",
+   "status": "pending",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2026/2030",
+   "basis_deed_date": "2026-09-05",
+   "from_id": "P-0140",
+   "to_id": "P-0143",
+   "quantity_raw": "15.5 decimal",
+   "decided_date": null
+  },
+  {
+   "id": "MC-0054",
+   "case_no": "DEMO-MC/2018/5469",
+   "plot_id": "M902-BS-3223",
+   "filed_date": "2018-12-06",
+   "status": "approved",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2018/7791",
+   "basis_deed_date": "2018-12-03",
+   "from_id": "P-0141",
+   "to_id": "P-0144",
+   "quantity_raw": "15.5 decimal",
+   "decided_date": "2018-12-29"
+  },
+  {
+   "id": "MC-0055",
+   "case_no": "DEMO-MC/2019/8735",
+   "plot_id": "M901-BS-1424",
+   "filed_date": "2019-12-29",
+   "status": "approved",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2019/6160",
+   "basis_deed_date": "2019-12-20",
+   "from_id": "P-0145",
+   "to_id": "P-0146",
+   "quantity_raw": "29.5 decimal",
+   "decided_date": "2020-02-06"
+  },
+  {
+   "id": "MC-0056",
+   "case_no": "DEMO-MC/2022/5978",
+   "plot_id": "M902-BS-3225",
+   "filed_date": "2022-06-23",
+   "status": "approved",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2022/8580",
+   "basis_deed_date": "2022-06-17",
+   "from_id": "P-0147",
+   "to_id": "P-0148",
+   "quantity_raw": "50.0 decimal",
+   "decided_date": "2022-08-03"
+  },
+  {
+   "id": "MC-0057",
+   "case_no": "DEMO-MC/2023/8577",
+   "plot_id": "M901-BS-1426",
+   "filed_date": "2023-04-28",
+   "status": "approved",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2023/6837",
+   "basis_deed_date": "2023-04-25",
+   "from_id": "P-0149",
+   "to_id": "P-0151",
+   "quantity_raw": "20.0 decimal",
+   "decided_date": "2023-06-15"
+  },
+  {
+   "id": "MC-0058",
+   "case_no": "DEMO-MC/2019/8413",
+   "plot_id": "M902-BS-3227",
+   "filed_date": "2019-06-10",
+   "status": "approved",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2019/5865",
+   "basis_deed_date": "2019-06-01",
+   "from_id": "P-0152",
+   "to_id": "P-0155",
+   "quantity_raw": "18.0 decimal",
+   "decided_date": "2019-07-10"
+  },
+  {
+   "id": "MC-0059",
+   "case_no": "DEMO-MC/2026/5459",
+   "plot_id": "M902-BS-3227",
+   "filed_date": "2026-09-07",
+   "status": "pending",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2026/4234",
+   "basis_deed_date": "2026-08-31",
+   "from_id": "P-0153",
+   "to_id": "P-0156",
+   "quantity_raw": "18.0 decimal",
+   "decided_date": null
+  },
+  {
+   "id": "MC-0060",
+   "case_no": "DEMO-MC/2026/5305",
+   "plot_id": "M902-BS-3227",
+   "filed_date": "2026-08-16",
+   "status": "pending",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2026/3010",
+   "basis_deed_date": "2026-08-13",
+   "from_id": "P-0154",
+   "to_id": "P-0157",
+   "quantity_raw": "18.0 decimal",
+   "decided_date": null
+  },
+  {
+   "id": "MC-0061",
+   "case_no": "DEMO-MC/2023/9736",
+   "plot_id": "M901-BS-1428",
+   "filed_date": "2023-06-12",
+   "status": "approved",
+   "basis_office": "DEMO-SRO",
+   "basis_deed_no": "2023/1471",
+   "basis_deed_date": "2023-06-06",
+   "from_id": "P-0158",
+   "to_id": "P-0161",
+   "quantity_raw": "6.0 decimal",
+   "decided_date": "2023-07-06"
+  }
+ ],
+ "expected": [
+  {
+   "object_type": "plot",
+   "object_id": "M901-BS-1101",
+   "status": "NO_CONFLICT",
+   "codes": [],
+   "scenario": "S01",
+   "description": "Sale within share; mutation approved"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M901-BS-1201",
+   "status": "CONFLICT",
+   "codes": [
+    "OVER_TRANSFER",
+    "RECORD_LAG"
+   ],
+   "scenario": "S02",
+   "description": "Second deed exceeds remaining share by 10 decimal; first deed never mutated"
+  },
+  {
+   "object_type": "case",
+   "object_id": "MC-0002",
+   "status": "CONFLICT",
+   "codes": [
+    "OVER_TRANSFER"
+   ],
+   "scenario": "S02",
+   "description": "Application relies on the conflicting second deed"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M901-BS-1205",
+   "status": "CONFLICT",
+   "codes": [
+    "OVER_TRANSFER"
+   ],
+   "scenario": "S03",
+   "description": "20 decimal sold from a 15 decimal share"
+  },
+  {
+   "object_type": "case",
+   "object_id": "MC-0003",
+   "status": "CONFLICT",
+   "codes": [
+    "OVER_TRANSFER"
+   ],
+   "scenario": "S03",
+   "description": "Mutation would record 5 decimal more than held"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M901-BS-1210",
+   "status": "CONFLICT",
+   "codes": [
+    "DEED_NOT_IN_INDEX"
+   ],
+   "scenario": "S04",
+   "description": "Cited deed absent from a covered index"
+  },
+  {
+   "object_type": "case",
+   "object_id": "MC-0004",
+   "status": "CONFLICT",
+   "codes": [
+    "DEED_NOT_IN_INDEX"
+   ],
+   "scenario": "S04",
+   "description": "Verify deed with Sub-Registry before mutation"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M903-BS-2101",
+   "status": "INCOMPLETE",
+   "codes": [
+    "CITED_DEED_UNVERIFIABLE",
+    "COVERAGE_GAP"
+   ],
+   "scenario": "S05",
+   "description": "Index starts 2016; 2008 deed and 2005-2015 transfers unknown"
+  },
+  {
+   "object_type": "case",
+   "object_id": "MC-0005",
+   "status": "INCOMPLETE",
+   "codes": [
+    "CITED_DEED_UNVERIFIABLE",
+    "COVERAGE_GAP"
+   ],
+   "scenario": "S05",
+   "description": "Needs manual search of paper volumes"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M902-BS-3101",
+   "status": "CONFLICT",
+   "codes": [
+    "MUTATION_MISMATCH"
+   ],
+   "scenario": "S06",
+   "description": "Deed says 10 decimal; application says 15"
+  },
+  {
+   "object_type": "case",
+   "object_id": "MC-0006",
+   "status": "CONFLICT",
+   "codes": [
+    "MUTATION_MISMATCH"
+   ],
+   "scenario": "S06",
+   "description": "Quantity mismatch"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M902-BS-3105",
+   "status": "ATTENTION",
+   "codes": [
+    "RAPID_RESALE"
+   ],
+   "scenario": "S07",
+   "description": "Resold after 36 and 40 days; context, not a conflict"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M901-BS-1215",
+   "status": "INCOMPLETE",
+   "codes": [
+    "NO_RECORDED_SOURCE"
+   ],
+   "scenario": "S08",
+   "description": "Seller's title not in supplied records"
+  },
+  {
+   "object_type": "case",
+   "object_id": "MC-0010",
+   "status": "INCOMPLETE",
+   "codes": [
+    "NO_RECORDED_SOURCE"
+   ],
+   "scenario": "S08",
+   "description": "Ask for seller's source documents"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M903-BS-2105",
+   "status": "INCOMPLETE",
+   "codes": [
+    "COVERAGE_GAP"
+   ],
+   "scenario": "S09",
+   "description": "No conflict seen, but 2010-2015 not indexed"
+  },
+  {
+   "object_type": "case",
+   "object_id": "MC-0012",
+   "status": "INCOMPLETE",
+   "codes": [
+    "COVERAGE_GAP"
+   ],
+   "scenario": "S09",
+   "description": "Clean-looking case still incomplete"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M901-BS-1301",
+   "status": "INCOMPLETE",
+   "codes": [
+    "AMBIGUOUS_REFERENCE"
+   ],
+   "scenario": "S10",
+   "description": "Cannot tell which BS dag was sold"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M901-BS-1302",
+   "status": "INCOMPLETE",
+   "codes": [
+    "AMBIGUOUS_REFERENCE"
+   ],
+   "scenario": "S10",
+   "description": "Cannot tell which BS dag was sold"
+  },
+  {
+   "object_type": "case",
+   "object_id": "MC-0013",
+   "status": "INCOMPLETE",
+   "codes": [
+    "AMBIGUOUS_REFERENCE"
+   ],
+   "scenario": "S10",
+   "description": "Needs surveyor/crosswalk confirmation"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M901-BS-1220",
+   "status": "INCOMPLETE",
+   "codes": [
+    "UNIT_UNRESOLVED"
+   ],
+   "scenario": "S11",
+   "description": "Bigha size varies; not guessed"
+  },
+  {
+   "object_type": "case",
+   "object_id": "MC-0014",
+   "status": "INCOMPLETE",
+   "codes": [
+    "UNIT_UNRESOLVED"
+   ],
+   "scenario": "S11",
+   "description": "Confirm local bigha definition"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M902-BS-3110",
+   "status": "NO_CONFLICT",
+   "codes": [],
+   "scenario": "S12",
+   "description": "Heir sells exactly her 12 decimal"
+  },
+  {
+   "object_type": "case",
+   "object_id": "MC-0015",
+   "status": "NO_CONFLICT",
+   "codes": [],
+   "scenario": "S12",
+   "description": "Inheritance chain closes"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M902-BS-3115",
+   "status": "INCOMPLETE",
+   "codes": [
+    "INHERITANCE_SHARES_INCOMPLETE",
+    "NO_RECORDED_SOURCE"
+   ],
+   "scenario": "S13",
+   "description": "Certificate covers 5/6; heir's share unknown"
+  },
+  {
+   "object_type": "case",
+   "object_id": "MC-0016",
+   "status": "INCOMPLETE",
+   "codes": [
+    "INHERITANCE_SHARES_INCOMPLETE",
+    "NO_RECORDED_SOURCE"
+   ],
+   "scenario": "S13",
+   "description": "Obtain complete heir list"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M901-BS-1225",
+   "status": "CONFLICT",
+   "codes": [
+    "SHARE_TOTAL_MISMATCH"
+   ],
+   "scenario": "S14",
+   "description": "Recorded shares sum to 5/4"
+  },
+  {
+   "object_type": "case",
+   "object_id": "MC-0017",
+   "status": "CONFLICT",
+   "codes": [
+    "SHARE_TOTAL_MISMATCH"
+   ],
+   "scenario": "S14",
+   "description": "Record must be corrected first"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M902-BS-3120",
+   "status": "NO_CONFLICT",
+   "codes": [],
+   "scenario": "S15",
+   "description": "27.5 decimal share; 25 decimal sold; units agree"
+  },
+  {
+   "object_type": "case",
+   "object_id": "MC-0018",
+   "status": "NO_CONFLICT",
+   "codes": [],
+   "scenario": "S15",
+   "description": "0.25 acre equals 25 shotangsho"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M901-BS-1230",
+   "status": "NO_CONFLICT",
+   "codes": [],
+   "scenario": "S16",
+   "description": "16.67 vs 16.6667 is rounding, not over-sale"
+  },
+  {
+   "object_type": "case",
+   "object_id": "MC-0019",
+   "status": "NO_CONFLICT",
+   "codes": [],
+   "scenario": "S16",
+   "description": "No false positive from rounding"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M901-BS-1235",
+   "status": "CONFLICT",
+   "codes": [
+    "OVER_TRANSFER"
+   ],
+   "scenario": "S17",
+   "description": "Seller holds nothing after 2025 sale"
+  },
+  {
+   "object_type": "case",
+   "object_id": "MC-0021",
+   "status": "CONFLICT",
+   "codes": [
+    "OVER_TRANSFER"
+   ],
+   "scenario": "S17",
+   "description": "Zero remaining share"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M902-BS-3125",
+   "status": "ATTENTION",
+   "codes": [
+    "RECORD_LAG"
+   ],
+   "scenario": "S18",
+   "description": "Khatian still shows seller 330 days later"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M901-BS-1400",
+   "status": "NO_CONFLICT",
+   "codes": [],
+   "scenario": "BG",
+   "description": "Generated clean plot"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M902-BS-3201",
+   "status": "NO_CONFLICT",
+   "codes": [],
+   "scenario": "BG",
+   "description": "Generated clean plot"
+  },
+  {
+   "object_type": "case",
+   "object_id": "MC-0027",
+   "status": "NO_CONFLICT",
+   "codes": [],
+   "scenario": "BG",
+   "description": "Recent clean sale"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M901-BS-1402",
+   "status": "NO_CONFLICT",
+   "codes": [],
+   "scenario": "BG",
+   "description": "Generated clean plot"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M902-BS-3203",
+   "status": "NO_CONFLICT",
+   "codes": [],
+   "scenario": "BG",
+   "description": "Generated clean plot"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M901-BS-1404",
+   "status": "NO_CONFLICT",
+   "codes": [],
+   "scenario": "BG",
+   "description": "Generated clean plot"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M902-BS-3205",
+   "status": "NO_CONFLICT",
+   "codes": [],
+   "scenario": "BG",
+   "description": "Generated clean plot"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M901-BS-1406",
+   "status": "NO_CONFLICT",
+   "codes": [],
+   "scenario": "BG",
+   "description": "Generated clean plot"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M902-BS-3207",
+   "status": "NO_CONFLICT",
+   "codes": [],
+   "scenario": "BG",
+   "description": "Generated clean plot"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M901-BS-1408",
+   "status": "NO_CONFLICT",
+   "codes": [],
+   "scenario": "BG",
+   "description": "Generated clean plot"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M902-BS-3209",
+   "status": "NO_CONFLICT",
+   "codes": [],
+   "scenario": "BG",
+   "description": "Generated clean plot"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M901-BS-1410",
+   "status": "NO_CONFLICT",
+   "codes": [],
+   "scenario": "BG",
+   "description": "Generated clean plot"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M902-BS-3211",
+   "status": "NO_CONFLICT",
+   "codes": [],
+   "scenario": "BG",
+   "description": "Generated clean plot"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M901-BS-1412",
+   "status": "NO_CONFLICT",
+   "codes": [],
+   "scenario": "BG",
+   "description": "Generated clean plot"
+  },
+  {
+   "object_type": "case",
+   "object_id": "MC-0044",
+   "status": "NO_CONFLICT",
+   "codes": [],
+   "scenario": "BG",
+   "description": "Recent clean sale"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M902-BS-3213",
+   "status": "NO_CONFLICT",
+   "codes": [],
+   "scenario": "BG",
+   "description": "Generated clean plot"
+  },
+  {
+   "object_type": "case",
+   "object_id": "MC-0045",
+   "status": "NO_CONFLICT",
+   "codes": [],
+   "scenario": "BG",
+   "description": "Recent clean sale"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M901-BS-1414",
+   "status": "NO_CONFLICT",
+   "codes": [],
+   "scenario": "BG",
+   "description": "Generated clean plot"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M902-BS-3215",
+   "status": "NO_CONFLICT",
+   "codes": [],
+   "scenario": "BG",
+   "description": "Generated clean plot"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M901-BS-1416",
+   "status": "NO_CONFLICT",
+   "codes": [],
+   "scenario": "BG",
+   "description": "Generated clean plot"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M902-BS-3217",
+   "status": "NO_CONFLICT",
+   "codes": [],
+   "scenario": "BG",
+   "description": "Generated clean plot"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M901-BS-1418",
+   "status": "NO_CONFLICT",
+   "codes": [],
+   "scenario": "BG",
+   "description": "Generated clean plot"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M902-BS-3219",
+   "status": "NO_CONFLICT",
+   "codes": [],
+   "scenario": "BG",
+   "description": "Generated clean plot"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M901-BS-1420",
+   "status": "NO_CONFLICT",
+   "codes": [],
+   "scenario": "BG",
+   "description": "Generated clean plot"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M902-BS-3221",
+   "status": "NO_CONFLICT",
+   "codes": [],
+   "scenario": "BG",
+   "description": "Generated clean plot"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M901-BS-1422",
+   "status": "NO_CONFLICT",
+   "codes": [],
+   "scenario": "BG",
+   "description": "Generated clean plot"
+  },
+  {
+   "object_type": "case",
+   "object_id": "MC-0053",
+   "status": "NO_CONFLICT",
+   "codes": [],
+   "scenario": "BG",
+   "description": "Recent clean sale"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M902-BS-3223",
+   "status": "NO_CONFLICT",
+   "codes": [],
+   "scenario": "BG",
+   "description": "Generated clean plot"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M901-BS-1424",
+   "status": "NO_CONFLICT",
+   "codes": [],
+   "scenario": "BG",
+   "description": "Generated clean plot"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M902-BS-3225",
+   "status": "NO_CONFLICT",
+   "codes": [],
+   "scenario": "BG",
+   "description": "Generated clean plot"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M901-BS-1426",
+   "status": "NO_CONFLICT",
+   "codes": [],
+   "scenario": "BG",
+   "description": "Generated clean plot"
+  },
+  {
+   "object_type": "case",
+   "object_id": "MC-0059",
+   "status": "NO_CONFLICT",
+   "codes": [],
+   "scenario": "BG",
+   "description": "Recent clean sale"
+  },
+  {
+   "object_type": "case",
+   "object_id": "MC-0060",
+   "status": "NO_CONFLICT",
+   "codes": [],
+   "scenario": "BG",
+   "description": "Recent clean sale"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M902-BS-3227",
+   "status": "NO_CONFLICT",
+   "codes": [],
+   "scenario": "BG",
+   "description": "Generated clean plot"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M901-BS-1428",
+   "status": "NO_CONFLICT",
+   "codes": [],
+   "scenario": "BG",
+   "description": "Generated clean plot"
+  },
+  {
+   "object_type": "plot",
+   "object_id": "M902-BS-3229",
+   "status": "NO_CONFLICT",
+   "codes": [],
+   "scenario": "BG",
+   "description": "Generated clean plot"
+  }
+ ]
+}
