@@ -1,0 +1,226 @@
+<!doctype html>
+<!-- Export: msedge --headless=new --no-pdf-header-footer --print-to-pdf="docs/ShareTally_Concept_Note.pdf" "file:///<path>/docs/concept-note.html"
+     or open in a browser and Print → Save as PDF (A4, margins default, background graphics on). Must stay ≤ 4 pages. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ShareTally — Concept Note (LandTech 2026)</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  @page { size: A4; margin: 13mm 14mm 14mm; }
+  :root { --ink: #1c2333; --ink2: #4b5469; --rule: #d9cfbb; --paper2: #f3ecdd; --brand: #22385c; --red: #a8261d; --amber: #8f5600; --blue: #2c5797; --green: #1d6656; }
+  * { box-sizing: border-box; }
+  body { font-family: "Hind Siliguri", "Nirmala UI", system-ui, sans-serif; color: var(--ink); font-size: 9.5pt; line-height: 1.38; margin: 0; background: #fff; }
+  h1 { font-size: 17pt; margin: 0; line-height: 1.15; }
+  h2 { font-size: 11pt; margin: 9pt 0 3pt; color: var(--brand); border-bottom: 1.5px solid var(--brand); padding-bottom: 1.5pt; break-after: avoid; }
+  h3 { font-size: 9.8pt; margin: 6pt 0 2pt; break-after: avoid; }
+  p { margin: 0 0 4pt; }
+  ul, ol { margin: 0 0 4pt; padding-left: 14pt; }
+  li { margin-bottom: 1.5pt; }
+  table { border-collapse: collapse; width: 100%; margin: 3pt 0 5pt; font-size: 8.6pt; break-inside: avoid; }
+  th, td { border-bottom: 0.6pt solid var(--rule); padding: 2.2pt 4pt; text-align: left; vertical-align: top; }
+  th { background: var(--paper2); font-weight: 600; }
+  code, .mono { font-family: "IBM Plex Mono", Consolas, monospace; font-size: 8.2pt; }
+  .head { display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 3px solid #c8553d; padding-bottom: 5pt; margin-bottom: 5pt; }
+  .meta { font-size: 8.4pt; color: var(--ink2); text-align: right; line-height: 1.35; }
+  .tag { display: inline-block; font-size: 7.6pt; font-weight: 700; letter-spacing: .04em; padding: 0.5pt 5pt; border-radius: 3pt; background: var(--paper2); color: #c8553d; }
+  .callout { background: var(--paper2); border-left: 3pt solid #c8553d; padding: 4pt 7pt; margin: 4pt 0 5pt; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 9pt; }
+  .finding { border: 0.6pt solid var(--rule); border-left: 3pt solid var(--red); padding: 4pt 7pt; margin: 3pt 0 5pt; font-size: 8.8pt; }
+  .pill { display: inline-block; padding: 0 5pt; border-radius: 8pt; font-size: 7.8pt; font-weight: 600; }
+  .c { background: #fbe8e5; color: var(--red); } .i { background: #fbefd8; color: var(--amber); } .a { background: #e7eef9; color: var(--blue); } .n { background: #e1f1ec; color: var(--green); }
+  figure { margin: 4pt 0; break-inside: avoid; }
+  figure img { width: 100%; border: 0.6pt solid var(--rule); }
+  figcaption { font-size: 8pt; color: var(--ink2); }
+  .refs { font-size: 7.9pt; line-height: 1.3; }
+  .refs li { margin-bottom: 1pt; }
+  .small { font-size: 8.4pt; color: var(--ink2); }
+  .ph { background: #fff3c4; padding: 0 2pt; }
+  .avoid { break-inside: avoid; }
+</style>
+</head>
+<body>
+
+<div class="head">
+  <div>
+    <span class="tag">LANDTECH 2026 · CONCEPT NOTE</span>
+    <h1>ShareTally <span style="font-weight:500">(অংশ-হিসাব)</span><br><span style="font-size:11pt;font-weight:500">Catching double sales by tallying every share before mutation</span></h1>
+  </div>
+  <div class="meta">
+    Track: Digital Land Records, Verification &amp; Digitization<br>
+    <b>Problem statement: P3 — Fraud &amp; Double-Selling Detection</b><br>
+    Team: <span class="ph">[TEAM NAME]</span> · Submission label LA-60<br>
+    Prototype on synthetic data · October 2026
+  </div>
+</div>
+
+<h2>1. Problem statement chosen</h2>
+<p><b>P3 — Fraud &amp; Double-Selling Detection:</b> detecting the same plot sold to more than one buyer, sales beyond one's share, and mismatches between registration and mutation records. Our deployment point is the e-mutation review step (the workflow of P4), but the contribution is the detection mechanism.</p>
+
+<h2>2. The problem in the Bangladesh context</h2>
+<p>Deeds are registered at Sub-Registry offices under the Law Ministry; the record of rights (khatian) is updated through mutation at AC (Land) offices under the Ministry of Land. The LandTech rule book names this split as a root of land disputes [1]. Under the Registration Act 1908 s.52A, a sale deed is registered when the latest khatian in the seller's name, a 25-year ownership description and the seller's affidavit that they have <i>not transferred the property to any person</i> are attached [2]. The khatian changes only when someone completes mutation, and many buyers do not: in a 2018 trial across 46 upazilas only about 30% of new owners applied within three months [3]; e-mutation took 43 days on average against a 28-day target in 2022 [4].</p>
+<div class="callout"><b>The failure.</b> A seller sells 20 decimal; the buyer does not mutate; the khatian still shows the seller. The seller sells the same land again. The second deed passes the same khatian-plus-affidavit test, and its buyer may reach the mutation desk first. Detection today depends on an officer noticing — in 2026 reports, forged-deed mutations were caught by one AC (Land) officer's suspicion or reversed only after a manual check of the Sub-Registry volume [5].</div>
+<p>The fix does not require a new legal flow. The Sub-Registrar must already send a <b>Land Transfer (L.T.) notice</b> for every registered transfer (State Acquisition and Tenancy Act 1950 s.89), and the land office must open a mutation file on receiving it (s.143C) [6]. What is missing is reconciling those notices against recorded shares. Selling land beyond one's holding is now an offence (Land Crimes Prevention and Remedy Act 2023 s.4) [7]; ShareTally helps catch it <i>before</i> the record is changed. Automatic mutation and data sharing between the offices were approved in 2020, but integration was still described as a plan in 2026 [8].</p>
+
+<h2>3. Proposed solution</h2>
+<p>ShareTally treats each plot like an account of shares. Inputs: latest khatian shares, registered transfers (digital L.T. notices), succession records, mutation applications, and the dates the digital registry index covers.</p>
+<ol>
+  <li><b>Exact baseline.</b> Anna notation (16 anna = whole), decimal shares, acres, decimals and configured local units become exact fractions — no rounding drift.</li>
+  <li><b>Replay oldest first.</b> Every later transfer and inheritance is applied in date order; earlier transfers keep priority, as in Transfer of Property Act 1882 s.48 [9].</li>
+  <li><b>Conservation.</b> Nobody can pass on more than they hold → <code>OVER_TRANSFER</code>, citing the khatian entry and every earlier deed.</li>
+  <li><b>Cross-check.</b> A mutation must cite a deed that is in the registry index and matches it → <code>DEED_NOT_IN_INDEX</code>, <code>MUTATION_MISMATCH</code>.</li>
+  <li><b>Refuse to guess.</b> Index gaps, undefined local units (bigha/katha), heir shares not adding up, old-survey dags split into several plots, or sellers with no recorded source → <b>Incomplete</b>, never "clean".</li>
+</ol>
+<p>Statuses: <span class="pill c">Conflict</span> <span class="pill i">Incomplete</span> <span class="pill a">Attention</span> (record lag &gt; 90 days, quick resale — context only) <span class="pill n">No conflict in supplied records</span>. The reviewer sees evidence, a share strip and the timeline, and records a decision; ShareTally never decides ownership or labels anyone fraudulent.</p>
+
+<div class="two avoid">
+<div>
+<h3>Worked example (fictional, scenario S02)</h3>
+<table>
+  <tr><th>Record</th><th>Content</th></tr>
+  <tr><td>BS Khatian 340 (2019), JL 901 (DEMO), BS dag 1201, 60 decimal</td><td>Joynal Namuna ৮ আনা (1/2); Shirin Namuna ৮ আনা</td></tr>
+  <tr><td>Deed 2023/0457</td><td>Joynal → Mizan, 20 decimal — never mutated</td></tr>
+  <tr><td>Deed 2026/0688</td><td>Joynal → Shapla, 20 decimal</td></tr>
+  <tr><td>Mutation DEMO-MC/2026/0312</td><td>Shapla applies on deed 2026/0688</td></tr>
+</table>
+</div>
+<div>
+<h3>Output</h3>
+<div class="finding"><b>Conflict — <code>OVER_TRANSFER</code>.</b> Joynal Namuna held 30.00 decimal. Earlier transfers: 20.00 decimal to Mizan Namuna by deed 2023/0457. That leaves 10.00 decimal, but deed 2026/0688 transfers 20.00 decimal — 10.00 more than remains.<br><i>Suggested action:</i> hold; notify the seller and every earlier buyer; obtain certified copies. Also <code>RECORD_LAG</code>: deed 2023/0457 unmutated for 1,329 days.</div>
+<p class="small">A check of the khatian alone would have cleared this case.</p>
+</div>
+</div>
+
+<h2>4. System architecture and tech stack</h2>
+<figure class="avoid">
+<svg viewBox="0 0 760 170" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Hind Siliguri, sans-serif" font-size="11">
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4b5469"/></marker></defs>
+  <g fill="#f3ecdd" stroke="#c9bb9c">
+    <rect x="4" y="8" width="150" height="40" rx="5"/><rect x="4" y="62" width="150" height="40" rx="5"/><rect x="4" y="116" width="150" height="40" rx="5"/>
+  </g>
+  <text x="14" y="25" font-weight="600">Sub-Registry clerk</text><text x="14" y="40" fill="#4b5469">records L.T. notice; pre-check</text>
+  <text x="14" y="79" font-weight="600">AC (Land) reviewer</text><text x="14" y="94" fill="#4b5469">queue, evidence, decision</text>
+  <text x="14" y="133" font-weight="600">Auditor</text><text x="14" y="148" fill="#4b5469">read-only, verifies log</text>
+  <rect x="200" y="20" width="200" height="124" rx="6" fill="#fff" stroke="#22385c" stroke-width="1.5"/>
+  <text x="212" y="40" font-weight="700" fill="#22385c">FastAPI web app</text>
+  <text x="212" y="58" fill="#4b5469">pages + JSON API · roles · CSRF</text>
+  <text x="212" y="74" fill="#4b5469">sessions · login throttling · CSP</text>
+  <text x="212" y="90" fill="#4b5469">explain.py (EN/BN templates)</text>
+  <text x="212" y="106" fill="#4b5469">ai.py (optional, fact-checked)</text>
+  <text x="212" y="122" fill="#4b5469">audit.py (SHA-256 hash chain)</text>
+  <rect x="446" y="20" width="160" height="70" rx="6" fill="#22385c"/>
+  <text x="458" y="42" font-weight="700" fill="#fff">Ledger engine</text>
+  <text x="458" y="58" fill="#dfe6f2">exact fractions · rules</text>
+  <text x="458" y="74" fill="#dfe6f2">pure functions, no I/O</text>
+  <rect x="446" y="104" width="160" height="40" rx="6" fill="#f3ecdd" stroke="#c9bb9c"/>
+  <text x="458" y="121" font-weight="600">SQLite</text><text x="458" y="136" fill="#4b5469">synthetic seed (fixed)</text>
+  <rect x="640" y="20" width="116" height="70" rx="6" fill="#fff" stroke="#c9bb9c" stroke-dasharray="4 3"/>
+  <text x="650" y="40" font-weight="600">Claude API</text><text x="650" y="56" fill="#4b5469">optional; template</text><text x="650" y="70" fill="#4b5469">fallback offline</text>
+  <g stroke="#4b5469" stroke-width="1.2" fill="none" marker-end="url(#ar)">
+    <path d="M154 28 H198"/><path d="M154 82 H198"/><path d="M154 136 H198"/><path d="M400 55 H444"/><path d="M400 124 H444"/><path d="M606 55 H638"/>
+  </g>
+</svg>
+<figcaption>Three roles share one server-rendered web app; the ledger engine is a pure, separately tested module; AI is optional and outside the decision path.</figcaption>
+</figure>
+<table>
+  <tr><th>Component</th><th>Choice</th><th>Why</th></tr>
+  <tr><td>Language</td><td>Python 3 (<code>fractions</code>)</td><td>Exact share arithmetic; one language for a two-person team</td></tr>
+  <tr><td>Web</td><td>FastAPI + Uvicorn</td><td>Pages and a JSON API that e-mutation could call</td></tr>
+  <tr><td>Storage</td><td>SQLite</td><td>Zero administration; enough for a prototype and single-office pilot (PostgreSQL for scale)</td></tr>
+  <tr><td>Front end</td><td>Jinja2, CSS, vanilla JS</td><td>No build step; works on low-end phones; strict CSP; Bangla/English toggle</td></tr>
+  <tr><td>Quality</td><td>pytest (51 tests)</td><td>Units, rules, workflow, security on our own prototype</td></tr>
+  <tr><td>AI (optional)</td><td>Anthropic Claude API</td><td>Bangla notice drafts and deed-text reading, both checked and with offline fallback</td></tr>
+</table>
+
+<h2>5. Key features</h2>
+<div class="two avoid">
+<ul>
+  <li><b>Mutation queue</b> sorted by risk; each case shows why, with evidence records and a suggested action.</li>
+  <li><b>Share strip:</b> who holds what, recorded vs now; over-sold land shown beyond 100%.</li>
+  <li><b>Pre-registration check</b> for the Sub-Registry clerk before a deed is registered.</li>
+  <li><b>Honest statuses:</b> coverage gaps, unknown units and ambiguous old-survey dags give Incomplete.</li>
+  <li><b>Reviewer decisions</b> with reasons; "proceed" blocked while a conflict exists; engine version stored.</li>
+  <li><b>Tamper-evident audit log</b> (hash chain) with auditor verification.</li>
+  <li><b>Bangla + English</b> explanations; optional AI notice draft rejected if it adds unsupported numbers or accusations.</li>
+  <li><b>Fictional-data guard:</b> new names without a fictional marker are refused.</li>
+</ul>
+<figure>
+<img src="img/case-conflict.png" alt="Case review screen showing a Conflict status, the OVER_TRANSFER explanation and the share strip">
+<figcaption>Case review for the worked example (synthetic data).</figcaption>
+</figure>
+</div>
+
+<h2>6. Evaluation and limitations</h2>
+<p>Eighteen hand-written scenarios (double sale, co-heir over-sale, forged-deed citation, deed older than the index, quantity mismatch, rapid resale, unknown seller, coverage gap, split old dag, undefined bigha, inheritance, incomplete heir list, over-allocated khatian, anna notation, rounding, sale after selling everything, record lag) plus 30 generated clean plots. Expected results were declared next to the data before the engine ran.</p>
+<table>
+  <tr><th>Measure (synthetic, demo clock 2026-10-01)</th><th>Result</th></tr>
+  <tr><td>Declared statuses and finding codes matched (plots + cases)</td><td>70 / 70</td></tr>
+  <tr><td>Clean background plots wrongly flagged</td><td>0 / 30</td></tr>
+  <tr><td>Incomplete-data cases reported as clean</td><td>0 / 13</td></tr>
+  <tr><td>Problem cases a khatian-only check would have cleared</td><td>8 / 12</td></tr>
+  <tr><td>Slowest single-plot ledger (laptop)</td><td>&lt; 1 ms</td></tr>
+</table>
+<p><b>Honest reading:</b> the same team wrote the rules and the expectations, so this shows the mechanism works as designed, not real-world accuracy. <b>Limitations:</b> needs a complete digital transfer feed (historic paper deeds give Incomplete until digitised); unregistered family partitions may appear as conflicts (reviewer can mark "explained"); heir fractions come from succession records (no faraid calculation); katha/bigha and kora–kranti–til ratios vary between sources and are configuration; the old-survey crosswalk is a lookup table, not a map overlay; registry integration is simulated.</p>
+
+<h2>7. Plan for countrywide implementation</h2>
+<table>
+  <tr><th>Phase</th><th>What</th><th>Who / needs</th></tr>
+  <tr><td>0. Validate (0–3 months)</td><td>Blind tests by land officers; rule review with legal advisers; anonymised, approved sample from one upazila</td><td>Ministry of Land, a2i/innovation unit, mentors</td></tr>
+  <tr><td>1. Pilot (3–9 months)</td><td>Digital L.T. notices from 1–2 Sub-Registry offices into one AC (Land) office; ShareTally as a read-only check beside e-mutation; measure reviewer time and conflicts found</td><td>Data-sharing order between the Directorate of Registration and the Ministry of Land</td></tr>
+  <tr><td>2. Integrate (9–18 months)</td><td>API call inside the e-mutation reviewer screen; pre-registration check at Sub-Registry; Bangla notices to earlier buyers</td><td>e-mutation and registration system vendors</td></tr>
+  <tr><td>3. Backfill and scale (18+ months)</td><td>Digitise historic deed indexes (P1 work) so Incomplete shrinks; extend upazila by upazila; crosswalks from Bangladesh Digital Survey maps</td><td>DLRS, Sub-Registry record rooms</td></tr>
+</table>
+<p><b>Governance:</b> rules versioned and owned by the Ministry of Land; every decision stores the engine version. <b>Scale:</b> each plot is computed independently, so the check scales horizontally. <b>Privacy:</b> role-based access, audit logging, no personal data sent to AI (tokens instead of names). <b>Main risk:</b> inter-ministry data sharing; mitigated by starting from the notice the law already requires.</p>
+
+<h2>8. Team and mentors</h2>
+<table>
+  <tr><th>Role</th><th>Name</th><th>Responsibility</th></tr>
+  <tr><td>Student (team leader?)</td><td>Tanvir Hossin <span class="ph">[confirm]</span></td><td class="ph">[e.g. engine, data, evaluation]</td></tr>
+  <tr><td>Student</td><td class="ph">[NAME]</td><td class="ph">[e.g. web app, security, video]</td></tr>
+  <tr><td>Faculty mentor</td><td class="ph">[NAME, DEPARTMENT, DIU]</td><td>Problem framing, legal-workflow review</td></tr>
+  <tr><td>Industry mentor</td><td class="ph">[NAME, ORGANISATION]</td><td>Architecture and deployment review</td></tr>
+</table>
+<p class="small"><b>AI disclosure:</b> Claude Code (Anthropic, Claude Opus 5.5) assisted with research, code, tests and drafting; both students reviewed the work and can explain it <span class="ph">[confirm]</span>. Optional in-app AI is described in §3 and the README. <b>Data:</b> all records are synthetic; no real personal data or government system was used.</p>
+
+<h2>9. সংক্ষিপ্ত বাংলা সারাংশ</h2>
+<p lang="bn"><b>সমস্যা:</b> দলিল নিবন্ধন হয় সাব-রেজিস্ট্রি অফিসে, খতিয়ান হালনাগাদ হয় এসি ল্যান্ড অফিসে নামজারির মাধ্যমে। ক্রেতা নামজারি না করা পর্যন্ত খতিয়ানে বিক্রেতার নামই থাকে, তাই একই অংশ আবার বিক্রি হলে দ্বিতীয় দলিলও একই যাচাইয়ে পার হয়ে যেতে পারে।</p>
+<p lang="bn"><b>সমাধান:</b> ShareTally প্রতিটি দাগকে অংশের হিসাব-খাতা হিসেবে দেখে — খতিয়ান দিয়ে শুরু, তারপর আইন অনুযায়ী আগে থেকেই পাঠানো এল.টি. নোটিশের প্রতিটি নিবন্ধিত দলিল পুরোনো থেকে নতুন ক্রমে বসানো হয়। কেউ অবশিষ্ট অংশের বেশি হস্তান্তর করলে আগের দলিলসহ প্রমাণ দেখিয়ে "দ্বন্দ্ব" জানানো হয়; তথ্য অসম্পূর্ণ হলে ফলাফল "অসম্পূর্ণ", কখনো "পরিষ্কার" নয়। চূড়ান্ত সিদ্ধান্ত নেন সহকারী কমিশনার (ভূমি); সফটওয়্যার মালিকানা নির্ধারণ করে না এবং কাউকে প্রতারক বলে না। প্রোটোটাইপের সব তথ্য কাল্পনিক।</p>
+
+<h2>Appendix A — synthetic test scenarios (expected results declared before running)</h2>
+<table>
+  <tr><th>ID</th><th>Situation</th><th>Expected</th></tr>
+  <tr><td>S01</td><td>Ordinary sale within share, mutation approved</td><td><span class="pill n">No conflict</span></td></tr>
+  <tr><td>S02</td><td>Second sale of 20 decimal while the first buyer never mutated</td><td><span class="pill c">Conflict</span> <code>OVER_TRANSFER</code>, <code>RECORD_LAG</code></td></tr>
+  <tr><td>S03</td><td>Co-heir of undivided land sells 20 of a 15-decimal share</td><td><span class="pill c">Conflict</span> <code>OVER_TRANSFER</code></td></tr>
+  <tr><td>S04</td><td>Mutation cites a deed number the covered index has never seen</td><td><span class="pill c">Conflict</span> <code>DEED_NOT_IN_INDEX</code></td></tr>
+  <tr><td>S05</td><td>Mutation cites a 2008 deed; index starts 2016</td><td><span class="pill i">Incomplete</span> <code>CITED_DEED_UNVERIFIABLE</code>, <code>COVERAGE_GAP</code></td></tr>
+  <tr><td>S06</td><td>Application asks 15 decimal; deed transferred 10</td><td><span class="pill c">Conflict</span> <code>MUTATION_MISMATCH</code></td></tr>
+  <tr><td>S07</td><td>Same 10 decimal resold after 36 and 40 days (all valid)</td><td><span class="pill a">Attention</span> <code>RAPID_RESALE</code></td></tr>
+  <tr><td>S08</td><td>Seller appears in no khatian, deed or succession record</td><td><span class="pill i">Incomplete</span> <code>NO_RECORDED_SOURCE</code></td></tr>
+  <tr><td>S09</td><td>Arithmetic fine, but index misses 2010–2015</td><td><span class="pill i">Incomplete</span> <code>COVERAGE_GAP</code></td></tr>
+  <tr><td>S10</td><td>Deed names RS dag 245, now split into BS 1301 and 1302</td><td><span class="pill i">Incomplete</span> <code>AMBIGUOUS_REFERENCE</code></td></tr>
+  <tr><td>S11</td><td>"1 bigha" where no local bigha size is configured</td><td><span class="pill i">Incomplete</span> <code>UNIT_UNRESOLVED</code></td></tr>
+  <tr><td>S12</td><td>Heir sells exactly her inherited 12 decimal</td><td><span class="pill n">No conflict</span></td></tr>
+  <tr><td>S13</td><td>Succession record gives heir fractions totalling 5/6</td><td><span class="pill i">Incomplete</span> <code>INHERITANCE_SHARES_INCOMPLETE</code>, <code>NO_RECORDED_SOURCE</code></td></tr>
+  <tr><td>S14</td><td>Khatian shares add up to 5/4 of the plot</td><td><span class="pill c">Conflict</span> <code>SHARE_TOTAL_MISMATCH</code></td></tr>
+  <tr><td>S15</td><td>Anna notation, acres, katha and Bangla digits all reconcile</td><td><span class="pill n">No conflict</span></td></tr>
+  <tr><td>S16</td><td>One-third of 50 decimal written as 16.67 (rounding)</td><td><span class="pill n">No conflict</span></td></tr>
+  <tr><td>S17</td><td>Seller sold everything (mutated), then sells 10 decimal again</td><td><span class="pill c">Conflict</span> <code>OVER_TRANSFER</code></td></tr>
+  <tr><td>S18</td><td>Valid sale registered 330 days ago, never mutated</td><td><span class="pill a">Attention</span> <code>RECORD_LAG</code></td></tr>
+  <tr><td>BG</td><td>30 generated plots with sales inside shares</td><td><span class="pill n">No conflict</span> (0 of 30 flagged)</td></tr>
+</table>
+
+<h3>References (accessed 15 Oct 2026)</h3>
+<ol class="refs">
+  <li>LandTech 2026 Rule Book, §1.1 (supplied PDF).</li>
+  <li>Registration Act 1908, s.52A — bdlaws.minlaw.gov.bd/act-90/section-22972.html</li>
+  <li>Behavioural Insights Team, mutation trial with a2i and the Land Reform Board, 20 Aug 2020 — bi.team/?p=11734</li>
+  <li>Prothom Alo, 28 Sep 2022 — prothomalo.com/bangladesh/p2gxq4yra9</li>
+  <li>Ittefaq, 18 Jul 2026 (Babuganj); Dhaka Times, 3 Jun 2026 — dhakatimes24.com/2026/06/03/406689</li>
+  <li>State Acquisition and Tenancy Act 1950, ss. 89, 143C — bdlaws.minlaw.gov.bd/act-241/section-7068.html; section-7261.html</li>
+  <li>Land Crimes Prevention and Remedy Act 2023 (Act 36 of 2023) — bdlaws.minlaw.gov.bd/act-print-1454.html</li>
+  <li>The Business Standard, 9 Nov 2020 and 30 Jun 2026; The Daily Star, 7 Feb 2026</li>
+  <li>Transfer of Property Act 1882, s.48 — bdlaws.minlaw.gov.bd/act-print-48.html</li>
+</ol>
+</body>
+</html>

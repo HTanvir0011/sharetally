@@ -1,0 +1,1056 @@
+{
+  "as_of": "2026-10-01",
+  "objects": 70,
+  "passed": 70,
+  "scenario_plots": 19,
+  "background_plots": 30,
+  "background_false_flags": 0,
+  "false_clean_on_incomplete": 0,
+  "incomplete_expected": 13,
+  "flags_with_evidence": 27,
+  "flags_total": 27,
+  "per_code": {
+    "OVER_TRANSFER": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0
+    },
+    "DEED_NOT_IN_INDEX": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "MUTATION_MISMATCH": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "SHARE_TOTAL_MISMATCH": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "NO_RECORDED_SOURCE": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0
+    },
+    "CITED_DEED_UNVERIFIABLE": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "COVERAGE_GAP": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0
+    },
+    "AMBIGUOUS_REFERENCE": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0
+    },
+    "UNIT_UNRESOLVED": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "INHERITANCE_SHARES_INCOMPLETE": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "RECORD_LAG": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0
+    },
+    "RAPID_RESALE": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    }
+  },
+  "latency_ms": {
+    "plots": 49,
+    "max": 0.59,
+    "mean": 0.2
+  },
+  "baseline": {
+    "problem_cases": 12,
+    "cleared_by_baseline": [
+      "DEMO-MC/2026/0312",
+      "DEMO-MC/2026/0405",
+      "DEMO-MC/2026/0418",
+      "DEMO-MC/2026/0377",
+      "DEMO-MC/2026/0425",
+      "DEMO-MC/2026/0410",
+      "DEMO-MC/2026/0402",
+      "DEMO-MC/2026/0428"
+    ],
+    "clean_cases": 9,
+    "held_by_baseline": [
+      "DEMO-MC/2026/0415"
+    ]
+  },
+  "rows": [
+    {
+      "object_type": "plot",
+      "object_id": "M901-BS-1400",
+      "scenario": "BG",
+      "description": "Generated clean plot",
+      "expected_status": "NO_CONFLICT",
+      "actual_status": "NO_CONFLICT",
+      "expected_codes": [],
+      "actual_codes": [],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M901-BS-1402",
+      "scenario": "BG",
+      "description": "Generated clean plot",
+      "expected_status": "NO_CONFLICT",
+      "actual_status": "NO_CONFLICT",
+      "expected_codes": [],
+      "actual_codes": [],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M901-BS-1404",
+      "scenario": "BG",
+      "description": "Generated clean plot",
+      "expected_status": "NO_CONFLICT",
+      "actual_status": "NO_CONFLICT",
+      "expected_codes": [],
+      "actual_codes": [],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M901-BS-1406",
+      "scenario": "BG",
+      "description": "Generated clean plot",
+      "expected_status": "NO_CONFLICT",
+      "actual_status": "NO_CONFLICT",
+      "expected_codes": [],
+      "actual_codes": [],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M901-BS-1408",
+      "scenario": "BG",
+      "description": "Generated clean plot",
+      "expected_status": "NO_CONFLICT",
+      "actual_status": "NO_CONFLICT",
+      "expected_codes": [],
+      "actual_codes": [],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M901-BS-1410",
+      "scenario": "BG",
+      "description": "Generated clean plot",
+      "expected_status": "NO_CONFLICT",
+      "actual_status": "NO_CONFLICT",
+      "expected_codes": [],
+      "actual_codes": [],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M901-BS-1412",
+      "scenario": "BG",
+      "description": "Generated clean plot",
+      "expected_status": "NO_CONFLICT",
+      "actual_status": "NO_CONFLICT",
+      "expected_codes": [],
+      "actual_codes": [],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M901-BS-1414",
+      "scenario": "BG",
+      "description": "Generated clean plot",
+      "expected_status": "NO_CONFLICT",
+      "actual_status": "NO_CONFLICT",
+      "expected_codes": [],
+      "actual_codes": [],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M901-BS-1416",
+      "scenario": "BG",
+      "description": "Generated clean plot",
+      "expected_status": "NO_CONFLICT",
+      "actual_status": "NO_CONFLICT",
+      "expected_codes": [],
+      "actual_codes": [],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M901-BS-1418",
+      "scenario": "BG",
+      "description": "Generated clean plot",
+      "expected_status": "NO_CONFLICT",
+      "actual_status": "NO_CONFLICT",
+      "expected_codes": [],
+      "actual_codes": [],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M901-BS-1420",
+      "scenario": "BG",
+      "description": "Generated clean plot",
+      "expected_status": "NO_CONFLICT",
+      "actual_status": "NO_CONFLICT",
+      "expected_codes": [],
+      "actual_codes": [],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M901-BS-1422",
+      "scenario": "BG",
+      "description": "Generated clean plot",
+      "expected_status": "NO_CONFLICT",
+      "actual_status": "NO_CONFLICT",
+      "expected_codes": [],
+      "actual_codes": [],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M901-BS-1424",
+      "scenario": "BG",
+      "description": "Generated clean plot",
+      "expected_status": "NO_CONFLICT",
+      "actual_status": "NO_CONFLICT",
+      "expected_codes": [],
+      "actual_codes": [],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M901-BS-1426",
+      "scenario": "BG",
+      "description": "Generated clean plot",
+      "expected_status": "NO_CONFLICT",
+      "actual_status": "NO_CONFLICT",
+      "expected_codes": [],
+      "actual_codes": [],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M901-BS-1428",
+      "scenario": "BG",
+      "description": "Generated clean plot",
+      "expected_status": "NO_CONFLICT",
+      "actual_status": "NO_CONFLICT",
+      "expected_codes": [],
+      "actual_codes": [],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M902-BS-3201",
+      "scenario": "BG",
+      "description": "Generated clean plot",
+      "expected_status": "NO_CONFLICT",
+      "actual_status": "NO_CONFLICT",
+      "expected_codes": [],
+      "actual_codes": [],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M902-BS-3203",
+      "scenario": "BG",
+      "description": "Generated clean plot",
+      "expected_status": "NO_CONFLICT",
+      "actual_status": "NO_CONFLICT",
+      "expected_codes": [],
+      "actual_codes": [],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M902-BS-3205",
+      "scenario": "BG",
+      "description": "Generated clean plot",
+      "expected_status": "NO_CONFLICT",
+      "actual_status": "NO_CONFLICT",
+      "expected_codes": [],
+      "actual_codes": [],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M902-BS-3207",
+      "scenario": "BG",
+      "description": "Generated clean plot",
+      "expected_status": "NO_CONFLICT",
+      "actual_status": "NO_CONFLICT",
+      "expected_codes": [],
+      "actual_codes": [],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M902-BS-3209",
+      "scenario": "BG",
+      "description": "Generated clean plot",
+      "expected_status": "NO_CONFLICT",
+      "actual_status": "NO_CONFLICT",
+      "expected_codes": [],
+      "actual_codes": [],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M902-BS-3211",
+      "scenario": "BG",
+      "description": "Generated clean plot",
+      "expected_status": "NO_CONFLICT",
+      "actual_status": "NO_CONFLICT",
+      "expected_codes": [],
+      "actual_codes": [],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M902-BS-3213",
+      "scenario": "BG",
+      "description": "Generated clean plot",
+      "expected_status": "NO_CONFLICT",
+      "actual_status": "NO_CONFLICT",
+      "expected_codes": [],
+      "actual_codes": [],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M902-BS-3215",
+      "scenario": "BG",
+      "description": "Generated clean plot",
+      "expected_status": "NO_CONFLICT",
+      "actual_status": "NO_CONFLICT",
+      "expected_codes": [],
+      "actual_codes": [],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M902-BS-3217",
+      "scenario": "BG",
+      "description": "Generated clean plot",
+      "expected_status": "NO_CONFLICT",
+      "actual_status": "NO_CONFLICT",
+      "expected_codes": [],
+      "actual_codes": [],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M902-BS-3219",
+      "scenario": "BG",
+      "description": "Generated clean plot",
+      "expected_status": "NO_CONFLICT",
+      "actual_status": "NO_CONFLICT",
+      "expected_codes": [],
+      "actual_codes": [],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M902-BS-3221",
+      "scenario": "BG",
+      "description": "Generated clean plot",
+      "expected_status": "NO_CONFLICT",
+      "actual_status": "NO_CONFLICT",
+      "expected_codes": [],
+      "actual_codes": [],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M902-BS-3223",
+      "scenario": "BG",
+      "description": "Generated clean plot",
+      "expected_status": "NO_CONFLICT",
+      "actual_status": "NO_CONFLICT",
+      "expected_codes": [],
+      "actual_codes": [],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M902-BS-3225",
+      "scenario": "BG",
+      "description": "Generated clean plot",
+      "expected_status": "NO_CONFLICT",
+      "actual_status": "NO_CONFLICT",
+      "expected_codes": [],
+      "actual_codes": [],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M902-BS-3227",
+      "scenario": "BG",
+      "description": "Generated clean plot",
+      "expected_status": "NO_CONFLICT",
+      "actual_status": "NO_CONFLICT",
+      "expected_codes": [],
+      "actual_codes": [],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M902-BS-3229",
+      "scenario": "BG",
+      "description": "Generated clean plot",
+      "expected_status": "NO_CONFLICT",
+      "actual_status": "NO_CONFLICT",
+      "expected_codes": [],
+      "actual_codes": [],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M901-BS-1101",
+      "scenario": "S01",
+      "description": "Sale within share; mutation approved",
+      "expected_status": "NO_CONFLICT",
+      "actual_status": "NO_CONFLICT",
+      "expected_codes": [],
+      "actual_codes": [],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M901-BS-1201",
+      "scenario": "S02",
+      "description": "Second deed exceeds remaining share by 10 decimal; first deed never mutated",
+      "expected_status": "CONFLICT",
+      "actual_status": "CONFLICT",
+      "expected_codes": [
+        "OVER_TRANSFER",
+        "RECORD_LAG"
+      ],
+      "actual_codes": [
+        "OVER_TRANSFER",
+        "RECORD_LAG"
+      ],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M901-BS-1205",
+      "scenario": "S03",
+      "description": "20 decimal sold from a 15 decimal share",
+      "expected_status": "CONFLICT",
+      "actual_status": "CONFLICT",
+      "expected_codes": [
+        "OVER_TRANSFER"
+      ],
+      "actual_codes": [
+        "OVER_TRANSFER"
+      ],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M901-BS-1210",
+      "scenario": "S04",
+      "description": "Cited deed absent from a covered index",
+      "expected_status": "CONFLICT",
+      "actual_status": "CONFLICT",
+      "expected_codes": [
+        "DEED_NOT_IN_INDEX"
+      ],
+      "actual_codes": [
+        "DEED_NOT_IN_INDEX"
+      ],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M903-BS-2101",
+      "scenario": "S05",
+      "description": "Index starts 2016; 2008 deed and 2005-2015 transfers unknown",
+      "expected_status": "INCOMPLETE",
+      "actual_status": "INCOMPLETE",
+      "expected_codes": [
+        "CITED_DEED_UNVERIFIABLE",
+        "COVERAGE_GAP"
+      ],
+      "actual_codes": [
+        "CITED_DEED_UNVERIFIABLE",
+        "COVERAGE_GAP"
+      ],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M902-BS-3101",
+      "scenario": "S06",
+      "description": "Deed says 10 decimal; application says 15",
+      "expected_status": "CONFLICT",
+      "actual_status": "CONFLICT",
+      "expected_codes": [
+        "MUTATION_MISMATCH"
+      ],
+      "actual_codes": [
+        "MUTATION_MISMATCH"
+      ],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M902-BS-3105",
+      "scenario": "S07",
+      "description": "Resold after 36 and 40 days; context, not a conflict",
+      "expected_status": "ATTENTION",
+      "actual_status": "ATTENTION",
+      "expected_codes": [
+        "RAPID_RESALE"
+      ],
+      "actual_codes": [
+        "RAPID_RESALE"
+      ],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M901-BS-1215",
+      "scenario": "S08",
+      "description": "Seller's title not in supplied records",
+      "expected_status": "INCOMPLETE",
+      "actual_status": "INCOMPLETE",
+      "expected_codes": [
+        "NO_RECORDED_SOURCE"
+      ],
+      "actual_codes": [
+        "NO_RECORDED_SOURCE"
+      ],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M903-BS-2105",
+      "scenario": "S09",
+      "description": "No conflict seen, but 2010-2015 not indexed",
+      "expected_status": "INCOMPLETE",
+      "actual_status": "INCOMPLETE",
+      "expected_codes": [
+        "COVERAGE_GAP"
+      ],
+      "actual_codes": [
+        "COVERAGE_GAP"
+      ],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M901-BS-1301",
+      "scenario": "S10",
+      "description": "Cannot tell which BS dag was sold",
+      "expected_status": "INCOMPLETE",
+      "actual_status": "INCOMPLETE",
+      "expected_codes": [
+        "AMBIGUOUS_REFERENCE"
+      ],
+      "actual_codes": [
+        "AMBIGUOUS_REFERENCE"
+      ],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M901-BS-1302",
+      "scenario": "S10",
+      "description": "Cannot tell which BS dag was sold",
+      "expected_status": "INCOMPLETE",
+      "actual_status": "INCOMPLETE",
+      "expected_codes": [
+        "AMBIGUOUS_REFERENCE"
+      ],
+      "actual_codes": [
+        "AMBIGUOUS_REFERENCE"
+      ],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M901-BS-1220",
+      "scenario": "S11",
+      "description": "Bigha size varies; not guessed",
+      "expected_status": "INCOMPLETE",
+      "actual_status": "INCOMPLETE",
+      "expected_codes": [
+        "UNIT_UNRESOLVED"
+      ],
+      "actual_codes": [
+        "UNIT_UNRESOLVED"
+      ],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M902-BS-3110",
+      "scenario": "S12",
+      "description": "Heir sells exactly her 12 decimal",
+      "expected_status": "NO_CONFLICT",
+      "actual_status": "NO_CONFLICT",
+      "expected_codes": [],
+      "actual_codes": [],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M902-BS-3115",
+      "scenario": "S13",
+      "description": "Certificate covers 5/6; heir's share unknown",
+      "expected_status": "INCOMPLETE",
+      "actual_status": "INCOMPLETE",
+      "expected_codes": [
+        "INHERITANCE_SHARES_INCOMPLETE",
+        "NO_RECORDED_SOURCE"
+      ],
+      "actual_codes": [
+        "INHERITANCE_SHARES_INCOMPLETE",
+        "NO_RECORDED_SOURCE"
+      ],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M901-BS-1225",
+      "scenario": "S14",
+      "description": "Recorded shares sum to 5/4",
+      "expected_status": "CONFLICT",
+      "actual_status": "CONFLICT",
+      "expected_codes": [
+        "SHARE_TOTAL_MISMATCH"
+      ],
+      "actual_codes": [
+        "SHARE_TOTAL_MISMATCH"
+      ],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M902-BS-3120",
+      "scenario": "S15",
+      "description": "27.5 decimal share; 25 decimal sold; units agree",
+      "expected_status": "NO_CONFLICT",
+      "actual_status": "NO_CONFLICT",
+      "expected_codes": [],
+      "actual_codes": [],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M901-BS-1230",
+      "scenario": "S16",
+      "description": "16.67 vs 16.6667 is rounding, not over-sale",
+      "expected_status": "NO_CONFLICT",
+      "actual_status": "NO_CONFLICT",
+      "expected_codes": [],
+      "actual_codes": [],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M901-BS-1235",
+      "scenario": "S17",
+      "description": "Seller holds nothing after 2025 sale",
+      "expected_status": "CONFLICT",
+      "actual_status": "CONFLICT",
+      "expected_codes": [
+        "OVER_TRANSFER"
+      ],
+      "actual_codes": [
+        "OVER_TRANSFER"
+      ],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "plot",
+      "object_id": "M902-BS-3125",
+      "scenario": "S18",
+      "description": "Khatian still shows seller 330 days later",
+      "expected_status": "ATTENTION",
+      "actual_status": "ATTENTION",
+      "expected_codes": [
+        "RECORD_LAG"
+      ],
+      "actual_codes": [
+        "RECORD_LAG"
+      ],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "case",
+      "object_id": "MC-0027",
+      "scenario": "BG",
+      "description": "Recent clean sale",
+      "expected_status": "NO_CONFLICT",
+      "actual_status": "NO_CONFLICT",
+      "expected_codes": [],
+      "actual_codes": [],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "case",
+      "object_id": "MC-0044",
+      "scenario": "BG",
+      "description": "Recent clean sale",
+      "expected_status": "NO_CONFLICT",
+      "actual_status": "NO_CONFLICT",
+      "expected_codes": [],
+      "actual_codes": [],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "case",
+      "object_id": "MC-0045",
+      "scenario": "BG",
+      "description": "Recent clean sale",
+      "expected_status": "NO_CONFLICT",
+      "actual_status": "NO_CONFLICT",
+      "expected_codes": [],
+      "actual_codes": [],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "case",
+      "object_id": "MC-0053",
+      "scenario": "BG",
+      "description": "Recent clean sale",
+      "expected_status": "NO_CONFLICT",
+      "actual_status": "NO_CONFLICT",
+      "expected_codes": [],
+      "actual_codes": [],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "case",
+      "object_id": "MC-0059",
+      "scenario": "BG",
+      "description": "Recent clean sale",
+      "expected_status": "NO_CONFLICT",
+      "actual_status": "NO_CONFLICT",
+      "expected_codes": [],
+      "actual_codes": [],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "case",
+      "object_id": "MC-0060",
+      "scenario": "BG",
+      "description": "Recent clean sale",
+      "expected_status": "NO_CONFLICT",
+      "actual_status": "NO_CONFLICT",
+      "expected_codes": [],
+      "actual_codes": [],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "case",
+      "object_id": "MC-0002",
+      "scenario": "S02",
+      "description": "Application relies on the conflicting second deed",
+      "expected_status": "CONFLICT",
+      "actual_status": "CONFLICT",
+      "expected_codes": [
+        "OVER_TRANSFER"
+      ],
+      "actual_codes": [
+        "OVER_TRANSFER"
+      ],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "case",
+      "object_id": "MC-0003",
+      "scenario": "S03",
+      "description": "Mutation would record 5 decimal more than held",
+      "expected_status": "CONFLICT",
+      "actual_status": "CONFLICT",
+      "expected_codes": [
+        "OVER_TRANSFER"
+      ],
+      "actual_codes": [
+        "OVER_TRANSFER"
+      ],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "case",
+      "object_id": "MC-0004",
+      "scenario": "S04",
+      "description": "Verify deed with Sub-Registry before mutation",
+      "expected_status": "CONFLICT",
+      "actual_status": "CONFLICT",
+      "expected_codes": [
+        "DEED_NOT_IN_INDEX"
+      ],
+      "actual_codes": [
+        "DEED_NOT_IN_INDEX"
+      ],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "case",
+      "object_id": "MC-0005",
+      "scenario": "S05",
+      "description": "Needs manual search of paper volumes",
+      "expected_status": "INCOMPLETE",
+      "actual_status": "INCOMPLETE",
+      "expected_codes": [
+        "CITED_DEED_UNVERIFIABLE",
+        "COVERAGE_GAP"
+      ],
+      "actual_codes": [
+        "CITED_DEED_UNVERIFIABLE",
+        "COVERAGE_GAP"
+      ],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "case",
+      "object_id": "MC-0006",
+      "scenario": "S06",
+      "description": "Quantity mismatch",
+      "expected_status": "CONFLICT",
+      "actual_status": "CONFLICT",
+      "expected_codes": [
+        "MUTATION_MISMATCH"
+      ],
+      "actual_codes": [
+        "MUTATION_MISMATCH"
+      ],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "case",
+      "object_id": "MC-0010",
+      "scenario": "S08",
+      "description": "Ask for seller's source documents",
+      "expected_status": "INCOMPLETE",
+      "actual_status": "INCOMPLETE",
+      "expected_codes": [
+        "NO_RECORDED_SOURCE"
+      ],
+      "actual_codes": [
+        "NO_RECORDED_SOURCE"
+      ],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "case",
+      "object_id": "MC-0012",
+      "scenario": "S09",
+      "description": "Clean-looking case still incomplete",
+      "expected_status": "INCOMPLETE",
+      "actual_status": "INCOMPLETE",
+      "expected_codes": [
+        "COVERAGE_GAP"
+      ],
+      "actual_codes": [
+        "COVERAGE_GAP"
+      ],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "case",
+      "object_id": "MC-0013",
+      "scenario": "S10",
+      "description": "Needs surveyor/crosswalk confirmation",
+      "expected_status": "INCOMPLETE",
+      "actual_status": "INCOMPLETE",
+      "expected_codes": [
+        "AMBIGUOUS_REFERENCE"
+      ],
+      "actual_codes": [
+        "AMBIGUOUS_REFERENCE"
+      ],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "case",
+      "object_id": "MC-0014",
+      "scenario": "S11",
+      "description": "Confirm local bigha definition",
+      "expected_status": "INCOMPLETE",
+      "actual_status": "INCOMPLETE",
+      "expected_codes": [
+        "UNIT_UNRESOLVED"
+      ],
+      "actual_codes": [
+        "UNIT_UNRESOLVED"
+      ],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "case",
+      "object_id": "MC-0015",
+      "scenario": "S12",
+      "description": "Inheritance chain closes",
+      "expected_status": "NO_CONFLICT",
+      "actual_status": "NO_CONFLICT",
+      "expected_codes": [],
+      "actual_codes": [],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "case",
+      "object_id": "MC-0016",
+      "scenario": "S13",
+      "description": "Obtain complete heir list",
+      "expected_status": "INCOMPLETE",
+      "actual_status": "INCOMPLETE",
+      "expected_codes": [
+        "INHERITANCE_SHARES_INCOMPLETE",
+        "NO_RECORDED_SOURCE"
+      ],
+      "actual_codes": [
+        "INHERITANCE_SHARES_INCOMPLETE",
+        "NO_RECORDED_SOURCE"
+      ],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "case",
+      "object_id": "MC-0017",
+      "scenario": "S14",
+      "description": "Record must be corrected first",
+      "expected_status": "CONFLICT",
+      "actual_status": "CONFLICT",
+      "expected_codes": [
+        "SHARE_TOTAL_MISMATCH"
+      ],
+      "actual_codes": [
+        "SHARE_TOTAL_MISMATCH"
+      ],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "case",
+      "object_id": "MC-0018",
+      "scenario": "S15",
+      "description": "0.25 acre equals 25 shotangsho",
+      "expected_status": "NO_CONFLICT",
+      "actual_status": "NO_CONFLICT",
+      "expected_codes": [],
+      "actual_codes": [],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "case",
+      "object_id": "MC-0019",
+      "scenario": "S16",
+      "description": "No false positive from rounding",
+      "expected_status": "NO_CONFLICT",
+      "actual_status": "NO_CONFLICT",
+      "expected_codes": [],
+      "actual_codes": [],
+      "pass": true,
+      "evidence_ok": true
+    },
+    {
+      "object_type": "case",
+      "object_id": "MC-0021",
+      "scenario": "S17",
+      "description": "Zero remaining share",
+      "expected_status": "CONFLICT",
+      "actual_status": "CONFLICT",
+      "expected_codes": [
+        "OVER_TRANSFER"
+      ],
+      "actual_codes": [
+        "OVER_TRANSFER"
+      ],
+      "pass": true,
+      "evidence_ok": true
+    }
+  ]
+}

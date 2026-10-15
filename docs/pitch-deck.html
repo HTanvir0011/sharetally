@@ -1,0 +1,215 @@
+<!doctype html>
+<!-- Export: msedge --headless=new --no-pdf-header-footer --print-to-pdf="docs/ShareTally_Pitch_Deck.pdf" "file:///<path>/docs/pitch-deck.html"  (10 slides, 16:9) -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ShareTally — Pitch deck</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  @page { size: 1280px 720px; margin: 0; }
+  :root { --paper: #f6f1e6; --paper2: #ede4d1; --ink: #1c2333; --ink2: #4b5469; --brand: #22385c; --margin: #c8553d; --gold: #e0a526;
+          --red: #a8261d; --redbg: #fbe8e5; --amber: #8f5600; --amberbg: #fbefd8; --blue: #2c5797; --bluebg: #e7eef9; --green: #1d6656; --greenbg: #e1f1ec; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "Hind Siliguri", "Nirmala UI", sans-serif; color: var(--ink); background: #888; }
+  .slide { width: 1280px; height: 720px; background: var(--paper); position: relative; overflow: hidden; padding: 56px 72px 48px;
+           break-after: page; page-break-after: always; border-left: 10px solid var(--margin); }
+  .slide:last-child { break-after: auto; page-break-after: auto; }
+  .kicker { font-size: 18px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--margin); margin-bottom: 8px; }
+  h1 { font-size: 64px; line-height: 1.05; margin: 0 0 16px; letter-spacing: -.01em; }
+  h2 { font-size: 44px; line-height: 1.1; margin: 0 0 24px; letter-spacing: -.01em; }
+  p, li { font-size: 25px; line-height: 1.4; }
+  ul { margin: 0; padding-left: 28px; } li { margin-bottom: 10px; }
+  .muted { color: var(--ink2); }
+  .num { font-family: "IBM Plex Mono", Consolas, monospace; }
+  .foot { position: absolute; left: 72px; right: 72px; bottom: 22px; display: flex; justify-content: space-between; font-size: 15px; color: var(--ink2); }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
+  .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .grid4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .card { background: #fffdf7; border: 1.5px solid #ddd2bc; border-radius: 14px; padding: 22px 24px; }
+  .card h3 { margin: 0 0 8px; font-size: 26px; }
+  .card p { font-size: 21px; margin: 0; }
+  .big { font-family: "IBM Plex Mono", Consolas, monospace; font-size: 58px; font-weight: 500; line-height: 1; margin-bottom: 8px; }
+  .tile-c { border-top: 8px solid var(--red); } .tile-i { border-top: 8px solid var(--amber); } .tile-a { border-top: 8px solid var(--blue); } .tile-n { border-top: 8px solid var(--green); }
+  .pill { display: inline-block; padding: 3px 14px; border-radius: 999px; font-size: 20px; font-weight: 700; }
+  .c { background: var(--redbg); color: var(--red); } .i { background: var(--amberbg); color: var(--amber); } .a { background: var(--bluebg); color: var(--blue); } .n { background: var(--greenbg); color: var(--green); }
+  .shot { width: 100%; max-height: 460px; object-fit: cover; object-position: top left; border-radius: 10px;
+          border: 1.5px solid #ddd2bc; box-shadow: 0 12px 30px -16px rgba(0,0,0,.35); }
+  .title-slide { background: var(--brand); color: #fff; border-left-color: var(--margin); }
+  .title-slide .kicker { color: var(--gold); }
+  .title-slide .muted, .title-slide .foot { color: #c9d4e8; }
+  .quote { font-size: 30px; line-height: 1.35; border-left: 6px solid var(--margin); padding-left: 22px; margin: 18px 0; }
+  code { font-family: "IBM Plex Mono", Consolas, monospace; font-size: .85em; background: var(--paper2); padding: 1px 6px; border-radius: 5px; }
+  .ph { background: #fff3c4; padding: 0 6px; border-radius: 4px; color: var(--ink); }
+  .step { display: flex; gap: 18px; align-items: flex-start; margin-bottom: 16px; }
+  .step b.n { flex: none; width: 46px; height: 46px; border-radius: 50%; background: var(--brand); color: #fff; display: grid; place-items: center; font-size: 22px; }
+  .step div { font-size: 24px; line-height: 1.35; }
+</style>
+</head>
+<body>
+
+<!-- 1 -->
+<section class="slide title-slide">
+  <div class="kicker">LandTech 2026 · P3 Fraud &amp; Double-Selling Detection</div>
+  <h1>ShareTally<br><span style="font-weight:500">অংশ-হিসাব</span></h1>
+  <p style="font-size:34px;max-width:900px;margin-top:10px">A plot cannot be sold twice if every share is accounted for — before mutation.</p>
+  <svg viewBox="0 0 1000 60" width="1000" height="60" style="margin-top:40px" aria-hidden="true">
+    <rect x="0" y="5" width="420" height="50" fill="#2f6f8f"/><rect x="420" y="5" width="280" height="50" fill="#a0783a"/>
+    <rect x="700" y="5" width="140" height="50" fill="#5b7f4a"/><rect x="840" y="5" width="160" height="50" fill="#c8553d"/>
+    <line x1="840" y1="0" x2="840" y2="60" stroke="#fff" stroke-width="3" stroke-dasharray="6 4"/>
+  </svg>
+  <p class="muted" style="font-size:20px">The red part: land that had already been sold.</p>
+  <div class="foot"><span>Team <span class="ph">[TEAM NAME]</span> · <span class="ph">[Student 1]</span> · <span class="ph">[Student 2]</span></span><span>Prototype on synthetic data</span></div>
+</section>
+
+<!-- 2 -->
+<section class="slide">
+  <div class="kicker">The problem</div>
+  <h2>The khatian lags the deed — and a second sale slips through the gap</h2>
+  <div class="grid3">
+    <div class="card"><h3>Two offices</h3><p>Deeds: Sub-Registry (Law Ministry). Khatian: AC (Land) mutation (Land Ministry). The rule book names this split as a root of disputes.</p></div>
+    <div class="card"><h3>Slow mutation</h3><p>Only ~30% of new owners applied for mutation within 3 months in a 2018 trial across 46 upazilas.<br><span class="muted">BIT, 2020</span></p></div>
+    <div class="card"><h3>Weak safeguard</h3><p>A sale deed is registered on the latest khatian plus the seller's own affidavit that they have not sold before.<br><span class="muted">Registration Act s.52A</span></p></div>
+  </div>
+  <p class="quote">Until the first buyer mutates, the khatian still shows the seller — so the same share can be sold again, and the second buyer may reach the mutation desk first.</p>
+  <div class="foot"><span>ShareTally · অংশ-হিসাব</span><span>2</span></div>
+</section>
+
+<!-- 3 -->
+<section class="slide">
+  <div class="kicker">The idea</div>
+  <h2>Treat every plot like a bank account of shares</h2>
+  <div class="grid2">
+    <div>
+      <div class="step"><b class="n">1</b><div>The latest khatian <b>opens the account</b> — anna notation, decimals, acres become exact fractions.</div></div>
+      <div class="step"><b class="n">2</b><div>Every registered deed <b>moves shares</b>, oldest first; earlier deeds keep priority (TPA s.48).</div></div>
+      <div class="step"><b class="n">3</b><div>Moving more than is left <b>bounces</b> — with the earlier deeds as proof.</div></div>
+      <div class="step"><b class="n">4</b><div>Missing statements make it <b>unconfirmed</b>, never "fine".</div></div>
+    </div>
+    <div class="card">
+      <h3>The feed already exists in law</h3>
+      <p>The Sub-Registrar must send a <b>Land Transfer (L.T.) notice</b> for every registered transfer (SAT Act 1950 s.89), and the land office must open a mutation file on it (s.143C).</p>
+      <p style="margin-top:14px">We only need it <b>digital and reconciled</b>.</p>
+    </div>
+  </div>
+  <div class="foot"><span>ShareTally · অংশ-হিসাব</span><span>3</span></div>
+</section>
+
+<!-- 4 -->
+<section class="slide">
+  <div class="kicker">Demo · worked example (fictional)</div>
+  <h2 style="font-size:38px">Joynal held 30 decimal, sold 20 in 2023, now sells 20 again</h2>
+  <div class="grid2" style="grid-template-columns: 1.25fr 1fr; gap:28px">
+    <img class="shot" src="img/case-conflict.png" alt="Case review showing Conflict and OVER_TRANSFER">
+    <div>
+      <p><span class="pill c">Conflict</span> <code>OVER_TRANSFER</code></p>
+      <p>Remaining: <b class="num">10.00</b> decimal<br>Claimed: <b class="num">20.00</b> decimal<br>Shortfall: <b class="num">10.00</b> decimal</p>
+      <p class="muted" style="font-size:22px">Earlier deed 2023/0457 was never mutated — so the khatian still showed Joynal. A khatian-only check would have cleared this case.</p>
+      <p style="font-size:22px"><b>Suggested action:</b> hold; notify every earlier buyer; get certified copies.</p>
+    </div>
+  </div>
+  <div class="foot"><span>ShareTally · অংশ-হিসাব</span><span>4</span></div>
+</section>
+
+<!-- 5 -->
+<section class="slide">
+  <div class="kicker">Two users, one check</div>
+  <h2>Catch it before registration, or before mutation</h2>
+  <div class="grid2" style="grid-template-columns: 1fr 1.2fr; gap:30px">
+    <div>
+      <ul>
+        <li><b>Sub-Registry clerk:</b> records the L.T. notice; <b>pre-registration check</b> before saving.</li>
+        <li><b>AC (Land) reviewer:</b> risk-sorted mutation queue, evidence, share strip, timeline, decision with reason.</li>
+        <li><b>Auditor:</b> read-only; verifies the tamper-evident log.</li>
+        <li>Bangla / English; works on a phone.</li>
+      </ul>
+    </div>
+    <img class="shot" src="img/intake-check.png" alt="Pre-registration check flags a proposed deed">
+  </div>
+  <div class="foot"><span>ShareTally · অংশ-হিসাব</span><span>5</span></div>
+</section>
+
+<!-- 6 -->
+<section class="slide">
+  <div class="kicker">Honest by design</div>
+  <h2>Missing data is never reported as clean</h2>
+  <div class="grid4">
+    <div class="card tile-c"><p><span class="pill c">Conflict</span></p><p style="margin-top:10px">Over-transfer · deed not in index · mutation ≠ deed · shares &gt; 100%</p></div>
+    <div class="card tile-i"><p><span class="pill i">Incomplete</span></p><p style="margin-top:10px">Index gap · deed older than index · unknown seller · bigha undefined · old RS dag split · heir shares ≠ 1</p></div>
+    <div class="card tile-a"><p><span class="pill a">Attention</span></p><p style="margin-top:10px">Unmutated &gt; 90 days · quick resale — context only</p></div>
+    <div class="card tile-n"><p><span class="pill n">No conflict</span></p><p style="margin-top:10px">"in the supplied records and coverage" — not a title guarantee</p></div>
+  </div>
+  <p class="quote" style="margin-top:30px">ShareTally never decides ownership and never calls anyone fraudulent. The AC (Land) decides; "proceed" is blocked while a conflict or gap remains.</p>
+  <div class="foot"><span>ShareTally · অংশ-হিসাব</span><span>6</span></div>
+</section>
+
+<!-- 7 -->
+<section class="slide">
+  <div class="kicker">Architecture &amp; safeguards</div>
+  <h2>Simple stack, auditable rules</h2>
+  <div class="grid2">
+    <div class="card">
+      <h3>Stack</h3>
+      <p>Python <code>fractions</code> ledger engine (pure, tested) · FastAPI · SQLite · server-rendered pages, vanilla JS · 51 automated tests · optional Claude API with offline fallback</p>
+    </div>
+    <div class="card">
+      <h3>Security (own prototype only)</h3>
+      <p>Hashed passwords · roles · CSRF · login throttling · strict CSP · hash-chained audit log storing the engine version with each decision</p>
+    </div>
+    <div class="card">
+      <h3>AI, fenced in</h3>
+      <p>Drafts a plain-Bangla notice; rejected if it adds any number not in the engine's facts or uses accusatory words. Names are tokenised before sending.</p>
+    </div>
+    <div class="card">
+      <h3>Data</h3>
+      <p>100% synthetic: 49 plots, 163 fictional people ("Namuna", "Kalponik"), 62 deeds. No portal scraped, no real record used.</p>
+    </div>
+  </div>
+  <div class="foot"><span>ShareTally · অংশ-হিসাব</span><span>7</span></div>
+</section>
+
+<!-- 8 -->
+<section class="slide">
+  <div class="kicker">Evaluation (synthetic)</div>
+  <h2>Measured against results declared in advance</h2>
+  <div class="grid4">
+    <div class="card tile-n"><div class="big">70/70</div><p>declared statuses and codes matched</p></div>
+    <div class="card tile-n"><div class="big">0/30</div><p>clean plots wrongly flagged</p></div>
+    <div class="card tile-i"><div class="big">0/13</div><p>incomplete cases called clean</p></div>
+    <div class="card tile-c"><div class="big">8/12</div><p>problem cases a khatian-only check would clear</p></div>
+  </div>
+  <p class="quote" style="margin-top:30px">Same team wrote rules and expectations: this proves the mechanism works as designed, not real-world accuracy. Next: blind cases from land officers, then an approved anonymised sample.</p>
+  <div class="foot"><span>ShareTally · অংশ-হিসাব</span><span>8</span></div>
+</section>
+
+<!-- 9 -->
+<section class="slide">
+  <div class="kicker">Countrywide path</div>
+  <h2>Start from the notice the law already requires</h2>
+  <div class="grid4">
+    <div class="card"><h3>0 · Validate</h3><p>Blind tests and rule review with land officers and legal advisers</p></div>
+    <div class="card"><h3>1 · Pilot</h3><p>Digital L.T. notices from 1–2 Sub-Registries into one AC (Land) office; read-only check</p></div>
+    <div class="card"><h3>2 · Integrate</h3><p>API inside the e-mutation screen; pre-registration check at Sub-Registry</p></div>
+    <div class="card"><h3>3 · Scale</h3><p>Backfill historic deed indexes; upazila by upazila; per-plot compute scales out</p></div>
+  </div>
+  <p style="margin-top:28px"><b>Main risk:</b> inter-ministry data sharing. <b>Cost:</b> prototype runs free; the check takes &lt; 1 ms per plot on a laptop.</p>
+  <div class="foot"><span>ShareTally · অংশ-হিসাব</span><span>9</span></div>
+</section>
+
+<!-- 10 -->
+<section class="slide title-slide">
+  <div class="kicker">Team &amp; ask</div>
+  <h2 style="color:#fff">Every share accounted for.</h2>
+  <div class="grid2" style="margin-top:20px">
+    <div>
+      <p>Students: Tanvir Hossin <span class="ph">[role]</span> · <span class="ph">[NAME]</span></p>
+      <p>Faculty mentor: <span class="ph">[NAME]</span><br>Industry mentor: <span class="ph">[NAME]</span></p>
+    </div>
+    <div>
+      <p><b>Our ask:</b> one upazila pilot — digital L.T. notices from its Sub-Registry, ShareTally beside e-mutation, measured for three months.</p>
+    </div>
+  </div>
+  <div class="foot"><span>Repository <span class="ph">[link]</span> · Live demo <span class="ph">[link]</span></span><span>10</span></div>
+</section>
+
+</body>
+</html>
