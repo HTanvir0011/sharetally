@@ -1,0 +1,100 @@
+﻿{% extends "base.html" %}
+{% from "_macros.html" import verdict, finding_card, strip, strip_legend, ledger_table, holders_table with context %}
+{% block title %}{{ case['case_no'] }}{% endblock %}
+{% block content %}
+<div class="page-head">
+  <div>
+    <h1>{{ case['case_no'] }}</h1>
+    <p><span class="t-en">Mutation application</span><span class="t-bn">নামজারি আবেদন</span> · <a href="/plots/{{ plot['id'] }}">{{ label }}</a></p>
+  </div>
+  <a class="btn ghost" href="/cases">← Queue</a>
+</div>
+{% if saved %}<div class="notice" role="status">Decision recorded and added to the audit log.</div>{% endif %}
+{{ verdict(status) }}
+
+<div class="grid-2">
+  <div>
+    <section class="card">
+      <h2><span class="t-en">Why this status</span><span class="t-bn">কেন এই অবস্থা</span></h2>
+      {% for f in case_findings %}{{ finding_card(f) }}{% else %}
+        <p>No finding affects this application. Shares add up within the records and coverage shown.</p>
+      {% endfor %}
+    </section>
+
+    <section class="card">
+      <h2><span class="t-en">Ledger of this plot</span><span class="t-bn">এই দাগের অংশ-খতিয়ান</span></h2>
+      {{ strip(ledger.strip_before, "Recorded in latest khatian", "b") }}
+      {{ strip(ledger.strip_now, "After replaying registered transfers", "n") }}
+      {{ strip_legend(ledger) }}
+      <p class="mt-s"><a href="#timeline">Full timeline below ↓</a></p>
+    </section>
+  </div>
+
+  <div>
+    <section class="card">
+      <h2><span class="t-en">Application</span><span class="t-bn">আবেদন</span></h2>
+      <dl class="kv">
+        <dt>Transferor</dt><dd>{{ names[case['from_id']]['en'] }} <span class="sub-bn">{{ names[case['from_id']]['bn'] }}</span></dd>
+        <dt>Applicant</dt><dd>{{ names[case['to_id']]['en'] }} <span class="sub-bn">{{ names[case['to_id']]['bn'] }}</span></dd>
+        <dt>Quantity claimed</dt><dd class="num">{{ case['quantity_raw'] }}</dd>
+        <dt>Basis deed</dt><dd><code>{{ case['basis_office'] }} {{ case['basis_deed_no'] }}</code> ({{ case['basis_deed_date'] }})</dd>
+        <dt>Filed</dt><dd class="num">{{ case['filed_date'] }}</dd>
+        <dt>Plot area</dt><dd class="num">{{ ledger.area }} decimal</dd>
+        <dt>Record</dt><dd>{{ plot['record_ref'] }} ({{ plot['record_date'] }})</dd>
+      </dl>
+    </section>
+
+    <section class="card">
+      <h2><span class="t-en">Draft notice in plain Bangla</span><span class="t-bn">সহজ বাংলায় নোটিশের খসড়া</span></h2>
+      <div class="assist">
+        <p class="muted">Uses AI when configured; every number in the draft is checked against the engine's facts, and the template text is used if the check fails or AI is unavailable.</p>
+        {% if user['role'] == 'reviewer' %}
+        <button class="btn ghost" type="button" id="explain-btn" data-case="{{ case['id'] }}">Draft notice text</button>
+        {% else %}<p class="muted">Only reviewers can draft notices.</p>{% endif %}
+        <div id="explain-meta" class="assist-meta" aria-live="polite"></div>
+        <div id="explain-out" class="assist-out" hidden>
+          <p data-bn lang="bn"></p>
+          <p data-en class="muted"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2><span class="t-en">Reviewer decision</span><span class="t-bn">পর্যালোচকের সিদ্ধান্ত</span></h2>
+      {% if can_decide %}
+      <form method="post" action="/cases/{{ case['id'] }}/decision">
+        <input type="hidden" name="csrf_token" value="{{ user['csrf'] }}">
+        <div class="radio-list" role="radiogroup" aria-label="Decision">
+          {% for key, labels in decisions.items() %}
+          {% set blocked = key == 'proceed' and status in ('CONFLICT', 'INCOMPLETE') %}
+          <label><input type="radio" name="decision" value="{{ key }}" required {% if blocked %}disabled{% endif %}>
+            <span><span class="t-en">{{ labels[0] }}</span><span class="t-bn">{{ labels[1] }}</span>{% if blocked %}<br><small class="muted">Not available while the check shows {{ status.lower().replace('_', ' ') }}.</small>{% endif %}</span></label>
+          {% endfor %}
+        </div>
+        <div class="field"><label for="note">Reason / evidence seen <span class="hint">(5–1000 characters, stored with the engine status at this moment)</span></label>
+          <textarea id="note" name="note" required minlength="5" maxlength="1000"></textarea></div>
+        <button class="btn" type="submit">Record decision</button>
+      </form>
+      <p class="muted mt-s">This records the reviewer's recommendation inside the prototype. The legal mutation order remains with the AC (Land).</p>
+      {% else %}
+        <p class="muted">Read-only role: decisions are shown below.</p>
+      {% endif %}
+      {% if reviews %}
+      <h3 class="mt">History</h3>
+      <ul>
+        {% for r in reviews %}<li><span class="num">{{ r['created_at'] }}</span> · {{ r['reviewer'] }} · <b>{{ r['decision'].replace('_', ' ') }}</b> (engine said {{ r['engine_status'] }}, v{{ r['engine_version'] }})<br><small>{{ r['note'] }}</small></li>{% endfor %}
+      </ul>
+      {% endif %}
+    </section>
+
+    <section class="card">
+      <h2>Current balances</h2>
+      {{ holders_table(ledger.holders) }}
+    </section>
+  </div>
+</div>
+<section class="card" id="timeline">
+  <h2><span class="t-en">Timeline: record, deeds, inheritance and mutation, oldest first</span><span class="t-bn">সময়ক্রম</span></h2>
+  {{ ledger_table(ledger.rows) }}
+</section>
+{% endblock %}

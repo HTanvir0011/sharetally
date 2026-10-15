@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}ShareTally{% endblock %} · ShareTally</title>
+  <meta name="description" content="ShareTally (অংশ-হিসাব): share-conservation checks for registered land transfers. Prototype on synthetic data.">
+  {% if user %}<meta name="csrf-token" content="{{ user['csrf'] }}">{% endif %}
+  <link rel="icon" href="/static/img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="/static/css/app.css?v={{ asset_v }}">
+  <script src="/static/js/app.js?v={{ asset_v }}" defer></script>
+</head>
+<body>
+<header class="top">
+  <div class="top-inner">
+    <a class="brand" href="/">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="2" width="28" height="28" rx="6" fill="currentColor" opacity=".12"/><rect x="6" y="9" width="9" height="14" rx="1.5" fill="currentColor"/><rect x="16" y="9" width="5" height="14" rx="1.5" fill="#e0a526"/><rect x="22" y="9" width="4" height="14" rx="1.5" fill="#c8553d"/></svg>
+      <span>ShareTally <span class="bn-name">অংশ-হিসাব</span></span>
+    </a>
+    <button class="menu-btn" type="button" data-menu aria-controls="nav" aria-expanded="false">Menu</button>
+    <nav class="nav" id="nav" aria-label="Main">
+      {% set path = request.url.path %}
+      {% if user %}
+        <a href="/dashboard" {% if path == '/dashboard' %}aria-current="page"{% endif %}><span class="t-en">Dashboard</span><span class="t-bn">ড্যাশবোর্ড</span></a>
+        {% if user['role'] in ('reviewer', 'auditor') %}
+        <a href="/cases" {% if path.startswith('/cases') %}aria-current="page"{% endif %}><span class="t-en">Mutation queue</span><span class="t-bn">নামজারি তালিকা</span></a>
+        {% endif %}
+        {% if user['role'] == 'clerk' %}
+        <a href="/intake" {% if path == '/intake' %}aria-current="page"{% endif %}><span class="t-en">Record L.T. notice</span><span class="t-bn">এল.টি. নোটিশ</span></a>
+        {% endif %}
+        <a href="/plots" {% if path.startswith('/plots') %}aria-current="page"{% endif %}><span class="t-en">Plots</span><span class="t-bn">দাগ</span></a>
+        {% if user['role'] == 'auditor' %}
+        <a href="/audit" {% if path == '/audit' %}aria-current="page"{% endif %}><span class="t-en">Audit log</span><span class="t-bn">অডিট লগ</span></a>
+        {% endif %}
+        <a href="/evaluation" {% if path == '/evaluation' %}aria-current="page"{% endif %}><span class="t-en">Evaluation</span><span class="t-bn">মূল্যায়ন</span></a>
+      {% endif %}
+      <a href="/about" {% if path == '/about' %}aria-current="page"{% endif %}><span class="t-en">About</span><span class="t-bn">পরিচিতি</span></a>
+      <button type="button" data-lang-toggle aria-label="Switch language"><span class="t-en">বাংলা</span><span class="t-bn">English</span></button>
+      {% if user %}
+        <span class="who">{{ user['display_name'] }}</span>
+        <form method="post" action="/logout"><input type="hidden" name="csrf_token" value="{{ user['csrf'] }}"><button type="submit">Log out</button></form>
+      {% endif %}
+    </nav>
+  </div>
+</header>
+<div class="ribbon" role="note">
+  <div class="ribbon-inner">
+    <span><b>SYNTHETIC DATA</b> · every person, plot and deed here is fictional</span>
+    <span>Registry feed is simulated</span>
+    {% if as_of %}<span>Demo clock: <span class="num">{{ as_of.isoformat() }}</span></span>{% endif %}
+    <span>Findings support a human decision; they are not legal determinations</span>
+  </div>
+</div>
+<main id="main">
+{% block content %}{% endblock %}
+</main>
+<footer>
+  ShareTally prototype · engine v{{ engine_version }} · LandTech 2026 (P3 — Fraud &amp; Double-Selling Detection) ·
+  <a href="/about">Method, sources and limitations</a>
+</footer>
+</body>
+</html>

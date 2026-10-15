@@ -1,0 +1,56 @@
+﻿{% extends "base.html" %}
+{% from "_macros.html" import verdict, finding_card, strip, strip_legend, ledger_table, holders_table, short_pill with context %}
+{% block title %}{{ label }}{% endblock %}
+{% block content %}
+<div class="page-head">
+  <div>
+    <h1>{{ label }}</h1>
+    <p>{{ plot['name_bn'] }} · {{ plot['upazila'] }}, {{ plot['district'] }} · <span class="num">{{ ledger.area }}</span> decimal ·
+      {{ plot['record_ref'] }} ({{ plot['record_date'] }}){% if plot['scenario'] != 'BG' %} · scenario <span class="code-chip">{{ plot['scenario'] }}</span>{% endif %}</p>
+  </div>
+  <a class="btn ghost" href="/plots">← Plots</a>
+</div>
+{% if saved %}<div class="notice" role="status">L.T. notice for deed {{ saved }} recorded. The ledger below already includes it.</div>{% endif %}
+{{ verdict(ledger.status) }}
+
+<div class="grid-2">
+  <div>
+    <section class="card">
+      <h2><span class="t-en">Share strip</span><span class="t-bn">অংশের চিত্র</span></h2>
+      {{ strip(ledger.strip_before, "Recorded in latest khatian", "b") }}
+      {{ strip(ledger.strip_now, "After replaying registered transfers", "n") }}
+      {{ strip_legend(ledger) }}
+    </section>
+    <section class="card">
+      <h2><span class="t-en">Findings</span><span class="t-bn">পর্যবেক্ষণ</span></h2>
+      {% for f in ledger.findings %}{{ finding_card(f) }}{% else %}<p>No findings. Shares add up within the records and coverage below.</p>{% endfor %}
+    </section>
+  </div>
+  <div>
+    <section class="card">
+      <h2>Balances</h2>
+      {{ holders_table(ledger.holders) }}
+    </section>
+    <section class="card">
+      <h2>Mutation cases on this plot</h2>
+      {% for c in cases %}
+        <p>{% if user['role'] in ('reviewer', 'auditor') %}<a href="/cases/{{ c['id'] }}">{{ c['case_no'] }}</a>{% else %}{{ c['case_no'] }}{% endif %}
+          · {{ c['status'] }} · filed {{ c['filed_date'] }}
+          {% if c['id'] in case_status %}<br>{{ short_pill(case_status[c['id']]) }}{% endif %}</p>
+      {% else %}<p class="muted">None.</p>{% endfor %}
+    </section>
+    <section class="card">
+      <h2>Data coverage</h2>
+      <p class="muted">A result can only be as complete as the registry index behind it.</p>
+      <ul>
+      {% for c in coverage %}<li>{{ c['note'] }}: <span class="num">{{ c['start_date'] }}</span> → <span class="num">{{ c['end_date'] or 'ongoing' }}</span></li>{% endfor %}
+      </ul>
+      {% if local_units %}<p>Local units: {% for u in local_units %}{{ u['note'] }}{% endfor %}</p>{% else %}<p class="muted">No local katha/bigha definition is configured for this mouza, so those units are not converted.</p>{% endif %}
+    </section>
+  </div>
+</div>
+<section class="card" id="timeline">
+  <h2><span class="t-en">Timeline: record, deeds, inheritance and mutation, oldest first</span><span class="t-bn">সময়ক্রম</span></h2>
+  {{ ledger_table(ledger.rows) }}
+</section>
+{% endblock %}

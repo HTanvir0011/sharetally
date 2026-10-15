@@ -1,0 +1,37 @@
+﻿{% extends "base.html" %}
+{% from "_macros.html" import short_pill with context %}
+{% block title %}Mutation queue{% endblock %}
+{% block content %}
+<div class="page-head">
+  <div>
+    <h1><span class="t-en">Mutation queue</span><span class="t-bn">নামজারি আবেদনের তালিকা</span></h1>
+    <p>Pending applications, most serious first. Status comes from the ledger check, not from the applicant's papers alone.</p>
+  </div>
+</div>
+<div class="filters" role="group" aria-label="Filter by status">
+  <a href="/cases" class="pill {{ 'clear' if not filter else '' }}">All</a>
+  {% for s in ['CONFLICT', 'INCOMPLETE', 'ATTENTION', 'NO_CONFLICT'] %}
+    <a href="/cases?status={{ s }}">{{ short_pill(s) }}</a>
+  {% endfor %}
+</div>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Case</th><th>Plot</th><th>Transfer claimed</th><th>Filed</th><th>Check</th><th>Codes</th><th>Review</th></tr></thead>
+  <tbody>
+  {% for r in rows %}
+    <tr>
+      <td><a href="/cases/{{ r.case['id'] }}">{{ r.case['case_no'] }}</a></td>
+      <td><a href="/plots/{{ r.case['plot_id'] }}">{{ r.plot_label }}</a></td>
+      <td>{{ r['from'] }} → {{ r['to'] }}<br><span class="num">{{ r.case['quantity_raw'] }}</span></td>
+      <td class="num">{{ r.case['filed_date'] }}</td>
+      <td>{{ short_pill(r.status) }}</td>
+      <td>{% for c in r.codes %}<span class="code-chip">{{ c }}</span> {% endfor %}</td>
+      <td>{% if r.review %}<small>{{ r.review['decision'].replace('_', ' ') }}</small>{% else %}<small class="muted">not yet</small>{% endif %}</td>
+    </tr>
+  {% else %}
+    <tr><td colspan="7">No cases match this filter.</td></tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+{% endblock %}

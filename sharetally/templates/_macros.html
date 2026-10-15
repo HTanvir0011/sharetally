@@ -1,0 +1,98 @@
+{% macro pill(status, big=False) -%}
+<span class="pill {{ status_class[status] }}{% if big %} big{% endif %}"><span class="t-en">{{ explain.status_text(status, 'en') }}</span><span class="t-bn">{{ explain.status_text(status, 'bn') }}</span></span>
+{%- endmacro %}
+
+{% macro short_pill(status) -%}
+{% set labels = {'CONFLICT': ('Conflict', 'দ্বন্দ্ব'), 'INCOMPLETE': ('Incomplete', 'অসম্পূর্ণ'), 'ATTENTION': ('Attention', 'লক্ষণীয়'), 'NO_CONFLICT': ('No conflict', 'দ্বন্দ্ব নেই')} %}
+<span class="pill {{ status_class[status] }}"><span class="t-en">{{ labels[status][0] }}</span><span class="t-bn">{{ labels[status][1] }}</span></span>
+{%- endmacro %}
+
+{% macro verdict(status, scope='') -%}
+{% set notes = {
+  'CONFLICT': ('The supplied records contradict each other. Hold and review the evidence below.', 'সরবরাহকৃত রেকর্ড পরস্পরবিরোধী। স্থগিত রেখে নিচের প্রমাণ যাচাই করুন।'),
+  'INCOMPLETE': ('The records are not enough to confirm this. Missing data is never reported as clean.', 'নিশ্চিত হওয়ার মতো রেকর্ড নেই। অনুপস্থিত তথ্যকে কখনো পরিষ্কার দেখানো হয় না।'),
+  'ATTENTION': ('No arithmetic conflict, but something deserves a look.', 'হিসাবে দ্বন্দ্ব নেই, তবে একটি বিষয় লক্ষ্য করা প্রয়োজন।'),
+  'NO_CONFLICT': ('Within the records and coverage shown, shares add up. This is not a title guarantee.', 'প্রদর্শিত রেকর্ড ও সময়সীমার মধ্যে অংশের হিসাব মেলে। এটি মালিকানার নিশ্চয়তা নয়।')} %}
+<div class="verdict {{ status_class[status] }}" role="status">
+  <div>
+    <strong><span class="t-en">{{ scope }}{{ explain.status_text(status, 'en') }}</span><span class="t-bn">{{ explain.status_text(status, 'bn') }}</span></strong>
+    <p><span class="t-en">{{ notes[status][0] }}</span><span class="t-bn">{{ notes[status][1] }}</span></p>
+  </div>
+</div>
+{%- endmacro %}
+
+{% macro finding_card(f) -%}
+<article class="finding {{ f.level }}">
+  <header>
+    <h3><span class="t-en">{{ f.title_en }}</span><span class="t-bn">{{ f.title_bn }}</span></h3>
+    <span class="code-chip">{{ f.code }}</span>
+    {% if f.proposed %}<span class="proposed-tag">proposed deed</span>{% endif %}
+  </header>
+  <p class="t-en">{{ f.text_en }}</p>
+  <p class="t-bn">{{ f.text_bn }}</p>
+  <div class="action"><b><span class="t-en">Suggested reviewer action:</span><span class="t-bn">প্রস্তাবিত পদক্ষেপ:</span></b> <span class="t-en">{{ f.action_en }}</span><span class="t-bn">{{ f.action_bn }}</span></div>
+  <div class="evidence">Evidence records: {% for e in f.evidence %}<code>{{ e }}</code>{% if not loop.last %}, {% endif %}{% endfor %}</div>
+</article>
+{%- endmacro %}
+
+{% macro strip(s, label, uid) -%}
+<div class="strip">
+  <div class="strip-label"><span>{{ label }}</span><span>whole plot = 100%</span></div>
+  <svg viewBox="0 0 1000 34" preserveAspectRatio="none" role="img" aria-label="{{ label }}: share of the plot held by each person{% if s.overflow %}, with a red section showing shares transferred beyond what existed{% endif %}">
+    <defs>
+      <pattern id="hatch-{{ uid }}" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+        <line x1="0" y1="0" x2="0" y2="10" class="over-hatch"/>
+      </pattern>
+    </defs>
+    <rect x="0" y="2" width="{{ s.whole }}" height="30" class="unalloc"/>
+    {% for g in s.segments %}<rect x="{{ g.x }}" y="2" width="{{ g.w }}" height="30" class="{{ g.cls }}"><title>{{ g.label }}: {{ g.pct }}%</title></rect>{% endfor %}
+    {% if s.overflow %}
+      <rect x="{{ s.overflow.x }}" y="2" width="{{ s.overflow.w }}" height="30" class="over"><title>Transferred beyond remaining shares</title></rect>
+      <rect x="{{ s.overflow.x }}" y="2" width="{{ s.overflow.w }}" height="30" fill="url(#hatch-{{ uid }})"/>
+    {% endif %}
+    <rect x="0" y="2" width="{{ s.whole }}" height="30" class="frame"/>
+    <line x1="{{ s.whole }}" y1="0" x2="{{ s.whole }}" y2="34" class="whole-line"/>
+  </svg>
+</div>
+{%- endmacro %}
+
+{% macro strip_legend(lv) -%}
+<ul class="legend" aria-label="Share of the plot: recorded, then now">
+  {% for g in lv.legend %}<li><span class="swatch {{ g.cls }}"></span>{{ g.label }} <span class="num">{{ g.before }}% → {{ g.now }}%</span></li>{% endfor %}
+  {% if lv.overflow_pct %}<li><span class="swatch over"></span>Claimed beyond what remained <span class="num">{{ lv.overflow_pct }}%</span></li>{% endif %}
+</ul>
+{%- endmacro %}
+
+{% macro ledger_table(rows) -%}
+<div class="table-wrap">
+<table class="khata">
+  <thead><tr><th>Date</th><th>Source</th><th>Event</th><th>Balances after (decimal)</th><th>Checks</th></tr></thead>
+  <tbody>
+  {% for r in rows %}
+    <tr class="row-{{ r.applied }}{% if r.proposed %} row-proposed{% endif %}" id="src-{{ r.source_id }}">
+      <td class="num">{{ r.date }}</td>
+      <td><code>{{ r.ref }}</code><br><span class="applied-tag">{{ r.kind.replace('_', ' ') }}{% if r.applied not in ('applied', 'reference') %} · {{ r.applied.replace('_', ' ') }}{% endif %}</span></td>
+      <td>{{ r.text }}</td>
+      <td class="num">{% for b in r.balances %}{{ b }}<br>{% endfor %}</td>
+      <td>{% for c in r.codes %}<span class="code-chip">{{ c }}</span> {% endfor %}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+{%- endmacro %}
+
+{% macro holders_table(holders) -%}
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Holder</th><th>Recorded share</th><th>Recorded (dec)</th><th>Now, per ledger</th><th>Now (dec)</th></tr></thead>
+  <tbody>
+  {% for h in holders %}
+  <tr><td>{{ h.name_en }}<span class="sub-bn">{{ h.name_bn }}</span><code class="muted">{{ h.id }}</code></td>
+      <td class="num">{{ h.baseline }}</td><td class="num">{{ h.baseline_dec }}</td>
+      <td class="num">{{ h.current }}</td><td class="num">{{ h.current_dec }}</td></tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+{%- endmacro %}

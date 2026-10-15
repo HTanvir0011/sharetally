@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}Sign in{% endblock %}
+{% block content %}
+<div class="login-wrap">
+  <section class="hero">
+    <h1><span class="t-en">A plot cannot be sold twice if every share is accounted for.</span><span class="t-bn">প্রতিটি অংশের হিসাব থাকলে একই জমি দুইবার বিক্রি করা যায় না।</span></h1>
+    <p class="lede t-en">ShareTally keeps a running balance of who holds how much of each dag. It replays registered transfers (from L.T. notices) on top of the latest khatian, so a reviewer sees a second sale or an over-sale before mutation, even while the khatian is still out of date.</p>
+    <p class="lede t-bn">ShareTally প্রতিটি দাগে কার কতটুকু অংশ আছে তার চলমান হিসাব রাখে। সর্বশেষ খতিয়ানের ওপর নিবন্ধিত হস্তান্তর (এল.টি. নোটিশ) ক্রমানুসারে বসিয়ে দেখায় — খতিয়ান হালনাগাদ না থাকলেও নামজারির আগেই দ্বিতীয় বিক্রি বা অংশের অতিরিক্ত বিক্রি ধরা পড়ে।</p>
+    <ol class="steps">
+      <li><span class="t-en">The Sub-Registry clerk records each registered deed's L.T. notice and can run a pre-registration check.</span><span class="t-bn">সাব-রেজিস্ট্রি অফিস প্রতিটি নিবন্ধিত দলিলের এল.টি. নোটিশ লিপিবদ্ধ করে ও নিবন্ধনের আগে যাচাই করতে পারে।</span></li>
+      <li><span class="t-en">The engine checks exact share arithmetic, registry cross-references and data coverage.</span><span class="t-bn">ইঞ্জিন অংশের নির্ভুল হিসাব, রেজিস্ট্রি সূচির সাথে মিল ও তথ্যের পরিসর যাচাই করে।</span></li>
+      <li><span class="t-en">The AC Land reviewer sees evidence and decides; every action enters a tamper-evident log.</span><span class="t-bn">সহকারী কমিশনার (ভূমি) প্রমাণ দেখে সিদ্ধান্ত নেন; প্রতিটি কাজ অপরিবর্তনযোগ্য লগে যায়।</span></li>
+    </ol>
+  </section>
+  <section class="card">
+    <h2>Sign in</h2>
+    {% if error %}<div class="errors" role="alert">{{ error }}</div>{% endif %}
+    <form method="post" action="/login" autocomplete="off">
+      <input type="hidden" name="login_csrf" value="{{ login_csrf }}">
+      <input type="hidden" name="next" value="{{ next }}">
+      <div class="field"><label for="username">Username</label><input id="username" name="username" type="text" required maxlength="60"></div>
+      <div class="field"><label for="password">Password</label><input id="password" name="password" type="password" required maxlength="200"></div>
+      <button class="btn" type="submit">Sign in</button>
+    </form>
+    {% if demo_users %}
+    <div class="demo-logins">
+      <p class="muted">Demo accounts for this synthetic prototype (change them with environment variables before any public deployment):</p>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Role</th><th>Username</th><th>Password</th></tr></thead>
+        <tbody>{% for u in demo_users %}<tr><td>{{ u[2] }}</td><td><code>{{ u[0] }}</code></td><td><code>{{ u[3] }}</code></td></tr>{% endfor %}</tbody>
+      </table></div>
+    </div>
+    {% endif %}
+  </section>
+</div>
+{% endblock %}

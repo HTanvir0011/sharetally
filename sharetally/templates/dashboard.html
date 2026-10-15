@@ -1,0 +1,51 @@
+﻿{% extends "base.html" %}
+{% from "_macros.html" import short_pill with context %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+<div class="page-head">
+  <div>
+    <h1><span class="t-en">Good day, {{ user['display_name'] }}</span><span class="t-bn">স্বাগতম</span></h1>
+    <p>Demo Upazila land office · {{ pending }} pending mutation cases · {{ reviewed }} already reviewed</p>
+  </div>
+  <div class="btn-row">
+    {% if user['role'] == 'clerk' %}<a class="btn" href="/intake">Record an L.T. notice</a>{% endif %}
+    {% if user['role'] in ('reviewer', 'auditor') %}<a class="btn" href="/cases">Open mutation queue</a>{% endif %}
+    <a class="btn ghost" href="/plots">Browse plots</a>
+  </div>
+</div>
+
+<div class="tiles">
+  <a class="tile conflict" href="/cases?status=CONFLICT"><div class="big">{{ counts['CONFLICT'] }}</div><span class="t-en">pending cases with a conflict</span><span class="t-bn">দ্বন্দ্বযুক্ত মামলা</span></a>
+  <a class="tile incomplete" href="/cases?status=INCOMPLETE"><div class="big">{{ counts['INCOMPLETE'] }}</div><span class="t-en">incomplete — records cannot confirm</span><span class="t-bn">অসম্পূর্ণ রেকর্ড</span></a>
+  <a class="tile attention" href="/cases?status=ATTENTION"><div class="big">{{ counts['ATTENTION'] }}</div><span class="t-en">need attention</span><span class="t-bn">লক্ষণীয়</span></a>
+  <a class="tile clear" href="/cases?status=NO_CONFLICT"><div class="big">{{ counts['NO_CONFLICT'] }}</div><span class="t-en">no conflict in supplied records</span><span class="t-bn">দ্বন্দ্ব নেই</span></a>
+</div>
+
+<div class="grid-2">
+  <section class="card">
+    <h2>Highest-priority pending cases</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Case</th><th>Plot</th><th>Status</th></tr></thead>
+      <tbody>
+      {% for r in top %}
+        <tr><td>{% if user['role'] in ('reviewer', 'auditor') %}<a href="/cases/{{ r.case['id'] }}">{{ r.case['case_no'] }}</a>{% else %}{{ r.case['case_no'] }}{% endif %}<br><small>{{ r['from'] }} → {{ r['to'] }}</small></td>
+            <td><a href="/plots/{{ r.case['plot_id'] }}">{{ r.plot_label }}</a></td><td>{{ short_pill(r.status) }}</td></tr>
+      {% endfor %}
+      </tbody>
+    </table></div>
+  </section>
+  <section>
+    <div class="card">
+      <h2>How results are measured</h2>
+      <p>On a fresh copy of the synthetic dataset, <span class="num">{{ evaluation.passed }}/{{ evaluation.objects }}</span> pre-declared expectations match, with <span class="num">{{ evaluation.background_false_flags }}</span> false flags on {{ evaluation.background_plots }} clean background plots and <span class="num">{{ evaluation.false_clean_on_incomplete }}</span> incomplete cases reported as clean.</p>
+      <p class="muted">These are synthetic tests written by the same team that wrote the rules. They show the mechanism works as designed, not real-world accuracy.</p>
+      <a href="/evaluation">See the full evaluation →</a>
+    </div>
+    <div class="card">
+      <h2>Registry feed</h2>
+      <p><span class="num">{{ notices }}</span> L.T. notices recorded through the clerk screen in this demo, on top of the seeded registry index.</p>
+      {% if chain %}<p>Audit chain: {% if chain.ok %}<span class="pill clear">intact · {{ chain.entries }} entries</span>{% else %}<span class="pill conflict">broken at #{{ chain.first_bad_seq }}</span>{% endif %}</p>{% endif %}
+    </div>
+  </section>
+</div>
+{% endblock %}

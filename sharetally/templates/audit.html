@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Audit log{% endblock %}
+{% block content %}
+<div class="page-head">
+  <div>
+    <h1><span class="t-en">Audit log</span><span class="t-bn">অডিট লগ</span></h1>
+    <p>Append-only and hash-chained: each entry's SHA-256 covers the previous entry's hash.</p>
+  </div>
+</div>
+<div class="verdict {{ 'clear' if chain.ok else 'conflict' }}" role="status">
+  <div>
+    {% if chain.ok %}<strong>Chain intact — {{ chain.entries }} entries verified</strong>
+      <p>Head hash <code>{{ chain.head }}</code>. Publishing or printing this value daily lets anyone detect a rewritten history later.</p>
+    {% else %}<strong>Chain broken at entry #{{ chain.first_bad_seq }}</strong><p>An earlier entry was edited or removed.</p>{% endif %}
+  </div>
+</div>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>#</th><th>Time (UTC)</th><th>Actor</th><th>Action</th><th>Object</th><th>Detail</th><th>Hash</th></tr></thead>
+  <tbody>
+  {% for e in entries %}
+    <tr><td class="num">{{ e['seq'] }}</td><td class="num">{{ e['ts'] }}</td><td>{{ e['actor'] }}<br><small>{{ e['role'] }}</small></td>
+      <td><span class="code-chip">{{ e['action'] }}</span></td><td><code>{{ e['object'] }}</code></td>
+      <td><small class="mono">{{ e['detail'] }}</small></td><td><code title="{{ e['hash'] }}">{{ e['hash'][:12] }}…</code></td></tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+{% endblock %}

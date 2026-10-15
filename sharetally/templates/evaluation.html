@@ -1,0 +1,59 @@
+﻿{% extends "base.html" %}
+{% from "_macros.html" import short_pill with context %}
+{% block title %}Evaluation{% endblock %}
+{% block content %}
+<div class="page-head">
+  <div>
+    <h1><span class="t-en">Evaluation on synthetic scenarios</span><span class="t-bn">কৃত্রিম পরিস্থিতিতে মূল্যায়ন</span></h1>
+    <p>Run on a fresh copy of the generated dataset (demo clock {{ ev.as_of }}), so edits made during a demo never change these numbers.</p>
+  </div>
+</div>
+
+<div class="tiles">
+  <div class="tile clear"><div class="big">{{ ev.passed }}/{{ ev.objects }}</div>expected statuses and finding codes matched (plots + cases)</div>
+  <div class="tile clear"><div class="big">{{ ev.background_false_flags }}/{{ ev.background_plots }}</div>clean background plots wrongly flagged</div>
+  <div class="tile incomplete"><div class="big">{{ ev.false_clean_on_incomplete }}/{{ ev.incomplete_expected }}</div>incomplete-data objects reported as clean</div>
+  <div class="tile attention"><div class="big">{{ ev.flags_with_evidence }}/{{ ev.flags_total }}</div>flags that cite at least one source record</div>
+  <div class="tile"><div class="big">{{ ev.latency_ms.max }}<small> ms</small></div>slowest plot ledger ({{ ev.latency_ms.plots }} plots, mean {{ ev.latency_ms.mean }} ms)</div>
+</div>
+
+<section class="card">
+  <h2>Compared with checking the latest khatian alone</h2>
+  <p>Today the sale-deed safeguard relies on the seller appearing in the latest khatian plus the seller's own affidavit (Registration Act s.52A). A check that sees only the khatian would have cleared
+    <b class="num">{{ ev.baseline.cleared_by_baseline|length }}</b> of <b class="num">{{ ev.baseline.problem_cases }}</b> pending cases that ShareTally holds as conflict or incomplete{% if ev.baseline.cleared_by_baseline %} ({{ ev.baseline.cleared_by_baseline|join(', ') }}){% endif %},
+    and held <b class="num">{{ ev.baseline.held_by_baseline|length }}</b> of <b class="num">{{ ev.baseline.clean_cases }}</b> clean cases{% if ev.baseline.held_by_baseline %} ({{ ev.baseline.held_by_baseline|join(', ') }}){% endif %}.</p>
+</section>
+
+<section class="card">
+  <h2>What these numbers do and do not show</h2>
+  <ul>
+    <li>Expectations were written next to each scenario before the engine was run, but by the same team that wrote the rules. Matching them shows the mechanism behaves as designed; it is <b>not</b> evidence of real-world accuracy.</li>
+    <li>Real records contain spelling variants, unrecorded oral partitions, missing volumes and errors that synthetic data does not reproduce. Expect more INCOMPLETE results and some false conflicts in practice.</li>
+    <li>Next step: blind scenarios written by a mentor from plain-language descriptions, then a pilot on anonymised, organizer-approved samples.</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>Per finding code (plots)</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Code</th><th>Correctly raised</th><th>Raised but not expected</th><th>Expected but missed</th></tr></thead>
+    <tbody>{% for code, c in ev.per_code.items() %}<tr><td><span class="code-chip">{{ code }}</span></td><td class="num">{{ c.tp }}</td><td class="num">{{ c.fp }}</td><td class="num">{{ c.fn }}</td></tr>{% endfor %}</tbody>
+  </table></div>
+</section>
+
+<section class="card">
+  <h2>Every expectation</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Object</th><th>Scenario</th><th>Expected</th><th>Actual</th><th>Codes (expected → actual)</th><th>Result</th></tr></thead>
+    <tbody>
+    {% for r in ev.rows if r.scenario != 'BG' %}
+      <tr><td>{{ r.object_type }} <code>{{ r.object_id }}</code></td><td><span class="code-chip">{{ r.scenario }}</span> {{ r.description }}</td>
+        <td>{{ short_pill(r.expected_status) }}</td><td>{{ short_pill(r.actual_status) if r.actual_status in status_class else r.actual_status }}</td>
+        <td><small>{{ r.expected_codes|join(', ') or '—' }} → {{ r.actual_codes|join(', ') or '—' }}</small></td>
+        <td>{% if r['pass'] %}<span class="pill clear">match</span>{% else %}<span class="pill conflict">mismatch</span>{% endif %}</td></tr>
+    {% endfor %}
+    </tbody>
+  </table></div>
+  <p class="muted">Background plots and their cases ({{ ev.rows|selectattr('scenario', 'equalto', 'BG')|list|length }} objects) are omitted from this table but counted above.</p>
+</section>
+{% endblock %}

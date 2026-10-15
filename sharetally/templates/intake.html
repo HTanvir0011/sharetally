@@ -1,0 +1,82 @@
+﻿{% extends "base.html" %}
+{% from "_macros.html" import verdict, finding_card, strip, strip_legend, ledger_table with context %}
+{% block title %}Record L.T. notice{% endblock %}
+{% block content %}
+<div class="page-head">
+  <div>
+    <h1><span class="t-en">Record a registered deed (L.T. notice)</span><span class="t-bn">নিবন্ধিত দলিলের এল.টি. নোটিশ</span></h1>
+    <p>Run the pre-registration check first; saving adds the deed to the registry index the land office reviews.</p>
+  </div>
+</div>
+
+<div class="grid-2">
+  <section class="card">
+    {% if errors %}<div class="errors" role="alert"><b>Please fix:</b><ul>{% for e in errors %}<li>{{ e }}</li>{% endfor %}</ul></div>{% endif %}
+    <form method="post" action="/intake" id="intake-form" novalidate>
+      <input type="hidden" name="csrf_token" value="{{ user['csrf'] }}">
+      <div class="form-grid">
+        <div class="field"><label for="deed_no">Deed number <span class="hint">e.g. 2026/0812</span></label>
+          <input id="deed_no" name="deed_no" type="text" value="{{ f.deed_no }}" maxlength="12" required></div>
+        <div class="field"><label for="deed_type">Deed type</label>
+          <select id="deed_type" name="deed_type"><option value="sale" {% if f.deed_type == 'sale' %}selected{% endif %}>Sale (সাফ কবলা)</option><option value="gift" {% if f.deed_type == 'gift' %}selected{% endif %}>Gift / heba (হেবা)</option></select></div>
+        <div class="field"><label for="execution_date">Execution date</label>
+          <input id="execution_date" name="execution_date" type="date" value="{{ f.execution_date }}" required></div>
+        <div class="field"><label for="registration_date">Registration date</label>
+          <input id="registration_date" name="registration_date" type="date" value="{{ f.registration_date }}" required></div>
+      </div>
+      <div class="field"><label for="plot_id">Plot (current BS dag)</label>
+        <select id="plot_id" name="plot_id" required>
+          <option value="">Choose…</option>
+          {% for p in plots %}<option value="{{ p['id'] }}" {% if f.plot_id == p['id'] %}selected{% endif %}>JL {{ p['jl_no'] }} {{ p['name_en'] }} · {{ p['survey'] }} {{ p['dag_no'] }}</option>{% endfor %}
+        </select></div>
+      <div class="field"><label for="plot_ref">Land as described in the deed, if an old survey is used <span class="hint">optional, e.g. RS 245</span></label>
+        <input id="plot_ref" name="plot_ref" type="text" value="{{ f.plot_ref }}" maxlength="20"></div>
+      <div class="form-grid">
+        <div class="field"><label for="seller_id">Seller (person ID)</label>
+          <input id="seller_id" name="seller_id" type="text" list="people" value="{{ f.seller_id }}" maxlength="60" required></div>
+        <div class="field"><label for="buyer_id">Buyer (person ID) <span class="hint">or leave empty and add a new fictional buyer</span></label>
+          <input id="buyer_id" name="buyer_id" type="text" list="people" value="{{ f.buyer_id }}" maxlength="60"></div>
+        <div class="field"><label for="new_buyer_en">New buyer name (English) <span class="hint">must be fictional, e.g. "Ruma Namuna"</span></label>
+          <input id="new_buyer_en" name="new_buyer_en" type="text" value="{{ f.new_buyer_en }}" maxlength="60"></div>
+        <div class="field"><label for="new_buyer_bn">New buyer name (Bangla)</label>
+          <input id="new_buyer_bn" name="new_buyer_bn" type="text" value="{{ f.new_buyer_bn }}" maxlength="60" lang="bn"></div>
+      </div>
+      <datalist id="people">{% for p in persons %}<option value="{{ p['id'] }} — {{ p['name_en'] }}"></option>{% endfor %}</datalist>
+      <div class="field"><label for="quantity">Quantity transferred <span class="hint">e.g. 20 decimal · ০.১০ একর · 1/4 share · ৮ আনা</span></label>
+        <input id="quantity" name="quantity" type="text" value="{{ f.quantity }}" maxlength="40" required></div>
+      <div class="btn-row">
+        <button class="btn" type="submit" name="action" value="check">Run pre-registration check</button>
+        <button class="btn ghost" type="submit" name="action" value="save">Check and save notice</button>
+      </div>
+    </form>
+  </section>
+
+  <aside>
+    <section class="card">
+      <h2>Fill from deed text</h2>
+      <div class="assist">
+        <p class="muted">Paste a deed summary (Bangla or English). Fields are proposed by AI when configured, or by a rule-based reader; nothing is saved until you check and submit the form.</p>
+        <label for="deed-text">Deed summary</label>
+        <textarea id="deed-text" rows="8" maxlength="4000" lang="bn" placeholder="দলিল নং: 2026/0850&#10;সম্পাদনের তারিখ: ২০২৬-০৯-২০&#10;দাতা (বিক্রেতা): জয়নাল নমুনা&#10;গ্রহীতা (ক্রেতা): ...&#10;মৌজা: শাপলা চর (ডেমো), জে.এল. নং ৯০১&#10;দাগ: বিএস ১২০১&#10;পরিমাণ: ১০ শতাংশ"></textarea>
+        <div class="btn-row mt-s"><button class="btn ghost" type="button" id="extract-btn">Read fields</button></div>
+        <div id="extract-meta" class="assist-meta" aria-live="polite"></div>
+      </div>
+    </section>
+    {% if check %}
+    <section class="card">
+      <h2>Pre-registration check</h2>
+      {{ verdict(check.status, "Proposed deed: ") }}
+      {% for f in check.findings %}{{ finding_card(f) }}{% else %}<p>The proposed transfer fits the seller's remaining share within the records and coverage shown.</p>{% endfor %}
+      {{ strip(check.ledger.strip_now, "Plot after this deed", "p") }}
+      {{ strip_legend(check.ledger) }}
+    </section>
+    {% endif %}
+  </aside>
+</div>
+{% if check %}
+<section class="card">
+  <h2>Ledger including the proposed deed</h2>
+  {{ ledger_table(check.ledger.rows) }}
+</section>
+{% endif %}
+{% endblock %}

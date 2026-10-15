@@ -1,0 +1,40 @@
+﻿{% extends "base.html" %}
+{% from "_macros.html" import short_pill with context %}
+{% block title %}Plots{% endblock %}
+{% block content %}
+<div class="page-head">
+  <div>
+    <h1><span class="t-en">Plots (dags)</span><span class="t-bn">দাগসমূহ</span></h1>
+    <p>Every plot's ledger is recomputed from the records on each view.</p>
+  </div>
+</div>
+<div class="filters">
+  <form class="search" method="get" action="/plots" role="search">
+    <label class="t-en" for="q" hidden>Search</label>
+    <input id="q" type="search" name="q" value="{{ q }}" maxlength="60" placeholder="Dag, JL, khatian, name or deed no.">
+    <button class="btn" type="submit">Search</button>
+  </form>
+  {% for s in ['CONFLICT', 'INCOMPLETE', 'ATTENTION', 'NO_CONFLICT'] %}
+    <a href="/plots?status={{ s }}{% if q %}&q={{ q|urlencode }}{% endif %}">{{ short_pill(s) }}</a>
+  {% endfor %}
+</div>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Plot</th><th>Area</th><th>Record</th><th>Scenario</th><th>Check</th><th>Codes</th></tr></thead>
+  <tbody>
+  {% for r in rows %}
+    <tr>
+      <td><a href="/plots/{{ r.row['id'] }}">{{ r.row['name_en'] }} · JL {{ r.row['jl_no'] }} · BS {{ r.row['dag_no'] }}</a></td>
+      <td class="num">{{ r.row['area_raw'] }}</td>
+      <td>{{ r.row['record_ref'] }}</td>
+      <td>{% if r.row['scenario'] != 'BG' %}<span class="code-chip">{{ r.row['scenario'] }}</span> {{ r.row['title'] }}{% else %}<small class="muted">background</small>{% endif %}</td>
+      <td>{{ short_pill(r.status) }}</td>
+      <td>{% for c in r.codes %}<span class="code-chip">{{ c }}</span> {% endfor %}</td>
+    </tr>
+  {% else %}
+    <tr><td colspan="6">No plots match.</td></tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+{% endblock %}
