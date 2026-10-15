@@ -1,0 +1,21 @@
+# Render blueprint for a free web service. The filesystem is ephemeral, so the SQLite
+# database is re-created and re-seeded with synthetic data whenever the service restarts.
+services:
+  - type: web
+    name: sharetally
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn sharetally.web:app --host 0.0.0.0 --port $PORT --proxy-headers --forwarded-allow-ips="*"
+    healthCheckPath: /healthz
+    envVars:
+      - key: SHARETALLY_SECURE_COOKIES
+        value: "1"
+      - key: SHARETALLY_PW_REVIEWER
+        sync: false
+      - key: SHARETALLY_PW_CLERK
+        sync: false
+      - key: SHARETALLY_PW_AUDITOR
+        sync: false
+      - key: ANTHROPIC_API_KEY
+        sync: false
