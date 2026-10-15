@@ -200,7 +200,7 @@ Known gaps: no MFA, no rate limit on read endpoints, SQLite single-node; the aud
 
 ## AI tool disclosure
 
-**Used to build this project.** Claude Code (Anthropic, model Claude Opus 5.5) was used on 15 October 2026 to research public sources, compare candidate ideas, and draft most of the code, tests, synthetic data and documentation in this repository from the team's brief. The design decisions, rules and wording are documented here so that both students can explain them. *[TEAM: describe what you reviewed, changed and tested yourselves before submitting — the rule book requires both students to be able to explain the code.]*
+**Used to build this project.** Claude Code (Anthropic, model Claude Opus 5.5) was used on 15 October 2026 to research public sources, compare candidate ideas, and draft most of the code, tests, synthetic data and documentation in this repository from the team's brief. Later the same day, Claude Code agents audited the code and drafted `docs/architecture.md`, `docs/audit-2026-10-15.md`, `docs/improvement-architecture.md` and `docs/adr/`. The design decisions, rules and wording are documented here so that both students can explain them. *[TEAM: describe what you reviewed, changed and tested yourselves before submitting — the rule book requires both students to be able to explain the code.]*
 
 **Used inside the app (optional).** With `ANTHROPIC_API_KEY` set, the app calls a Claude model (default `claude-opus-5-5`, effort `low`, server-side refusal fallback enabled) for two narrow tasks:
 
@@ -222,6 +222,18 @@ The engine's statuses never depend on AI. Without a key, a template and a rule-b
 ## Deployment
 
 `render.yaml` describes a free Render web service (`uvicorn ... --proxy-headers`). Render's free instances sleep after 15 minutes without traffic and take about a minute to wake; the filesystem is ephemeral, so the demo database resets on restart (a feature for a demo). Set `SHARETALLY_PW_*` secrets in the dashboard; `ANTHROPIC_API_KEY` is optional. Any host that runs `uvicorn sharetally.web:app` works.
+
+## Documentation
+
+| Document | What it covers |
+| --- | --- |
+| [docs/architecture.md](docs/architecture.md) | Architecture as built: components, data model, engine algorithm, request flows, security model, AI fencing, configuration, deployment, tests |
+| [docs/improvement-architecture.md](docs/improvement-architecture.md) | Improvement roadmap and target architectures for the Final Round, a one-upazila pilot and national scale, with open legal questions |
+| [docs/audit-2026-10-15.md](docs/audit-2026-10-15.md) | Code audit register: 56 weaknesses with evidence, seven independently re-verified |
+| [docs/adr/](docs/adr/README.md) | Architecture decision records (built and proposed) |
+| [docs/evaluation.md](docs/evaluation.md) | Generated evaluation results on the synthetic scenarios |
+| [docs/idea-selection.md](docs/idea-selection.md) | Research, six candidate ideas, scoring and selection |
+| [docs/submission-text.md](docs/submission-text.md), [docs/demo-script.md](docs/demo-script.md), [docs/team-plan.md](docs/team-plan.md) | Round 1 submission text, demo script and judge Q&A, team plan |
 
 ## Repository layout
 
